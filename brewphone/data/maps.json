@@ -1,0 +1,31 @@
+{
+  "version": "1.0.0",
+  "items": [
+    {
+      "id": "map-floor3",
+      "day": 1,
+      "app": "map",
+      "title": "潮騒館3階図",
+      "subtitle": "",
+      "body": "映写室Bから非常階段まで近く、二階アーカイブ室へ数分で移動できる。",
+      "image": "../shared/images/scenes/third-floor-hall.jpg",
+      "link": null,
+      "evidenceId": "EV-MAP-01",
+      "tags": [],
+      "classification": "B"
+    },
+    {
+      "id": "bus-yui",
+      "day": 5,
+      "app": "map",
+      "title": "白石結衣 移動記録",
+      "subtitle": "",
+      "body": "19:17 海凪中央発。19:24 車内カメラ。20:31には現場から離れている。",
+      "image": "../day05/images/bus-camera-yui.jpg",
+      "link": "../sites/minagi-bus/timetable.html",
+      "evidenceId": null,
+      "tags": [],
+      "classification": "A"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+.note-form {
+  display: grid;
+  gap: 9px;
+  margin-bottom: 12px;
+  padding: 15px;
+  background: rgba(255, 255, 255, .76);
+  border: 1px solid rgba(255, 255, 255, .92);
+  border-radius: 15px;
+}
+
+.note-form input,
+.note-form textarea,
+.note-form select {
+  width: 100%;
+  padding: 10px 11px;
+  color: var(--phone-ink);
+  background: #f6f7f5;
+  border: 1px solid #cfd6d6;
+  border-radius: 9px;
+  font: inherit;
+  font-size: .78rem;
+}
+
+.note-form textarea { min-height: 105px; resize: vertical; line-height: 1.65; }
+.note-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.note-submit-row { display: flex; gap: 8px; }
+.note-submit-row .button:first-child { flex: 1; justify-content: center; }
+.export-row { display: flex; gap: 7px; margin: 11px 0; overflow-x: auto; }
+.export-row .button { flex: 0 0 auto; padding: .52rem .68rem; font-size: .68rem; }
+.note-card { padding: 15px; background: rgba(255, 255, 255, .78); border: 1px solid rgba(255, 255, 255, .94); border-radius: 14px; box-shadow: 0 6px 16px rgba(28, 47, 58, .06); }
+.note-card.done { opacity: .57; }
+.note-card.done h3 { text-decoration: line-through; }
+.note-card h3 { margin: 0 0 7px; font-size: .92rem; }
+.note-card > p { margin: 0 0 11px; color: #56656d; font-size: .76rem; line-height: 1.7; }
+.note-meta { display: flex; flex-wrap: wrap; gap: 5px; color: #66737b; font-size: .63rem; }
+.note-meta span { padding: 3px 6px; background: #edf0ef; border-radius: 5px; }
+.note-actions { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 12px; }
+.note-actions button { padding: .35rem .52rem; color: #51616a; background: #f7f8f6; border: 1px solid #d3d9d9; border-radius: 7px; font: inherit; font-size: .65rem; }
+.note-actions button[data-action="delete"] { margin-left: auto; color: #963b42; }

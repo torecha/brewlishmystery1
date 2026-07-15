@@ -1,0 +1,59 @@
+{
+  "version": "1.0.0",
+  "items": [
+    {
+      "id": "news-current",
+      "day": 3,
+      "app": "news",
+      "title": "潮騒館で監督死亡",
+      "subtitle": "",
+      "body": "開館記念上映会後、旧映写室で久世新監督が死亡。警察は事故と事件の両面で調査。",
+      "image": null,
+      "link": "../sites/minagi-news/article-20261018.html",
+      "evidenceId": null,
+      "tags": [],
+      "classification": "B"
+    },
+    {
+      "id": "news-puzzle",
+      "day": 3,
+      "app": "news",
+      "title": "日曜版「消えた座席番号」",
+      "subtitle": "",
+      "body": "欠けた座席番号を求める読者クイズ。",
+      "image": null,
+      "link": "../sites/minagi-news/sunday-puzzle.html",
+      "evidenceId": null,
+      "tags": [
+        "13"
+      ],
+      "classification": "B"
+    },
+    {
+      "id": "news-article13",
+      "day": 3,
+      "app": "news",
+      "title": "ARTICLE-13 御影座火災",
+      "subtitle": "",
+      "body": "2004年火災で、13歳少女が避難誘導を手伝ったとの記事。",
+      "image": null,
+      "link": "../sites/minagi-news/article-20040822-13.html",
+      "evidenceId": null,
+      "tags": [],
+      "classification": "A"
+    },
+    {
+      "id": "corrected-news",
+      "day": 10,
+      "app": "news",
+      "title": "御影座火災報告を再調査",
+      "subtitle": "",
+      "body": "海凪市は非常口前展示壁と企業関与を再検証。星野達郎への公式謝罪を決定。",
+      "image": null,
+      "link": "../sites/minagi-news/corrections.html",
+      "evidenceId": null,
+      "tags": [],
+      "classification": "B"
+    }
+  ]
+}

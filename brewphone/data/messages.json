@@ -1,0 +1,37 @@
+{
+  "version": "1.0.0",
+  "items": [
+    {
+      "id": "msg-d1-1",
+      "day": 1,
+      "app": "messages",
+      "title": "現場連絡グループ",
+      "subtitle": "潮騒館スタッフ",
+      "body": "21:12 館内封鎖。三階旧映写室Bを現状保存。関係者はロビー待機。",
+      "image": null,
+      "link": null,
+      "evidenceId": null,
+      "tags": [
+        "現場",
+        "封鎖"
+      ],
+      "classification": "B"
+    },
+    {
+      "id": "msg-d1-2",
+      "day": 1,
+      "app": "messages",
+      "title": "真綾から館長へ",
+      "subtitle": "星野真綾",
+      "body": "20:46、久世さんから「第2巻を先に回して」と連絡がありました。",
+      "image": null,
+      "link": null,
+      "evidenceId": null,
+      "tags": [
+        "20:46",
+        "音声"
+      ],
+      "classification": "B"
+    }
+  ]
+}

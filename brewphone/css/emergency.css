@@ -1,0 +1,27 @@
+.emergency-banner {
+  position: relative;
+  z-index: 25;
+  margin: 10px 13px 0;
+  padding: 13px 15px 13px 45px;
+  color: white;
+  background: linear-gradient(130deg, #8f303b, #b04748);
+  border: 1px solid rgba(255, 255, 255, .18);
+  border-radius: 13px;
+  box-shadow: 0 12px 28px rgba(115, 25, 35, .25);
+  font-size: .74rem;
+  line-height: 1.55;
+}
+
+.emergency-banner::before { position: absolute; top: 14px; left: 15px; display: grid; width: 21px; height: 21px; place-items: center; color: #9a333b; background: white; border-radius: 50%; content: '!'; font-weight: 900; }
+.emergency-banner strong { font-size: .66rem; letter-spacing: .12em; }
+.emergency-banner.hidden { display: none; }
+.phone-shake { animation: phoneShake .32s linear; }
+
+@keyframes phoneShake {
+  0%, 100% { transform: translateX(0); }
+  22% { transform: translateX(-7px); }
+  45% { transform: translateX(6px); }
+  68% { transform: translateX(-3px); }
+}
+
+@media (prefers-reduced-motion: reduce) { .phone-shake { animation: none; } }

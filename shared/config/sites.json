@@ -1,0 +1,362 @@
+{
+  "version": "1.0.0",
+  "base": "../sites/",
+  "sites": [
+    {
+      "id": "SITE-01",
+      "slug": "shiosai-museum",
+      "name": "潮騒館 公式サイト",
+      "unlock": 1,
+      "type": "museum",
+      "role": "舞台・館内構造・職員・設備の公式情報を提示する。",
+      "pages": [
+        "index.html",
+        "about.html",
+        "floor-map.html",
+        "staff.html",
+        "news.html",
+        "access.html"
+      ],
+      "entry": "BrewPhoneのニュース、Day1館内図ボタン",
+      "clues": [
+        "旧映画館「御影座」から改修されたこと",
+        "3階映写室Bの位置",
+        "旧式設備を保存していること",
+        "森下館長の設備更新告知"
+      ],
+      "noise": [
+        "開館記念グッズ",
+        "施設利用案内",
+        "海辺の撮影スポット紹介"
+      ],
+      "quiz": null,
+      "visual": "海辺の公共文化施設。白、深い紺、くすんだ金。過度に高級にしない。",
+      "image": "images/museum-home-hero.jpg"
+    },
+    {
+      "id": "SITE-02",
+      "slug": "minagi-news",
+      "name": "海凪新聞デジタル",
+      "unlock": 3,
+      "type": "local-news",
+      "role": "2004年火災記事、訂正欄、新聞クイズ、現在の事件報道を提示。",
+      "pages": [
+        "index.html",
+        "article-20261018.html",
+        "article-20040822-13.html",
+        "archive.html",
+        "corrections.html",
+        "sunday-puzzle.html"
+      ],
+      "entry": "BrewPhone News、検索履歴「御影座 火災 13」",
+      "clues": [
+        "ARTICLE-13",
+        "13歳少女の避難誘導",
+        "後年の訂正欄",
+        "東浜開発の協賛記録"
+      ],
+      "noise": [
+        "釣果欄",
+        "秋祭り広告",
+        "天気欄"
+      ],
+      "quiz": "座席番号パズル。正解13。正解後ARTICLE-13を提示。",
+      "visual": "地方新聞。白地、濃紺見出し、紙面風カラム。広告と記事の密度を自然にする。",
+      "image": "images/minagi-news-front.jpg"
+    },
+    {
+      "id": "SITE-03",
+      "slug": "mikage-archive",
+      "name": "御影座記憶アーカイブ",
+      "unlock": 3,
+      "type": "archive",
+      "role": "古写真、館内図、座席番号札、関係者の記憶を掲載。",
+      "pages": [
+        "index.html",
+        "gallery.html",
+        "floorplan.html",
+        "collection.html",
+        "memory-posts.html",
+        "item-13.html"
+      ],
+      "entry": "海凪新聞ARTICLE-13、BrewPhoneブックマーク",
+      "clues": [
+        "非常口前展示壁の写真",
+        "座席札13の欠落",
+        "星野達郎の映写技師記録",
+        "FRAME 13への外部リンク"
+      ],
+      "noise": [
+        "上映作品一覧",
+        "座席クッション投票",
+        "寄贈品紹介"
+      ],
+      "quiz": "古写真の撮影場所当て。正解は北側非常口。",
+      "visual": "市民運営の資料アーカイブ。生成り紙、墨色、古写真サムネイル。",
+      "image": "images/mikage-archive-gallery.jpg"
+    },
+    {
+      "id": "SITE-04",
+      "slug": "tohama-development",
+      "name": "東浜開発 公式サイト",
+      "unlock": 4,
+      "type": "corporate",
+      "role": "企業の表向きの歴史と、2004年協賛事業の痕跡を提示。",
+      "pages": [
+        "index.html",
+        "company.html",
+        "history.html",
+        "csr.html",
+        "news.html",
+        "history-2004.html"
+      ],
+      "entry": "久世のメール、東堂理央プロフィール",
+      "clues": [
+        "2004年地域文化支援事業",
+        "特設展示壁の模型",
+        "古いページの削除痕跡",
+        "東堂修一の当時役職"
+      ],
+      "noise": [
+        "不動産開発実績",
+        "採用情報",
+        "環境方針"
+      ],
+      "quiz": null,
+      "visual": "保守的な大手企業サイト。白、濃紺、青緑。現代的で無難。",
+      "image": "images/tohama-history-2004.jpg"
+    },
+    {
+      "id": "SITE-05",
+      "slug": "kuze-documents",
+      "name": "KUZÉ DOCUMENTS",
+      "unlock": 1,
+      "type": "production",
+      "role": "久世の経歴、作品紹介、制作ノート、作品更新履歴を提示。",
+      "pages": [
+        "index.html",
+        "works.html",
+        "last-projection.html",
+        "profile.html",
+        "journal.html",
+        "contact.html"
+      ],
+      "entry": "被害者プロフィール、SNSリンク",
+      "clues": [
+        "作品「最後の映写」の編集方針",
+        "20:50投稿文と過去投稿のテンプレ一致",
+        "企業名を外した予告編",
+        "更新履歴の不自然な削除"
+      ],
+      "noise": [
+        "過去作品賞歴",
+        "機材紹介",
+        "上映会告知"
+      ],
+      "quiz": null,
+      "visual": "独立系ドキュメンタリー制作会社。黒、白、抑えた灰色。映画ポスター風にしすぎない。",
+      "image": "images/kuze-film-still.jpg"
+    },
+    {
+      "id": "SITE-06",
+      "slug": "frame13-blog",
+      "name": "FRAME 13",
+      "unlock": 5,
+      "type": "personal-blog",
+      "role": "白石結衣の匿名ブログ。旧姓、過去の記憶、実名公開への拒否を間接的に示す。",
+      "pages": [
+        "index.html",
+        "archive.html",
+        "post-20040821.html",
+        "post-name.html",
+        "profile.html"
+      ],
+      "entry": "新聞クイズNP-03、御影座アーカイブ",
+      "clues": [
+        "O.Y.の半券",
+        "13番席",
+        "名前を変えたこと",
+        "火災時に二人の手を引いた記憶"
+      ],
+      "noise": [
+        "翻訳した児童書の感想",
+        "海辺の散歩",
+        "古い映画半券"
+      ],
+      "quiz": "読者投稿の文字並べ替えでFRAMEを得る。",
+      "visual": "2000年代から続く個人ブログを改修した外観。淡い灰青、余白、古い写真。",
+      "image": "images/frame13-blog-header.jpg"
+    },
+    {
+      "id": "SITE-07",
+      "slug": "minagi-bus",
+      "name": "海凪バス",
+      "unlock": 5,
+      "type": "transit",
+      "role": "白石結衣の移動時間とアリバイをプレイヤーが検証する。",
+      "pages": [
+        "index.html",
+        "route.html",
+        "timetable.html",
+        "stop-minagi-central.html",
+        "fare.html"
+      ],
+      "entry": "BrewPhone Map、結衣の交通IC記録",
+      "clues": [
+        "19:17発便",
+        "裏口からバス停徒歩4分",
+        "19:24車内カメラ地点"
+      ],
+      "noise": [
+        "運賃改定",
+        "忘れ物案内",
+        "観光一日券"
+      ],
+      "quiz": null,
+      "visual": "現実的な地方バス会社サイト。白、青、橙。表と路線図を読みやすく。",
+      "image": "images/bus-route-map.png"
+    },
+    {
+      "id": "SITE-08",
+      "slug": "fire-report-archive",
+      "name": "海凪消防資料公開室",
+      "unlock": 5,
+      "type": "public-record",
+      "role": "2004年火災報告書と欠落ページを提示。",
+      "pages": [
+        "index.html",
+        "search.html",
+        "record-fr-2004-13.html",
+        "document-viewer.html",
+        "disclosure-policy.html"
+      ],
+      "entry": "神谷記者メモ、BrewPhone Files",
+      "clues": [
+        "12ページの次が14ページ",
+        "出火地点は舞台袖",
+        "非常口幅の記録",
+        "公開資料番号FR-2004-13"
+      ],
+      "noise": [
+        "別年度の火災統計",
+        "防災啓発資料"
+      ],
+      "quiz": null,
+      "visual": "簡素な行政資料検索。白、灰、暗い青。装飾を抑える。",
+      "image": "images/fire-archive-cover.jpg"
+    },
+    {
+      "id": "SITE-09",
+      "slug": "cinema-tech-forum",
+      "name": "映写技術保存会",
+      "unlock": 8,
+      "type": "technical",
+      "role": "旧式鍵、ラッチ、16mm巻き取りハンドルの仕様を説明する。",
+      "pages": [
+        "index.html",
+        "articles.html",
+        "door-lock-m02.html",
+        "projector-16mm.html",
+        "forum-thread-218.html"
+      ],
+      "entry": "映写機裏の凶器発見、BrewPhone Browser",
+      "clues": [
+        "M-02鍵は電子ログを残さない",
+        "扉は退出後自動ラッチ",
+        "着脱式ハンドルの材質と重量"
+      ],
+      "noise": [
+        "ランプ交換",
+        "フィルム保存温度",
+        "会員募集"
+      ],
+      "quiz": null,
+      "visual": "専門家向け技術サイト。古い掲示板要素と現代記事ページを併存。",
+      "image": "images/cinema-tech-lock.jpg"
+    },
+    {
+      "id": "SITE-10",
+      "slug": "local-magazine",
+      "name": "月刊みなぎ",
+      "unlock": 3,
+      "type": "magazine",
+      "role": "無関係に見える地域情報と小さな検索語を与える。",
+      "pages": [
+        "index.html",
+        "issue-202610.html",
+        "photo-quiz.html",
+        "reader-posts.html",
+        "fortune.html"
+      ],
+      "entry": "BrewPhone News、海凪新聞広告",
+      "clues": [
+        "古写真の場所当てで北側非常口",
+        "読者投稿並べ替えでFRAME"
+      ],
+      "noise": [
+        "占い",
+        "商店街特集",
+        "釣り写真",
+        "カフェ紹介"
+      ],
+      "quiz": "写真場所当て、文字並べ替え。",
+      "visual": "地方フリーペーパー。明るいが事件サイトと浮かない配色。",
+      "image": "images/local-magazine-cover.jpg"
+    },
+    {
+      "id": "SITE-11",
+      "slug": "wayback-mock",
+      "name": "公開Web保存庫",
+      "unlock": 8,
+      "type": "web-archive",
+      "role": "東浜開発が削除した2004年協賛ページを復元表示。",
+      "pages": [
+        "index.html",
+        "search.html",
+        "snapshot-20040815-tohama.html",
+        "snapshot-info.html"
+      ],
+      "entry": "東浜開発history-2004のリンク切れ、ブラウザ履歴",
+      "clues": [
+        "避難導線を変更した特設展示という広報文",
+        "展示壁の設置主体",
+        "ページ削除日時"
+      ],
+      "noise": [
+        "保存失敗表示",
+        "別年スナップショット"
+      ],
+      "quiz": null,
+      "visual": "古いWebページを枠内で表示する汎用保存サービス。実在サービスの商標は使用しない。",
+      "image": "images/wayback-deleted-page.png"
+    },
+    {
+      "id": "SITE-12",
+      "slug": "weather-record",
+      "name": "海凪気象記録",
+      "unlock": 2,
+      "type": "weather-record",
+      "role": "写真の明るさ、雨の有無、時刻補助を検証する。",
+      "pages": [
+        "index.html",
+        "daily-20261018.html",
+        "sunset.html",
+        "archive.html"
+      ],
+      "entry": "BrewPhone Map、写真詳細",
+      "clues": [
+        "10月18日の日没17:42",
+        "19時以降降雨なし",
+        "外観写真の時間帯整合"
+      ],
+      "noise": [
+        "潮汐",
+        "風向",
+        "週間予報"
+      ],
+      "quiz": null,
+      "visual": "観測データサイト。表と簡潔なグラフ中心。",
+      "image": "images/weather-chart.png"
+    }
+  ]
+}

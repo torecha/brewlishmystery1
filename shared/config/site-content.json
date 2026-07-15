@@ -1,0 +1,1647 @@
+{
+  "version": "1.0.0",
+  "pages": {
+    "shiosai-museum/index.html": {
+      "siteId": "SITE-01",
+      "siteName": "潮騒館 公式サイト",
+      "slug": "shiosai-museum",
+      "page": "index.html",
+      "unlockDay": 1,
+      "type": "museum",
+      "title": "海辺に残る映像と記憶",
+      "body": "旧映画館「御影座」を保存改修した市立映像資料館。フィルム、地域ニュース、個人撮影映像を収集・公開しています。",
+      "bullets": [
+        "旧映写室を含む建物設備を保存",
+        "2026年10月18日 再開館記念上映",
+        "地域映像の寄贈受付"
+      ],
+      "image": "images/museum-home-hero.jpg",
+      "visual": "海辺の公共文化施設。白、深い紺、くすんだ金。過度に高級にしない。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "about.html",
+        "floor-map.html",
+        "staff.html",
+        "news.html",
+        "access.html"
+      ]
+    },
+    "shiosai-museum/about.html": {
+      "siteId": "SITE-01",
+      "siteName": "潮騒館 公式サイト",
+      "slug": "shiosai-museum",
+      "page": "about.html",
+      "unlockDay": 1,
+      "type": "museum",
+      "title": "潮騒館について",
+      "body": "1928年開館の映画館「御影座」を保存改修し、地域映像の収集・修復・上映を行う市立資料館として2026年に再開館しました。",
+      "bullets": [
+        "旧映画館「御影座」から改修されたこと",
+        "3階映写室Bの位置",
+        "開館記念グッズ",
+        "施設利用案内"
+      ],
+      "image": "images/museum-home-hero.jpg",
+      "visual": "海辺の公共文化施設。白、深い紺、くすんだ金。過度に高級にしない。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "about.html",
+        "floor-map.html",
+        "staff.html",
+        "news.html",
+        "access.html"
+      ]
+    },
+    "shiosai-museum/floor-map.html": {
+      "siteId": "SITE-01",
+      "siteName": "潮騒館 公式サイト",
+      "slug": "shiosai-museum",
+      "page": "floor-map.html",
+      "unlockDay": 1,
+      "type": "museum",
+      "title": "館内案内",
+      "body": "3階には旧映写室A・B、フィルム保管庫、非常階段があります。2階アーカイブ室から3階B室までは階段で約2分半です。",
+      "bullets": [
+        "旧映写室B：ICカードと保存用旧式錠",
+        "扉は自動ラッチ式",
+        "投影窓は人が通れない幅"
+      ],
+      "image": "images/museum-home-hero.jpg",
+      "visual": "海辺の公共文化施設。白、深い紺、くすんだ金。過度に高級にしない。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "about.html",
+        "floor-map.html",
+        "staff.html",
+        "news.html",
+        "access.html"
+      ]
+    },
+    "shiosai-museum/staff.html": {
+      "siteId": "SITE-01",
+      "siteName": "潮騒館 公式サイト",
+      "slug": "shiosai-museum",
+      "page": "staff.html",
+      "unlockDay": 1,
+      "type": "museum",
+      "title": "スタッフ",
+      "body": "館長・森下恵、映像アーカイブ主任・星野真綾、施設管理責任者・宮原孝志。",
+      "bullets": [
+        "星野真綾：映像修復・音声ノイズ除去",
+        "宮原孝志：旧設備・鍵管理",
+        "森下恵：施設運営"
+      ],
+      "image": "images/museum-home-hero.jpg",
+      "visual": "海辺の公共文化施設。白、深い紺、くすんだ金。過度に高級にしない。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "about.html",
+        "floor-map.html",
+        "staff.html",
+        "news.html",
+        "access.html"
+      ]
+    },
+    "shiosai-museum/news.html": {
+      "siteId": "SITE-01",
+      "siteName": "潮騒館 公式サイト",
+      "slug": "shiosai-museum",
+      "page": "news.html",
+      "unlockDay": 1,
+      "type": "museum",
+      "title": "お知らせ",
+      "body": "再開館記念上映「最後の映写」の開催案内と、館内設備の利用変更を掲載しています。",
+      "bullets": [
+        "旧映画館「御影座」から改修されたこと",
+        "3階映写室Bの位置",
+        "開館記念グッズ",
+        "施設利用案内"
+      ],
+      "image": "images/museum-home-hero.jpg",
+      "visual": "海辺の公共文化施設。白、深い紺、くすんだ金。過度に高級にしない。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "about.html",
+        "floor-map.html",
+        "staff.html",
+        "news.html",
+        "access.html"
+      ]
+    },
+    "shiosai-museum/access.html": {
+      "siteId": "SITE-01",
+      "siteName": "潮騒館 公式サイト",
+      "slug": "shiosai-museum",
+      "page": "access.html",
+      "unlockDay": 1,
+      "type": "museum",
+      "title": "交通・アクセス",
+      "body": "海凪中央駅から市内バスで8分。正面入口のほか、搬入口側に関係者用通用口があります。",
+      "bullets": [
+        "旧映画館「御影座」から改修されたこと",
+        "3階映写室Bの位置",
+        "開館記念グッズ",
+        "施設利用案内"
+      ],
+      "image": "images/museum-home-hero.jpg",
+      "visual": "海辺の公共文化施設。白、深い紺、くすんだ金。過度に高級にしない。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "about.html",
+        "floor-map.html",
+        "staff.html",
+        "news.html",
+        "access.html"
+      ]
+    },
+    "minagi-news/index.html": {
+      "siteId": "SITE-02",
+      "siteName": "海凪新聞デジタル",
+      "slug": "minagi-news",
+      "page": "index.html",
+      "unlockDay": 3,
+      "type": "local-news",
+      "title": "海凪新聞デジタル",
+      "body": "2004年火災記事、訂正欄、新聞クイズ、現在の事件報道を提示。",
+      "bullets": [
+        "ARTICLE-13",
+        "13歳少女の避難誘導",
+        "釣果欄",
+        "秋祭り広告"
+      ],
+      "image": "images/minagi-news-front.jpg",
+      "visual": "地方新聞。白地、濃紺見出し、紙面風カラム。広告と記事の密度を自然にする。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "article-20261018.html",
+        "article-20040822-13.html",
+        "archive.html",
+        "corrections.html",
+        "sunday-puzzle.html"
+      ]
+    },
+    "minagi-news/article-20261018.html": {
+      "siteId": "SITE-02",
+      "siteName": "海凪新聞デジタル",
+      "slug": "minagi-news",
+      "page": "article-20261018.html",
+      "unlockDay": 3,
+      "type": "local-news",
+      "title": "潮騒館の旧映写室で監督死亡",
+      "body": "18日午後9時7分、潮騒館の旧映写室Bで映像監督・久世新さんが倒れているのが発見された。",
+      "bullets": [
+        "午後8時46分に館内連絡とされる音声",
+        "午後8時50分にSNS投稿",
+        "警察は事故と事件の両面で調査"
+      ],
+      "image": "images/minagi-news-front.jpg",
+      "visual": "地方新聞。白地、濃紺見出し、紙面風カラム。広告と記事の密度を自然にする。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "article-20261018.html",
+        "article-20040822-13.html",
+        "archive.html",
+        "corrections.html",
+        "sunday-puzzle.html"
+      ]
+    },
+    "minagi-news/article-20040822-13.html": {
+      "siteId": "SITE-02",
+      "siteName": "海凪新聞デジタル",
+      "slug": "minagi-news",
+      "page": "article-20040822-13.html",
+      "unlockDay": 3,
+      "type": "local-news",
+      "title": "ARTICLE-13｜御影座火災、13歳少女が避難誘導",
+      "body": "2004年8月21日の御影座火災で、13歳の少女が来場者二人の手を引き、北側出口へ誘導していた。",
+      "bullets": [
+        "少女の氏名は非公表",
+        "出火原因は調査中と記載",
+        "東浜開発はイベント協賛企業"
+      ],
+      "image": "images/minagi-news-front.jpg",
+      "visual": "地方新聞。白地、濃紺見出し、紙面風カラム。広告と記事の密度を自然にする。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "article-20261018.html",
+        "article-20040822-13.html",
+        "archive.html",
+        "corrections.html",
+        "sunday-puzzle.html"
+      ]
+    },
+    "minagi-news/archive.html": {
+      "siteId": "SITE-02",
+      "siteName": "海凪新聞デジタル",
+      "slug": "minagi-news",
+      "page": "archive.html",
+      "unlockDay": 3,
+      "type": "local-news",
+      "title": "記事アーカイブ",
+      "body": "海凪新聞の公開記事を発行日・記事番号から検索できます。2004年8月の御影座火災関連記事は検証欄とあわせて保存されています。",
+      "bullets": [
+        "ARTICLE-13",
+        "13歳少女の避難誘導",
+        "釣果欄",
+        "秋祭り広告"
+      ],
+      "image": "images/minagi-news-front.jpg",
+      "visual": "地方新聞。白地、濃紺見出し、紙面風カラム。広告と記事の密度を自然にする。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "article-20261018.html",
+        "article-20040822-13.html",
+        "archive.html",
+        "corrections.html",
+        "sunday-puzzle.html"
+      ]
+    },
+    "minagi-news/corrections.html": {
+      "siteId": "SITE-02",
+      "siteName": "海凪新聞デジタル",
+      "slug": "minagi-news",
+      "page": "corrections.html",
+      "unlockDay": 3,
+      "type": "local-news",
+      "title": "訂正・検証",
+      "body": "2004年記事で少女が火災原因であるかのような印象を与えた後続記事について、根拠が確認できなかった。",
+      "bullets": [
+        "出火地点は舞台袖",
+        "少女の位置と一致しない",
+        "非常口前展示壁を再調査"
+      ],
+      "image": "images/minagi-news-front.jpg",
+      "visual": "地方新聞。白地、濃紺見出し、紙面風カラム。広告と記事の密度を自然にする。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "article-20261018.html",
+        "article-20040822-13.html",
+        "archive.html",
+        "corrections.html",
+        "sunday-puzzle.html"
+      ]
+    },
+    "minagi-news/sunday-puzzle.html": {
+      "siteId": "SITE-02",
+      "siteName": "海凪新聞デジタル",
+      "slug": "minagi-news",
+      "page": "sunday-puzzle.html",
+      "unlockDay": 3,
+      "type": "local-news",
+      "title": "日曜版｜消えた座席番号",
+      "body": "座席番号の規則を読み、欠けた番号を答えてください。",
+      "bullets": [
+        "9, 10, 11, 12, ?, 14, 15",
+        "正解後の検索語：ARTICLE-13",
+        "読者プレゼント応募番号とは無関係"
+      ],
+      "image": "images/minagi-news-front.jpg",
+      "visual": "地方新聞。白地、濃紺見出し、紙面風カラム。広告と記事の密度を自然にする。",
+      "quiz": "座席番号パズル。正解13。正解後ARTICLE-13を提示。",
+      "pages": [
+        "index.html",
+        "article-20261018.html",
+        "article-20040822-13.html",
+        "archive.html",
+        "corrections.html",
+        "sunday-puzzle.html"
+      ]
+    },
+    "mikage-archive/index.html": {
+      "siteId": "SITE-03",
+      "siteName": "御影座記憶アーカイブ",
+      "slug": "mikage-archive",
+      "page": "index.html",
+      "unlockDay": 3,
+      "type": "archive",
+      "title": "御影座記憶アーカイブ",
+      "body": "古写真、館内図、座席番号札、関係者の記憶を掲載。",
+      "bullets": [
+        "非常口前展示壁の写真",
+        "座席札13の欠落",
+        "上映作品一覧",
+        "座席クッション投票"
+      ],
+      "image": "images/mikage-archive-gallery.jpg",
+      "visual": "市民運営の資料アーカイブ。生成り紙、墨色、古写真サムネイル。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "gallery.html",
+        "floorplan.html",
+        "collection.html",
+        "memory-posts.html",
+        "item-13.html"
+      ]
+    },
+    "mikage-archive/gallery.html": {
+      "siteId": "SITE-03",
+      "siteName": "御影座記憶アーカイブ",
+      "slug": "mikage-archive",
+      "page": "gallery.html",
+      "unlockDay": 3,
+      "type": "archive",
+      "title": "写真資料室",
+      "body": "市民から寄せられた御影座の外観、ロビー、客席、北側通路の写真を撮影年代順に公開しています。",
+      "bullets": [
+        "非常口前展示壁の写真",
+        "座席札13の欠落",
+        "上映作品一覧",
+        "座席クッション投票"
+      ],
+      "image": "images/mikage-archive-gallery.jpg",
+      "visual": "市民運営の資料アーカイブ。生成り紙、墨色、古写真サムネイル。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "gallery.html",
+        "floorplan.html",
+        "collection.html",
+        "memory-posts.html",
+        "item-13.html"
+      ]
+    },
+    "mikage-archive/floorplan.html": {
+      "siteId": "SITE-03",
+      "siteName": "御影座記憶アーカイブ",
+      "slug": "mikage-archive",
+      "page": "floorplan.html",
+      "unlockDay": 3,
+      "type": "archive",
+      "title": "旧御影座の館内図",
+      "body": "1998年の消防設備点検図をもとにした館内図です。北側非常口前は、2004年の催事期間だけ通常と異なる配置でした。",
+      "bullets": [
+        "非常口前展示壁の写真",
+        "座席札13の欠落",
+        "上映作品一覧",
+        "座席クッション投票"
+      ],
+      "image": "images/mikage-archive-gallery.jpg",
+      "visual": "市民運営の資料アーカイブ。生成り紙、墨色、古写真サムネイル。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "gallery.html",
+        "floorplan.html",
+        "collection.html",
+        "memory-posts.html",
+        "item-13.html"
+      ]
+    },
+    "mikage-archive/collection.html": {
+      "siteId": "SITE-03",
+      "siteName": "御影座記憶アーカイブ",
+      "slug": "mikage-archive",
+      "page": "collection.html",
+      "unlockDay": 3,
+      "type": "archive",
+      "title": "収蔵資料一覧",
+      "body": "座席札、上映プログラム、映写機部品など、旧御影座から引き継いだ資料を収蔵番号順に紹介します。",
+      "bullets": [
+        "非常口前展示壁の写真",
+        "座席札13の欠落",
+        "上映作品一覧",
+        "座席クッション投票"
+      ],
+      "image": "images/mikage-archive-gallery.jpg",
+      "visual": "市民運営の資料アーカイブ。生成り紙、墨色、古写真サムネイル。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "gallery.html",
+        "floorplan.html",
+        "collection.html",
+        "memory-posts.html",
+        "item-13.html"
+      ]
+    },
+    "mikage-archive/memory-posts.html": {
+      "siteId": "SITE-03",
+      "siteName": "御影座記憶アーカイブ",
+      "slug": "mikage-archive",
+      "page": "memory-posts.html",
+      "unlockDay": 3,
+      "type": "archive",
+      "title": "御影座の記憶",
+      "body": "来場者と元職員から寄せられた短い記憶です。投稿内容は個人の記憶に基づき、年代が不確かなものも含まれます。",
+      "bullets": [
+        "非常口前展示壁の写真",
+        "座席札13の欠落",
+        "上映作品一覧",
+        "座席クッション投票"
+      ],
+      "image": "images/mikage-archive-gallery.jpg",
+      "visual": "市民運営の資料アーカイブ。生成り紙、墨色、古写真サムネイル。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "gallery.html",
+        "floorplan.html",
+        "collection.html",
+        "memory-posts.html",
+        "item-13.html"
+      ]
+    },
+    "mikage-archive/item-13.html": {
+      "siteId": "SITE-03",
+      "siteName": "御影座記憶アーカイブ",
+      "slug": "mikage-archive",
+      "page": "item-13.html",
+      "unlockDay": 3,
+      "type": "archive",
+      "title": "収蔵品13｜欠けた座席札",
+      "body": "御影座の解体前調査で、13番の座席札だけが見つからなかった。",
+      "bullets": [
+        "匿名ブログFRAME 13への寄稿者リンク",
+        "北側非常口の古写真",
+        "星野達郎の映写技師手帳"
+      ],
+      "image": "images/mikage-archive-gallery.jpg",
+      "visual": "市民運営の資料アーカイブ。生成り紙、墨色、古写真サムネイル。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "gallery.html",
+        "floorplan.html",
+        "collection.html",
+        "memory-posts.html",
+        "item-13.html"
+      ]
+    },
+    "tohama-development/index.html": {
+      "siteId": "SITE-04",
+      "siteName": "東浜開発 公式サイト",
+      "slug": "tohama-development",
+      "page": "index.html",
+      "unlockDay": 4,
+      "type": "corporate",
+      "title": "東浜開発 公式サイト",
+      "body": "企業の表向きの歴史と、2004年協賛事業の痕跡を提示。",
+      "bullets": [
+        "2004年地域文化支援事業",
+        "特設展示壁の模型",
+        "不動産開発実績",
+        "採用情報"
+      ],
+      "image": "images/tohama-history-2004.jpg",
+      "visual": "保守的な大手企業サイト。白、濃紺、青緑。現代的で無難。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "company.html",
+        "history.html",
+        "csr.html",
+        "news.html",
+        "history-2004.html"
+      ]
+    },
+    "tohama-development/company.html": {
+      "siteId": "SITE-04",
+      "siteName": "東浜開発 公式サイト",
+      "slug": "tohama-development",
+      "page": "company.html",
+      "unlockDay": 4,
+      "type": "corporate",
+      "title": "会社情報",
+      "body": "東浜開発は海凪市を中心に都市整備、商業施設運営、文化施設支援を行う地域開発会社です。",
+      "bullets": [
+        "2004年地域文化支援事業",
+        "特設展示壁の模型",
+        "不動産開発実績",
+        "採用情報"
+      ],
+      "image": "images/tohama-history-2004.jpg",
+      "visual": "保守的な大手企業サイト。白、濃紺、青緑。現代的で無難。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "company.html",
+        "history.html",
+        "csr.html",
+        "news.html",
+        "history-2004.html"
+      ]
+    },
+    "tohama-development/history.html": {
+      "siteId": "SITE-04",
+      "siteName": "東浜開発 公式サイト",
+      "slug": "tohama-development",
+      "page": "history.html",
+      "unlockDay": 4,
+      "type": "corporate",
+      "title": "沿革",
+      "body": "1987年の設立から現在までの主要事業を紹介します。2004年には御影座の夏季地域イベントへ協賛しました。",
+      "bullets": [
+        "2004年地域文化支援事業",
+        "特設展示壁の模型",
+        "不動産開発実績",
+        "採用情報"
+      ],
+      "image": "images/tohama-history-2004.jpg",
+      "visual": "保守的な大手企業サイト。白、濃紺、青緑。現代的で無難。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "company.html",
+        "history.html",
+        "csr.html",
+        "news.html",
+        "history-2004.html"
+      ]
+    },
+    "tohama-development/csr.html": {
+      "siteId": "SITE-04",
+      "siteName": "東浜開発 公式サイト",
+      "slug": "tohama-development",
+      "page": "csr.html",
+      "unlockDay": 4,
+      "type": "corporate",
+      "title": "地域・文化活動",
+      "body": "地域文化の継承を目的とした展示協賛、施設整備、子ども向け映像教室の活動実績を掲載しています。",
+      "bullets": [
+        "2004年地域文化支援事業",
+        "特設展示壁の模型",
+        "不動産開発実績",
+        "採用情報"
+      ],
+      "image": "images/tohama-history-2004.jpg",
+      "visual": "保守的な大手企業サイト。白、濃紺、青緑。現代的で無難。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "company.html",
+        "history.html",
+        "csr.html",
+        "news.html",
+        "history-2004.html"
+      ]
+    },
+    "tohama-development/news.html": {
+      "siteId": "SITE-04",
+      "siteName": "東浜開発 公式サイト",
+      "slug": "tohama-development",
+      "page": "news.html",
+      "unlockDay": 4,
+      "type": "corporate",
+      "title": "ニュースリリース",
+      "body": "東浜開発の事業・人事・地域連携に関する発表資料です。過去の掲載内容は広報方針により整理される場合があります。",
+      "bullets": [
+        "2004年地域文化支援事業",
+        "特設展示壁の模型",
+        "不動産開発実績",
+        "採用情報"
+      ],
+      "image": "images/tohama-history-2004.jpg",
+      "visual": "保守的な大手企業サイト。白、濃紺、青緑。現代的で無難。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "company.html",
+        "history.html",
+        "csr.html",
+        "news.html",
+        "history-2004.html"
+      ]
+    },
+    "tohama-development/history-2004.html": {
+      "siteId": "SITE-04",
+      "siteName": "東浜開発 公式サイト",
+      "slug": "tohama-development",
+      "page": "history-2004.html",
+      "unlockDay": 4,
+      "type": "corporate",
+      "title": "2004年 地域文化支援事業",
+      "body": "東浜開発は御影座イベントへ特設展示を提供しました。",
+      "bullets": [
+        "VIP動線に合わせ展示位置を変更",
+        "特設壁面で協賛企業史を紹介",
+        "当時広報責任者：東堂修一"
+      ],
+      "image": "images/tohama-history-2004.jpg",
+      "visual": "保守的な大手企業サイト。白、濃紺、青緑。現代的で無難。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "company.html",
+        "history.html",
+        "csr.html",
+        "news.html",
+        "history-2004.html"
+      ]
+    },
+    "kuze-documents/index.html": {
+      "siteId": "SITE-05",
+      "siteName": "KUZÉ DOCUMENTS",
+      "slug": "kuze-documents",
+      "page": "index.html",
+      "unlockDay": 1,
+      "type": "production",
+      "title": "KUZÉ DOCUMENTS",
+      "body": "久世の経歴、作品紹介、制作ノート、作品更新履歴を提示。",
+      "bullets": [
+        "作品「最後の映写」の編集方針",
+        "20:50投稿文と過去投稿のテンプレ一致",
+        "過去作品賞歴",
+        "機材紹介"
+      ],
+      "image": "images/kuze-film-still.jpg",
+      "visual": "独立系ドキュメンタリー制作会社。黒、白、抑えた灰色。映画ポスター風にしすぎない。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "works.html",
+        "last-projection.html",
+        "profile.html",
+        "journal.html",
+        "contact.html"
+      ]
+    },
+    "kuze-documents/works.html": {
+      "siteId": "SITE-05",
+      "siteName": "KUZÉ DOCUMENTS",
+      "slug": "kuze-documents",
+      "page": "works.html",
+      "unlockDay": 1,
+      "type": "production",
+      "title": "作品一覧",
+      "body": "映像監督・久世新が手がけたドキュメンタリーと短編作品。土地に残る記録を再構成する編集手法で知られます。",
+      "bullets": [
+        "作品「最後の映写」の編集方針",
+        "20:50投稿文と過去投稿のテンプレ一致",
+        "過去作品賞歴",
+        "機材紹介"
+      ],
+      "image": "images/kuze-film-still.jpg",
+      "visual": "独立系ドキュメンタリー制作会社。黒、白、抑えた灰色。映画ポスター風にしすぎない。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "works.html",
+        "last-projection.html",
+        "profile.html",
+        "journal.html",
+        "contact.html"
+      ]
+    },
+    "kuze-documents/last-projection.html": {
+      "siteId": "SITE-05",
+      "siteName": "KUZÉ DOCUMENTS",
+      "slug": "kuze-documents",
+      "page": "last-projection.html",
+      "unlockDay": 1,
+      "type": "production",
+      "title": "最後の映写",
+      "body": "失われた映画館と、街の記憶をたどるドキュメンタリー。",
+      "bullets": [
+        "少女の手元と火災映像を連続配置",
+        "予告編では企業看板が映らない",
+        "2026年10月18日 初回上映予定"
+      ],
+      "image": "images/kuze-film-still.jpg",
+      "visual": "独立系ドキュメンタリー制作会社。黒、白、抑えた灰色。映画ポスター風にしすぎない。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "works.html",
+        "last-projection.html",
+        "profile.html",
+        "journal.html",
+        "contact.html"
+      ]
+    },
+    "kuze-documents/profile.html": {
+      "siteId": "SITE-05",
+      "siteName": "KUZÉ DOCUMENTS",
+      "slug": "kuze-documents",
+      "page": "profile.html",
+      "unlockDay": 1,
+      "type": "production",
+      "title": "久世新について",
+      "body": "1979年生まれ。記録映像と証言を組み替え、公式記録の外側にいる人物を描いてきた映像監督です。",
+      "bullets": [
+        "作品「最後の映写」の編集方針",
+        "20:50投稿文と過去投稿のテンプレ一致",
+        "過去作品賞歴",
+        "機材紹介"
+      ],
+      "image": "images/kuze-film-still.jpg",
+      "visual": "独立系ドキュメンタリー制作会社。黒、白、抑えた灰色。映画ポスター風にしすぎない。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "works.html",
+        "last-projection.html",
+        "profile.html",
+        "journal.html",
+        "contact.html"
+      ]
+    },
+    "kuze-documents/journal.html": {
+      "siteId": "SITE-05",
+      "siteName": "KUZÉ DOCUMENTS",
+      "slug": "kuze-documents",
+      "page": "journal.html",
+      "unlockDay": 1,
+      "type": "production",
+      "title": "制作ジャーナル",
+      "body": "新作「最後の映写」の調査、編集、上映準備に関する制作メモ。公開時刻を指定した定型投稿もここから設定されます。",
+      "bullets": [
+        "作品「最後の映写」の編集方針",
+        "20:50投稿文と過去投稿のテンプレ一致",
+        "過去作品賞歴",
+        "機材紹介"
+      ],
+      "image": "images/kuze-film-still.jpg",
+      "visual": "独立系ドキュメンタリー制作会社。黒、白、抑えた灰色。映画ポスター風にしすぎない。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "works.html",
+        "last-projection.html",
+        "profile.html",
+        "journal.html",
+        "contact.html"
+      ]
+    },
+    "kuze-documents/contact.html": {
+      "siteId": "SITE-05",
+      "siteName": "KUZÉ DOCUMENTS",
+      "slug": "kuze-documents",
+      "page": "contact.html",
+      "unlockDay": 1,
+      "type": "production",
+      "title": "連絡先",
+      "body": "上映・取材・作品利用に関する窓口です。現在、新規の問い合わせ受付は停止されています。",
+      "bullets": [
+        "作品「最後の映写」の編集方針",
+        "20:50投稿文と過去投稿のテンプレ一致",
+        "過去作品賞歴",
+        "機材紹介"
+      ],
+      "image": "images/kuze-film-still.jpg",
+      "visual": "独立系ドキュメンタリー制作会社。黒、白、抑えた灰色。映画ポスター風にしすぎない。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "works.html",
+        "last-projection.html",
+        "profile.html",
+        "journal.html",
+        "contact.html"
+      ]
+    },
+    "frame13-blog/index.html": {
+      "siteId": "SITE-06",
+      "siteName": "FRAME 13",
+      "slug": "frame13-blog",
+      "page": "index.html",
+      "unlockDay": 5,
+      "type": "personal-blog",
+      "title": "FRAME 13",
+      "body": "白石結衣の匿名ブログ。旧姓、過去の記憶、実名公開への拒否を間接的に示す。",
+      "bullets": [
+        "O.Y.の半券",
+        "13番席",
+        "翻訳した児童書の感想",
+        "海辺の散歩"
+      ],
+      "image": "images/frame13-blog-header.jpg",
+      "visual": "2000年代から続く個人ブログを改修した外観。淡い灰青、余白、古い写真。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "archive.html",
+        "post-20040821.html",
+        "post-name.html",
+        "profile.html"
+      ]
+    },
+    "frame13-blog/archive.html": {
+      "siteId": "SITE-06",
+      "siteName": "FRAME 13",
+      "slug": "frame13-blog",
+      "page": "archive.html",
+      "unlockDay": 5,
+      "type": "personal-blog",
+      "title": "投稿アーカイブ",
+      "body": "古い映画館、本の翻訳、海辺の散歩について書いた断片的な記録を、投稿年月ごとにまとめています。",
+      "bullets": [
+        "O.Y.の半券",
+        "13番席",
+        "翻訳した児童書の感想",
+        "海辺の散歩"
+      ],
+      "image": "images/frame13-blog-header.jpg",
+      "visual": "2000年代から続く個人ブログを改修した外観。淡い灰青、余白、古い写真。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "archive.html",
+        "post-20040821.html",
+        "post-name.html",
+        "profile.html"
+      ]
+    },
+    "frame13-blog/post-20040821.html": {
+      "siteId": "SITE-06",
+      "siteName": "FRAME 13",
+      "slug": "frame13-blog",
+      "page": "post-20040821.html",
+      "unlockDay": 5,
+      "type": "personal-blog",
+      "title": "あの日の出口",
+      "body": "出口の前に壁があった。煙の中で、知らない人の手を二つ握った。",
+      "bullets": [
+        "キャンドルは式典でもらったもの",
+        "火元は見ていない",
+        "名前を検索される生活から離れたかった"
+      ],
+      "image": "images/frame13-blog-header.jpg",
+      "visual": "2000年代から続く個人ブログを改修した外観。淡い灰青、余白、古い写真。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "archive.html",
+        "post-20040821.html",
+        "post-name.html",
+        "profile.html"
+      ]
+    },
+    "frame13-blog/post-name.html": {
+      "siteId": "SITE-06",
+      "siteName": "FRAME 13",
+      "slug": "frame13-blog",
+      "page": "post-name.html",
+      "unlockDay": 5,
+      "type": "personal-blog",
+      "title": "名前を変えた理由",
+      "body": "真実を話すたびに、私の人生まで公開される。だから名前を変えた。",
+      "bullets": [
+        "旧姓の頭文字 O.Y.",
+        "実名公表への拒否",
+        "映像作品公開への不安"
+      ],
+      "image": "images/frame13-blog-header.jpg",
+      "visual": "2000年代から続く個人ブログを改修した外観。淡い灰青、余白、古い写真。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "archive.html",
+        "post-20040821.html",
+        "post-name.html",
+        "profile.html"
+      ]
+    },
+    "frame13-blog/profile.html": {
+      "siteId": "SITE-06",
+      "siteName": "FRAME 13",
+      "slug": "frame13-blog",
+      "page": "profile.html",
+      "unlockDay": 5,
+      "type": "personal-blog",
+      "title": "このブログについて",
+      "body": "管理人Yによる個人ブログです。記事中の人物名と場所の一部は、本人の希望により公開時から伏せています。",
+      "bullets": [
+        "O.Y.の半券",
+        "13番席",
+        "翻訳した児童書の感想",
+        "海辺の散歩"
+      ],
+      "image": "images/frame13-blog-header.jpg",
+      "visual": "2000年代から続く個人ブログを改修した外観。淡い灰青、余白、古い写真。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "archive.html",
+        "post-20040821.html",
+        "post-name.html",
+        "profile.html"
+      ]
+    },
+    "minagi-bus/index.html": {
+      "siteId": "SITE-07",
+      "siteName": "海凪バス",
+      "slug": "minagi-bus",
+      "page": "index.html",
+      "unlockDay": 5,
+      "type": "transit",
+      "title": "海凪バス",
+      "body": "白石結衣の移動時間とアリバイをプレイヤーが検証する。",
+      "bullets": [
+        "19:17発便",
+        "裏口からバス停徒歩4分",
+        "運賃改定",
+        "忘れ物案内"
+      ],
+      "image": "images/bus-route-map.png",
+      "visual": "現実的な地方バス会社サイト。白、青、橙。表と路線図を読みやすく。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "route.html",
+        "timetable.html",
+        "stop-minagi-central.html",
+        "fare.html"
+      ]
+    },
+    "minagi-bus/route.html": {
+      "siteId": "SITE-07",
+      "siteName": "海凪バス",
+      "slug": "minagi-bus",
+      "page": "route.html",
+      "unlockDay": 5,
+      "type": "transit",
+      "title": "市内線 路線図",
+      "body": "潮騒館前、海凪中央、旧港通りを結ぶ市内循環線の停留所と標準所要時間をご案内します。",
+      "bullets": [
+        "19:17発便",
+        "裏口からバス停徒歩4分",
+        "運賃改定",
+        "忘れ物案内"
+      ],
+      "image": "images/bus-route-map.png",
+      "visual": "現実的な地方バス会社サイト。白、青、橙。表と路線図を読みやすく。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "route.html",
+        "timetable.html",
+        "stop-minagi-central.html",
+        "fare.html"
+      ]
+    },
+    "minagi-bus/timetable.html": {
+      "siteId": "SITE-07",
+      "siteName": "海凪バス",
+      "slug": "minagi-bus",
+      "page": "timetable.html",
+      "unlockDay": 5,
+      "type": "transit",
+      "title": "海凪中央 19時台",
+      "body": "潮騒館最寄りの海凪中央停留所から郊外方面。",
+      "bullets": [
+        "19:17発 風見台行",
+        "19:24 港北通過",
+        "IC乗車記録対応"
+      ],
+      "image": "images/bus-route-map.png",
+      "visual": "現実的な地方バス会社サイト。白、青、橙。表と路線図を読みやすく。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "route.html",
+        "timetable.html",
+        "stop-minagi-central.html",
+        "fare.html"
+      ]
+    },
+    "minagi-bus/stop-minagi-central.html": {
+      "siteId": "SITE-07",
+      "siteName": "海凪バス",
+      "slug": "minagi-bus",
+      "page": "stop-minagi-central.html",
+      "unlockDay": 5,
+      "type": "transit",
+      "title": "海凪中央 停留所案内",
+      "body": "海凪中央停留所の乗り場、乗り換え、到着予定時刻を掲載しています。乗降記録はIC利用履歴に準じます。",
+      "bullets": [
+        "19:17発便",
+        "裏口からバス停徒歩4分",
+        "運賃改定",
+        "忘れ物案内"
+      ],
+      "image": "images/bus-route-map.png",
+      "visual": "現実的な地方バス会社サイト。白、青、橙。表と路線図を読みやすく。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "route.html",
+        "timetable.html",
+        "stop-minagi-central.html",
+        "fare.html"
+      ]
+    },
+    "minagi-bus/fare.html": {
+      "siteId": "SITE-07",
+      "siteName": "海凪バス",
+      "slug": "minagi-bus",
+      "page": "fare.html",
+      "unlockDay": 5,
+      "type": "transit",
+      "title": "運賃・乗車方法",
+      "body": "市内線は後乗り前降りです。現金のほか交通系ICカードを利用でき、履歴には乗降停留所が記録されます。",
+      "bullets": [
+        "19:17発便",
+        "裏口からバス停徒歩4分",
+        "運賃改定",
+        "忘れ物案内"
+      ],
+      "image": "images/bus-route-map.png",
+      "visual": "現実的な地方バス会社サイト。白、青、橙。表と路線図を読みやすく。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "route.html",
+        "timetable.html",
+        "stop-minagi-central.html",
+        "fare.html"
+      ]
+    },
+    "fire-report-archive/index.html": {
+      "siteId": "SITE-08",
+      "siteName": "海凪消防資料公開室",
+      "slug": "fire-report-archive",
+      "page": "index.html",
+      "unlockDay": 5,
+      "type": "public-record",
+      "title": "海凪消防資料公開室",
+      "body": "2004年火災報告書と欠落ページを提示。",
+      "bullets": [
+        "12ページの次が14ページ",
+        "出火地点は舞台袖",
+        "別年度の火災統計",
+        "防災啓発資料"
+      ],
+      "image": "images/fire-archive-cover.jpg",
+      "visual": "簡素な行政資料検索。白、灰、暗い青。装飾を抑える。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "search.html",
+        "record-fr-2004-13.html",
+        "document-viewer.html",
+        "disclosure-policy.html"
+      ]
+    },
+    "fire-report-archive/search.html": {
+      "siteId": "SITE-08",
+      "siteName": "海凪消防資料公開室",
+      "slug": "fire-report-archive",
+      "page": "search.html",
+      "unlockDay": 5,
+      "type": "public-record",
+      "title": "公開資料検索",
+      "body": "資料番号、発生日、施設名から消防調査資料を検索できます。個人情報および非開示情報は公開版から除かれます。",
+      "bullets": [
+        "12ページの次が14ページ",
+        "出火地点は舞台袖",
+        "別年度の火災統計",
+        "防災啓発資料"
+      ],
+      "image": "images/fire-archive-cover.jpg",
+      "visual": "簡素な行政資料検索。白、灰、暗い青。装飾を抑える。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "search.html",
+        "record-fr-2004-13.html",
+        "document-viewer.html",
+        "disclosure-policy.html"
+      ]
+    },
+    "fire-report-archive/record-fr-2004-13.html": {
+      "siteId": "SITE-08",
+      "siteName": "海凪消防資料公開室",
+      "slug": "fire-report-archive",
+      "page": "record-fr-2004-13.html",
+      "unlockDay": 5,
+      "type": "public-record",
+      "title": "FR-2004-13 御影座火災調査",
+      "body": "出火地点は舞台袖装飾照明付近。公開資料では13ページが欠落。",
+      "bullets": [
+        "非常口前の仮設物に関する記述",
+        "映写室からの出火痕跡なし",
+        "追加開示請求を受付"
+      ],
+      "image": "images/fire-archive-cover.jpg",
+      "visual": "簡素な行政資料検索。白、灰、暗い青。装飾を抑える。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "search.html",
+        "record-fr-2004-13.html",
+        "document-viewer.html",
+        "disclosure-policy.html"
+      ]
+    },
+    "fire-report-archive/document-viewer.html": {
+      "siteId": "SITE-08",
+      "siteName": "海凪消防資料公開室",
+      "slug": "fire-report-archive",
+      "page": "document-viewer.html",
+      "unlockDay": 5,
+      "type": "public-record",
+      "title": "文書閲覧｜FR-2004-13",
+      "body": "御影座火災調査資料の公開用スキャンです。表示順は原本のページ番号に従いますが、非開示ページは欠番となります。",
+      "bullets": [
+        "12ページの次が14ページ",
+        "出火地点は舞台袖",
+        "別年度の火災統計",
+        "防災啓発資料"
+      ],
+      "image": "images/fire-archive-cover.jpg",
+      "visual": "簡素な行政資料検索。白、灰、暗い青。装飾を抑える。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "search.html",
+        "record-fr-2004-13.html",
+        "document-viewer.html",
+        "disclosure-policy.html"
+      ]
+    },
+    "fire-report-archive/disclosure-policy.html": {
+      "siteId": "SITE-08",
+      "siteName": "海凪消防資料公開室",
+      "slug": "fire-report-archive",
+      "page": "disclosure-policy.html",
+      "unlockDay": 5,
+      "type": "public-record",
+      "title": "資料公開方針",
+      "body": "消防調査資料は海凪市情報公開条例に基づき公開します。第三者の権利に関わる記載は審査のうえ非開示となります。",
+      "bullets": [
+        "12ページの次が14ページ",
+        "出火地点は舞台袖",
+        "別年度の火災統計",
+        "防災啓発資料"
+      ],
+      "image": "images/fire-archive-cover.jpg",
+      "visual": "簡素な行政資料検索。白、灰、暗い青。装飾を抑える。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "search.html",
+        "record-fr-2004-13.html",
+        "document-viewer.html",
+        "disclosure-policy.html"
+      ]
+    },
+    "cinema-tech-forum/index.html": {
+      "siteId": "SITE-09",
+      "siteName": "映写技術保存会",
+      "slug": "cinema-tech-forum",
+      "page": "index.html",
+      "unlockDay": 8,
+      "type": "technical",
+      "title": "映写技術保存会",
+      "body": "旧式鍵、ラッチ、16mm巻き取りハンドルの仕様を説明する。",
+      "bullets": [
+        "M-02鍵は電子ログを残さない",
+        "扉は退出後自動ラッチ",
+        "ランプ交換",
+        "フィルム保存温度"
+      ],
+      "image": "images/cinema-tech-lock.jpg",
+      "visual": "専門家向け技術サイト。古い掲示板要素と現代記事ページを併存。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "articles.html",
+        "door-lock-m02.html",
+        "projector-16mm.html",
+        "forum-thread-218.html"
+      ]
+    },
+    "cinema-tech-forum/articles.html": {
+      "siteId": "SITE-09",
+      "siteName": "映写技術保存会",
+      "slug": "cinema-tech-forum",
+      "page": "articles.html",
+      "unlockDay": 8,
+      "type": "technical",
+      "title": "技術記事一覧",
+      "body": "保存映画館の旧設備、フィルム取扱い、映写機部品、安全な維持管理について会員が共有した技術資料です。",
+      "bullets": [
+        "M-02鍵は電子ログを残さない",
+        "扉は退出後自動ラッチ",
+        "ランプ交換",
+        "フィルム保存温度"
+      ],
+      "image": "images/cinema-tech-lock.jpg",
+      "visual": "専門家向け技術サイト。古い掲示板要素と現代記事ページを併存。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "articles.html",
+        "door-lock-m02.html",
+        "projector-16mm.html",
+        "forum-thread-218.html"
+      ]
+    },
+    "cinema-tech-forum/door-lock-m02.html": {
+      "siteId": "SITE-09",
+      "siteName": "映写技術保存会",
+      "slug": "cinema-tech-forum",
+      "page": "door-lock-m02.html",
+      "unlockDay": 8,
+      "type": "technical",
+      "title": "保存映写館の旧式錠 M-02",
+      "body": "IC化後も旧シリンダーを保存した施設では、M-02型マスターキーが電子ログを経由しない。",
+      "bullets": [
+        "解錠操作は電子記録されない",
+        "扉を閉めれば自動ラッチ",
+        "鍵は真鍮製"
+      ],
+      "image": "images/cinema-tech-lock.jpg",
+      "visual": "専門家向け技術サイト。古い掲示板要素と現代記事ページを併存。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "articles.html",
+        "door-lock-m02.html",
+        "projector-16mm.html",
+        "forum-thread-218.html"
+      ]
+    },
+    "cinema-tech-forum/projector-16mm.html": {
+      "siteId": "SITE-09",
+      "siteName": "映写技術保存会",
+      "slug": "cinema-tech-forum",
+      "page": "projector-16mm.html",
+      "unlockDay": 8,
+      "type": "technical",
+      "title": "16mm巻き取り装置",
+      "body": "着脱式ハンドルは保守時に外すことができる。",
+      "bullets": [
+        "真鍮を含む合金部品",
+        "重量約780g",
+        "取付部に外した直後の擦れが残る"
+      ],
+      "image": "images/cinema-tech-lock.jpg",
+      "visual": "専門家向け技術サイト。古い掲示板要素と現代記事ページを併存。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "articles.html",
+        "door-lock-m02.html",
+        "projector-16mm.html",
+        "forum-thread-218.html"
+      ]
+    },
+    "cinema-tech-forum/forum-thread-218.html": {
+      "siteId": "SITE-09",
+      "siteName": "映写技術保存会",
+      "slug": "cinema-tech-forum",
+      "page": "forum-thread-218.html",
+      "unlockDay": 8,
+      "type": "technical",
+      "title": "スレッド218｜保存館の旧鍵運用",
+      "body": "ICカード化した保存館に旧式錠を残す場合の管理方法について、施設技術者が情報を交換した記録です。",
+      "bullets": [
+        "M-02鍵は電子ログを残さない",
+        "扉は退出後自動ラッチ",
+        "ランプ交換",
+        "フィルム保存温度"
+      ],
+      "image": "images/cinema-tech-lock.jpg",
+      "visual": "専門家向け技術サイト。古い掲示板要素と現代記事ページを併存。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "articles.html",
+        "door-lock-m02.html",
+        "projector-16mm.html",
+        "forum-thread-218.html"
+      ]
+    },
+    "local-magazine/index.html": {
+      "siteId": "SITE-10",
+      "siteName": "月刊みなぎ",
+      "slug": "local-magazine",
+      "page": "index.html",
+      "unlockDay": 3,
+      "type": "magazine",
+      "title": "月刊みなぎ",
+      "body": "無関係に見える地域情報と小さな検索語を与える。",
+      "bullets": [
+        "古写真の場所当てで北側非常口",
+        "読者投稿並べ替えでFRAME",
+        "占い",
+        "商店街特集"
+      ],
+      "image": "images/local-magazine-cover.jpg",
+      "visual": "地方フリーペーパー。明るいが事件サイトと浮かない配色。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "issue-202610.html",
+        "photo-quiz.html",
+        "reader-posts.html",
+        "fortune.html"
+      ]
+    },
+    "local-magazine/issue-202610.html": {
+      "siteId": "SITE-10",
+      "siteName": "月刊みなぎ",
+      "slug": "local-magazine",
+      "page": "issue-202610.html",
+      "unlockDay": 3,
+      "type": "magazine",
+      "title": "2026年10月号｜記憶の場所へ",
+      "body": "再開館した潮騒館、秋の港町散歩、商店街の新店を特集。古写真の場所当て企画も掲載しています。",
+      "bullets": [
+        "古写真の場所当てで北側非常口",
+        "読者投稿並べ替えでFRAME",
+        "占い",
+        "商店街特集"
+      ],
+      "image": "images/local-magazine-cover.jpg",
+      "visual": "地方フリーペーパー。明るいが事件サイトと浮かない配色。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "issue-202610.html",
+        "photo-quiz.html",
+        "reader-posts.html",
+        "fortune.html"
+      ]
+    },
+    "local-magazine/photo-quiz.html": {
+      "siteId": "SITE-10",
+      "siteName": "月刊みなぎ",
+      "slug": "local-magazine",
+      "page": "photo-quiz.html",
+      "unlockDay": 3,
+      "type": "magazine",
+      "title": "古写真クイズ｜ここはどこ？",
+      "body": "1980年代に撮影された一枚から場所を当てる読者企画。壁の向こうに残る標識と出口の向きが手掛かりです。",
+      "bullets": [
+        "古写真の場所当てで北側非常口",
+        "読者投稿並べ替えでFRAME",
+        "占い",
+        "商店街特集"
+      ],
+      "image": "images/local-magazine-cover.jpg",
+      "visual": "地方フリーペーパー。明るいが事件サイトと浮かない配色。",
+      "quiz": "写真場所当て、文字並べ替え。",
+      "pages": [
+        "index.html",
+        "issue-202610.html",
+        "photo-quiz.html",
+        "reader-posts.html",
+        "fortune.html"
+      ]
+    },
+    "local-magazine/reader-posts.html": {
+      "siteId": "SITE-10",
+      "siteName": "月刊みなぎ",
+      "slug": "local-magazine",
+      "page": "reader-posts.html",
+      "unlockDay": 3,
+      "type": "magazine",
+      "title": "読者のお便り",
+      "body": "今月のテーマは「忘れられない一場面」。編集部が選んだ投稿の頭文字には、小さな言葉遊びが隠れています。",
+      "bullets": [
+        "古写真の場所当てで北側非常口",
+        "読者投稿並べ替えでFRAME",
+        "占い",
+        "商店街特集"
+      ],
+      "image": "images/local-magazine-cover.jpg",
+      "visual": "地方フリーペーパー。明るいが事件サイトと浮かない配色。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "issue-202610.html",
+        "photo-quiz.html",
+        "reader-posts.html",
+        "fortune.html"
+      ]
+    },
+    "local-magazine/fortune.html": {
+      "siteId": "SITE-10",
+      "siteName": "月刊みなぎ",
+      "slug": "local-magazine",
+      "page": "fortune.html",
+      "unlockDay": 3,
+      "type": "magazine",
+      "title": "港町十二星座占い",
+      "body": "海凪の灯台守が読む今月の運勢。気分転換のための誌面企画で、事件情報とは直接関係しません。",
+      "bullets": [
+        "古写真の場所当てで北側非常口",
+        "読者投稿並べ替えでFRAME",
+        "占い",
+        "商店街特集"
+      ],
+      "image": "images/local-magazine-cover.jpg",
+      "visual": "地方フリーペーパー。明るいが事件サイトと浮かない配色。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "issue-202610.html",
+        "photo-quiz.html",
+        "reader-posts.html",
+        "fortune.html"
+      ]
+    },
+    "wayback-mock/index.html": {
+      "siteId": "SITE-11",
+      "siteName": "公開Web保存庫",
+      "slug": "wayback-mock",
+      "page": "index.html",
+      "unlockDay": 8,
+      "type": "web-archive",
+      "title": "公開Web保存庫",
+      "body": "東浜開発が削除した2004年協賛ページを復元表示。",
+      "bullets": [
+        "避難導線を変更した特設展示という広報文",
+        "展示壁の設置主体",
+        "保存失敗表示",
+        "別年スナップショット"
+      ],
+      "image": "images/wayback-deleted-page.png",
+      "visual": "古いWebページを枠内で表示する汎用保存サービス。実在サービスの商標は使用しない。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "search.html",
+        "snapshot-20040815-tohama.html",
+        "snapshot-info.html"
+      ]
+    },
+    "wayback-mock/search.html": {
+      "siteId": "SITE-11",
+      "siteName": "公開Web保存庫",
+      "slug": "wayback-mock",
+      "page": "search.html",
+      "unlockDay": 8,
+      "type": "web-archive",
+      "title": "保存URLを検索",
+      "body": "公開WebページのURLまたは期間を入力し、保存済みスナップショットを検索します。削除済みページも保存時点の状態で閲覧できます。",
+      "bullets": [
+        "避難導線を変更した特設展示という広報文",
+        "展示壁の設置主体",
+        "保存失敗表示",
+        "別年スナップショット"
+      ],
+      "image": "images/wayback-deleted-page.png",
+      "visual": "古いWebページを枠内で表示する汎用保存サービス。実在サービスの商標は使用しない。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "search.html",
+        "snapshot-20040815-tohama.html",
+        "snapshot-info.html"
+      ]
+    },
+    "wayback-mock/snapshot-20040815-tohama.html": {
+      "siteId": "SITE-11",
+      "siteName": "公開Web保存庫",
+      "slug": "wayback-mock",
+      "page": "snapshot-20040815-tohama.html",
+      "unlockDay": 8,
+      "type": "web-archive",
+      "title": "保存スナップショット 2004-08-15",
+      "body": "東浜開発イベント案内の保存ページ。",
+      "bullets": [
+        "VIP導線確保のため展示位置を変更",
+        "北側非常口付近へ特設展示",
+        "現行サイトからは削除"
+      ],
+      "image": "images/wayback-deleted-page.png",
+      "visual": "古いWebページを枠内で表示する汎用保存サービス。実在サービスの商標は使用しない。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "search.html",
+        "snapshot-20040815-tohama.html",
+        "snapshot-info.html"
+      ]
+    },
+    "wayback-mock/snapshot-info.html": {
+      "siteId": "SITE-11",
+      "siteName": "公開Web保存庫",
+      "slug": "wayback-mock",
+      "page": "snapshot-info.html",
+      "unlockDay": 8,
+      "type": "web-archive",
+      "title": "スナップショット情報",
+      "body": "保存日時、取得元URL、欠損ファイルを表示します。内容は取得当時のもので、現在の運営者による保証はありません。",
+      "bullets": [
+        "避難導線を変更した特設展示という広報文",
+        "展示壁の設置主体",
+        "保存失敗表示",
+        "別年スナップショット"
+      ],
+      "image": "images/wayback-deleted-page.png",
+      "visual": "古いWebページを枠内で表示する汎用保存サービス。実在サービスの商標は使用しない。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "search.html",
+        "snapshot-20040815-tohama.html",
+        "snapshot-info.html"
+      ]
+    },
+    "weather-record/index.html": {
+      "siteId": "SITE-12",
+      "siteName": "海凪気象記録",
+      "slug": "weather-record",
+      "page": "index.html",
+      "unlockDay": 2,
+      "type": "weather-record",
+      "title": "海凪気象記録",
+      "body": "写真の明るさ、雨の有無、時刻補助を検証する。",
+      "bullets": [
+        "10月18日の日没17:42",
+        "19時以降降雨なし",
+        "潮汐",
+        "風向"
+      ],
+      "image": "images/weather-chart.png",
+      "visual": "観測データサイト。表と簡潔なグラフ中心。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "daily-20261018.html",
+        "sunset.html",
+        "archive.html"
+      ]
+    },
+    "weather-record/daily-20261018.html": {
+      "siteId": "SITE-12",
+      "siteName": "海凪気象記録",
+      "slug": "weather-record",
+      "page": "daily-20261018.html",
+      "unlockDay": 2,
+      "type": "weather-record",
+      "title": "2026年10月18日 海凪市",
+      "body": "晴れ。日没17:31。20時台の降水なし。",
+      "bullets": [
+        "写真の窓外は暗くて自然",
+        "移動遅延を生む悪天候なし",
+        "気温17.8度"
+      ],
+      "image": "images/weather-chart.png",
+      "visual": "観測データサイト。表と簡潔なグラフ中心。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "daily-20261018.html",
+        "sunset.html",
+        "archive.html"
+      ]
+    },
+    "weather-record/sunset.html": {
+      "siteId": "SITE-12",
+      "siteName": "海凪気象記録",
+      "slug": "weather-record",
+      "page": "sunset.html",
+      "unlockDay": 2,
+      "type": "weather-record",
+      "title": "日没・薄明記録",
+      "body": "2026年10月18日の海凪市の日没は17時42分。市民薄明の終了後、屋外の自然光は急速に低下しました。",
+      "bullets": [
+        "10月18日の日没17:42",
+        "19時以降降雨なし",
+        "潮汐",
+        "風向"
+      ],
+      "image": "images/weather-chart.png",
+      "visual": "観測データサイト。表と簡潔なグラフ中心。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "daily-20261018.html",
+        "sunset.html",
+        "archive.html"
+      ]
+    },
+    "weather-record/archive.html": {
+      "siteId": "SITE-12",
+      "siteName": "海凪気象記録",
+      "slug": "weather-record",
+      "page": "archive.html",
+      "unlockDay": 2,
+      "type": "weather-record",
+      "title": "過去の観測記録",
+      "body": "日付を指定して気温、降水、風向、日照、日没時刻の確定観測値を参照できます。",
+      "bullets": [
+        "10月18日の日没17:42",
+        "19時以降降雨なし",
+        "潮汐",
+        "風向"
+      ],
+      "image": "images/weather-chart.png",
+      "visual": "観測データサイト。表と簡潔なグラフ中心。",
+      "quiz": null,
+      "pages": [
+        "index.html",
+        "daily-20261018.html",
+        "sunset.html",
+        "archive.html"
+      ]
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "version": "1.0.0",
+  "items": [
+    {
+      "id": "notif-day01",
+      "day": 1,
+      "title": "Day1資料解放",
+      "body": "Day1に対応する新しい捜査資料が追加されました。"
+    },
+    {
+      "id": "notif-day02",
+      "day": 2,
+      "title": "Day2資料解放",
+      "body": "Day2に対応する新しい捜査資料が追加されました。"
+    },
+    {
+      "id": "notif-day03",
+      "day": 3,
+      "title": "Day3資料解放",
+      "body": "Day3に対応する新しい捜査資料が追加されました。"
+    },
+    {
+      "id": "notif-day04",
+      "day": 4,
+      "title": "Day4資料解放",
+      "body": "Day4に対応する新しい捜査資料が追加されました。"
+    },
+    {
+      "id": "notif-day05",
+      "day": 5,
+      "title": "Day5資料解放",
+      "body": "Day5に対応する新しい捜査資料が追加されました。"
+    },
+    {
+      "id": "notif-day06",
+      "day": 6,
+      "title": "Day6資料解放",
+      "body": "Day6に対応する新しい捜査資料が追加されました。"
+    },
+    {
+      "id": "notif-day07",
+      "day": 7,
+      "title": "Day7資料解放",
+      "body": "Day7に対応する新しい捜査資料が追加されました。"
+    },
+    {
+      "id": "notif-day08",
+      "day": 8,
+      "title": "Day8資料解放",
+      "body": "Day8に対応する新しい捜査資料が追加されました。"
+    },
+    {
+      "id": "notif-day09",
+      "day": 9,
+      "title": "Day9資料解放",
+      "body": "Day9に対応する新しい捜査資料が追加されました。"
+    },
+    {
+      "id": "notif-day10",
+      "day": 10,
+      "title": "Day10資料解放",
+      "body": "Day10に対応する新しい捜査資料が追加されました。"
+    }
+  ]
+}

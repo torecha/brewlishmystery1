@@ -1,0 +1,73 @@
+{
+  "version": "1.0.0",
+  "items": [
+    {
+      "id": "browser-d3",
+      "day": 3,
+      "app": "browser",
+      "title": "検索履歴",
+      "subtitle": "",
+      "body": "御影座 火災 13 / 小川 結衣 / FRAME 13",
+      "image": null,
+      "link": null,
+      "evidenceId": null,
+      "tags": [
+        "ARTICLE-13",
+        "FRAME13"
+      ],
+      "classification": "B"
+    },
+    {
+      "id": "site-tohama",
+      "day": 4,
+      "app": "browser",
+      "title": "東浜開発 会社沿革",
+      "subtitle": "",
+      "body": "2004年地域文化支援事業の記録。",
+      "image": null,
+      "link": "../sites/tohama-development/history-2004.html",
+      "evidenceId": null,
+      "tags": [],
+      "classification": "B"
+    },
+    {
+      "id": "frame13",
+      "day": 5,
+      "app": "browser",
+      "title": "FRAME 13",
+      "subtitle": "",
+      "body": "白石結衣とみられる匿名ブログ。実名公開への恐怖を綴る。",
+      "image": null,
+      "link": "../sites/frame13-blog/post-name.html",
+      "evidenceId": null,
+      "tags": [],
+      "classification": "B"
+    },
+    {
+      "id": "latch-spec",
+      "day": 8,
+      "app": "browser",
+      "title": "保存映写館の扉仕様",
+      "subtitle": "",
+      "body": "旧式鍵で解錠後、退出して扉を閉めるとラッチが掛かる。",
+      "image": null,
+      "link": "../sites/cinema-tech-forum/door-lock-m02.html",
+      "evidenceId": null,
+      "tags": [],
+      "classification": "A"
+    },
+    {
+      "id": "wayback",
+      "day": 8,
+      "app": "browser",
+      "title": "保存された東浜開発ページ",
+      "subtitle": "",
+      "body": "「避難導線を変更した特設展示」の記載。",
+      "image": null,
+      "link": "../sites/wayback-mock/snapshot-20040815-tohama.html",
+      "evidenceId": null,
+      "tags": [],
+      "classification": "A"
+    }
+  ]
+}

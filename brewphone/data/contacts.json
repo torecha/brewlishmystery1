@@ -1,0 +1,72 @@
+{
+  "version": "1.0.0",
+  "items": [
+    {
+      "id": "contact-maya",
+      "day": 1,
+      "app": "contacts",
+      "title": "星野真綾",
+      "subtitle": "左利き / アーカイブ主任",
+      "body": "39歳。潮騒館映像アーカイブ主任。映像修復と音声ノイズ除去を担当。",
+      "image": "images/people/maya-profile.jpg",
+      "link": null,
+      "evidenceId": null,
+      "tags": [
+        "真綾"
+      ],
+      "classification": "B"
+    },
+    {
+      "id": "contact-kuze",
+      "day": 1,
+      "app": "contacts",
+      "title": "久世新",
+      "subtitle": "被害者",
+      "body": "47歳。ドキュメンタリー監督。開館記念作品「最後の映写」を制作。",
+      "image": "images/people/kuze-profile.jpg",
+      "link": null,
+      "evidenceId": null,
+      "tags": [],
+      "classification": "B"
+    },
+    {
+      "id": "contact-miyahara",
+      "day": 1,
+      "app": "contacts",
+      "title": "宮原孝志",
+      "subtitle": "",
+      "body": "51歳。施設管理責任者。旧設備と鍵を管理。",
+      "image": "images/people/miyahara-profile.jpg",
+      "link": null,
+      "evidenceId": null,
+      "tags": [],
+      "classification": "B"
+    },
+    {
+      "id": "contact-yui",
+      "day": 3,
+      "app": "contacts",
+      "title": "白石結衣",
+      "subtitle": "",
+      "body": "35歳。児童書翻訳者。旧姓・小川。2004年8月時点13歳。",
+      "image": "images/people/yui-profile.jpg",
+      "link": null,
+      "evidenceId": null,
+      "tags": [],
+      "classification": "A"
+    },
+    {
+      "id": "contact-todo",
+      "day": 4,
+      "app": "contacts",
+      "title": "東堂修一",
+      "subtitle": "",
+      "body": "58歳。東浜開発会長。2004年当時は広報責任者。",
+      "image": "images/people/todo-profile.jpg",
+      "link": null,
+      "evidenceId": null,
+      "tags": [],
+      "classification": "B"
+    }
+  ]
+}

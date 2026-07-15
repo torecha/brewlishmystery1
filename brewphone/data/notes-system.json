@@ -1,0 +1,44 @@
+{
+  "version": "1.0.0",
+  "items": [
+    {
+      "id": "note-facility",
+      "day": 2,
+      "app": "system-notes",
+      "title": "映写室B 扉仕様",
+      "subtitle": "",
+      "body": "扉は外へ出て閉じると自動ラッチ。ICカードと保存用旧式錠を併設。",
+      "image": null,
+      "link": null,
+      "evidenceId": null,
+      "tags": [],
+      "classification": "B"
+    },
+    {
+      "id": "kamiya-note",
+      "day": 7,
+      "app": "system-notes",
+      "title": "神谷記者メモ",
+      "subtitle": "",
+      "body": "企業責任を示す看板／非常口前の展示壁／少女は救助側。",
+      "image": null,
+      "link": null,
+      "evidenceId": null,
+      "tags": [],
+      "classification": "B"
+    },
+    {
+      "id": "yui-statement",
+      "day": 10,
+      "app": "system-notes",
+      "title": "白石結衣 コメント",
+      "subtitle": "",
+      "body": "「真実が公開されることと、私の人生が公開されることは同じではありません」",
+      "image": null,
+      "link": null,
+      "evidenceId": null,
+      "tags": [],
+      "classification": "C"
+    }
+  ]
+}

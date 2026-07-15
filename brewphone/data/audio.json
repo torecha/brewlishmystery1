@@ -1,0 +1,35 @@
+{
+  "version": "1.0.0",
+  "items": [
+    {
+      "id": "audio-2046",
+      "day": 2,
+      "app": "recorder",
+      "title": "20:46 館内インターホン",
+      "subtitle": "再生時間 00:07",
+      "body": "久世の声「第2巻を先に回して」。返答側の音声は記録されていない。",
+      "image": null,
+      "link": null,
+      "evidenceId": "EV-093",
+      "tags": [
+        "20:46",
+        "音声"
+      ],
+      "classification": "A"
+    },
+    {
+      "id": "audio-compare",
+      "day": 6,
+      "app": "recorder",
+      "title": "音声波形比較",
+      "subtitle": "",
+      "body": "19:10リハーサルと20:46音声で、咳払いと椅子音まで一致。",
+      "image": "images/evidence/audio-waveform-compare.png",
+      "link": null,
+      "evidenceId": "EV-004",
+      "tags": [],
+      "classification": "A",
+      "eventId": "day06_emergency_01"
+    }
+  ]
+}

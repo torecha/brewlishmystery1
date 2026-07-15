@@ -1,0 +1,65 @@
+{
+  "version": "1.0.0",
+  "codes": [
+    {
+      "day": 1,
+      "key": "day01",
+      "code": "PROJECTOR",
+      "label": "Day1 閉じた映写室"
+    },
+    {
+      "day": 2,
+      "key": "day02",
+      "code": "VOICE46",
+      "label": "Day2 20時46分の声"
+    },
+    {
+      "day": 3,
+      "key": "day03",
+      "code": "SEAT13",
+      "label": "Day3 新聞の13番"
+    },
+    {
+      "day": 4,
+      "key": "day04",
+      "code": "SCHEDULED",
+      "label": "Day4 予約された生存"
+    },
+    {
+      "day": 5,
+      "key": "day05",
+      "code": "EXITWALL",
+      "label": "Day5 火災の日の少女"
+    },
+    {
+      "day": 6,
+      "key": "day06",
+      "code": "2031",
+      "label": "Day6 再生された声"
+    },
+    {
+      "day": 7,
+      "key": "day07",
+      "code": "LOSTNAME",
+      "label": "Day7 名前を失う人"
+    },
+    {
+      "day": 8,
+      "key": "day08",
+      "code": "MASTERKEY",
+      "label": "Day8 記録されない鍵"
+    },
+    {
+      "day": 9,
+      "key": "day09",
+      "code": "LEFTHAND",
+      "label": "Day9 左手の編集者"
+    },
+    {
+      "day": 10,
+      "key": "day10",
+      "code": "LASTFRAME",
+      "label": "Day10 最後の編集"
+    }
+  ]
+}

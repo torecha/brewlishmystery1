@@ -1,0 +1,114 @@
+{
+  "version": "1.0.0",
+  "items": [
+    {
+      "id": "photo-d1-1",
+      "day": 1,
+      "app": "photos",
+      "title": "旧映写室B 全景",
+      "subtitle": "",
+      "body": "倒れた脚立、散乱工具、映写機、作業机が写る。",
+      "image": "../day01/images/projection-room-wide.jpg",
+      "link": null,
+      "evidenceId": "EV-003",
+      "tags": [
+        "現場"
+      ],
+      "classification": "B"
+    },
+    {
+      "id": "photo-d1-2",
+      "day": 1,
+      "app": "photos",
+      "title": "遺体発見時",
+      "subtitle": "",
+      "body": "久世は脚立の真下ではなく西側に倒れていた。",
+      "image": "../day01/images/body-discovery-wide.jpg",
+      "link": null,
+      "evidenceId": "EV-004",
+      "tags": [
+        "遺体",
+        "脚立"
+      ],
+      "classification": "A"
+    },
+    {
+      "id": "photo-d1-3",
+      "day": 1,
+      "app": "photos",
+      "title": "二種類の錠",
+      "subtitle": "",
+      "body": "ICカードリーダーの横に旧式鍵穴が残る。",
+      "image": "../day01/images/projection-door-dual-lock.jpg",
+      "link": null,
+      "evidenceId": "EV-005",
+      "tags": [],
+      "classification": "B"
+    },
+    {
+      "id": "photo-d1-4",
+      "day": 1,
+      "app": "photos",
+      "title": "脚立と作業用手袋",
+      "subtitle": "",
+      "body": "手袋の掌に油汚れがなく、工具は一方向へ散る。",
+      "image": "../day01/images/ladder-tools-floor.jpg",
+      "link": null,
+      "evidenceId": "EV-006",
+      "tags": [],
+      "classification": "A"
+    },
+    {
+      "id": "photo-staff",
+      "day": 3,
+      "app": "photos",
+      "title": "潮騒館スタッフ集合写真",
+      "subtitle": "",
+      "body": "開館前の記念写真。真綾は左手で小型カッターを持つ。",
+      "image": "../shared/images/people/staff-group-lobby.jpg",
+      "link": null,
+      "evidenceId": "EV-123",
+      "tags": [],
+      "classification": "A"
+    },
+    {
+      "id": "cctv-yui",
+      "day": 5,
+      "app": "photos",
+      "title": "裏口カメラ 19:12",
+      "subtitle": "",
+      "body": "白石結衣が真綾へ封筒を渡している。",
+      "image": "../day05/images/yui-envelope-cctv.jpg",
+      "link": null,
+      "evidenceId": "EV-041",
+      "tags": [],
+      "classification": "B"
+    },
+    {
+      "id": "photo-fire",
+      "day": 5,
+      "app": "photos",
+      "title": "2004年 御影座イベント写真",
+      "subtitle": "",
+      "body": "非常口前に仮設展示壁。結衣は離れた場所でキャンドルを持つ。",
+      "image": "../day05/images/exit-wall-archive-photo.jpg",
+      "link": null,
+      "evidenceId": "EV-018",
+      "tags": [],
+      "classification": "A"
+    },
+    {
+      "id": "photo-stairs",
+      "day": 9,
+      "app": "photos",
+      "title": "階段踊り場 20:34",
+      "subtitle": "",
+      "body": "真綾が三階から二階へ下る姿。左袖に金色微粒子。",
+      "image": "../day09/images/stair-landing-2034.jpg",
+      "link": null,
+      "evidenceId": "EV-085",
+      "tags": [],
+      "classification": "A"
+    }
+  ]
+}

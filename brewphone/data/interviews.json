@@ -1,0 +1,109 @@
+{
+  "version": "1.0.0",
+  "items": [
+    {
+      "id": "int-maya-1",
+      "day": 2,
+      "app": "interviews",
+      "title": "INT-001 星野真綾 初回",
+      "subtitle": "2026-10-18 22:10 / ロビー会議室",
+      "body": "「20:20からアーカイブ室。20:46に久世さんとインターホンで話しました。私も返事をしました」",
+      "image": null,
+      "link": null,
+      "evidenceId": "INT-001",
+      "tags": [],
+      "classification": "B"
+    },
+    {
+      "id": "int-rin-1",
+      "day": 2,
+      "app": "interviews",
+      "title": "INT-002 早瀬凛 初回",
+      "subtitle": "",
+      "body": "「20:20以降は会っていません」—ただし廊下映像では20:22に口論。",
+      "image": null,
+      "link": null,
+      "evidenceId": "INT-002",
+      "tags": [],
+      "classification": "D"
+    },
+    {
+      "id": "int-miya-1",
+      "day": 2,
+      "app": "interviews",
+      "title": "INT-003 宮原孝志 初回",
+      "subtitle": "",
+      "body": "「旧式鍵は誰も使用していません。管理棚にありました」",
+      "image": null,
+      "link": null,
+      "evidenceId": "INT-003",
+      "tags": [],
+      "classification": "D"
+    },
+    {
+      "id": "int-rio",
+      "day": 4,
+      "app": "interviews",
+      "title": "INT-004 東堂理央",
+      "subtitle": "",
+      "body": "「父の代理で来ました」—実際は18:24に久世へ社内資料USBを渡していた。",
+      "image": null,
+      "link": null,
+      "evidenceId": "INT-004",
+      "tags": [],
+      "classification": "D"
+    },
+    {
+      "id": "int-odagiri",
+      "day": 6,
+      "app": "interviews",
+      "title": "INT-006 小田切蓮",
+      "subtitle": "",
+      "body": "「予約機能はあります。ただし当夜の音声ファイルは私の命名ではありません」",
+      "image": null,
+      "link": null,
+      "evidenceId": "INT-006",
+      "tags": [],
+      "classification": "B"
+    },
+    {
+      "id": "int-maya-2",
+      "day": 7,
+      "app": "interviews",
+      "title": "INT-007 星野真綾 再聴取",
+      "subtitle": "",
+      "body": "「上映されれば、結衣さんはまた名前を失うことになる」",
+      "image": null,
+      "link": null,
+      "evidenceId": "INT-007",
+      "tags": [],
+      "classification": "A"
+    },
+    {
+      "id": "int-kamiya",
+      "day": 7,
+      "app": "interviews",
+      "title": "INT-008 神谷直人",
+      "subtitle": "",
+      "body": "「久世から未公開映像の存在を聞いた。21:30に会う予定だった」",
+      "image": null,
+      "link": null,
+      "evidenceId": "INT-008",
+      "tags": [],
+      "classification": "C"
+    },
+    {
+      "id": "int-miya-2",
+      "day": 8,
+      "app": "interviews",
+      "title": "INT-010 宮原孝志 再聴取",
+      "subtitle": "",
+      "body": "管理簿改ざんは以前の鍵紛失を隠すため。当夜は地下機械室の映像アリバイあり。",
+      "image": null,
+      "link": null,
+      "evidenceId": null,
+      "tags": [],
+      "classification": "D"
+    }
+  ]
+}

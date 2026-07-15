@@ -1,0 +1,72 @@
+{
+  "version": "1.0.0",
+  "items": [
+    {
+      "id": "weapon",
+      "day": 8,
+      "app": "evidence",
+      "title": "EV-081 巻き取りハンドル",
+      "subtitle": "",
+      "body": "映写機2号裏から発見。表面に清拭筋。",
+      "image": "../day08/images/weapon-handle-evidence.jpg",
+      "link": null,
+      "evidenceId": "EV-081",
+      "tags": [],
+      "classification": "A",
+      "eventId": "day08_emergency_01"
+    },
+    {
+      "id": "master-key",
+      "day": 8,
+      "app": "evidence",
+      "title": "M-02 旧式マスターキー",
+      "subtitle": "",
+      "body": "電子錠から独立した真鍮製マスターキー。",
+      "image": "../day08/images/master-key-m02.jpg",
+      "link": null,
+      "evidenceId": "EV-064",
+      "tags": [],
+      "classification": "A"
+    },
+    {
+      "id": "impact-report",
+      "day": 9,
+      "app": "evidence",
+      "title": "打撃方向鑑定",
+      "subtitle": "",
+      "body": "久世の右後方から、左手で斜めに振り下ろした軌道に整合。",
+      "image": "../day09/images/impact-angle-diagram.png",
+      "link": null,
+      "evidenceId": "EV-121",
+      "tags": [],
+      "classification": "A"
+    },
+    {
+      "id": "brass-report",
+      "day": 9,
+      "app": "evidence",
+      "title": "真鍮粉鑑定",
+      "subtitle": "",
+      "body": "真綾の左袖、M-02、鍵穴の粒子が同系統。",
+      "image": "../day09/images/brass-powder-micro.jpg",
+      "link": null,
+      "evidenceId": "EV-125",
+      "tags": [],
+      "classification": "A"
+    },
+    {
+      "id": "evidence-final",
+      "day": 9,
+      "app": "evidence",
+      "title": "最終証拠ボード",
+      "subtitle": "",
+      "body": "左利き、離席、旧式鍵、真鍮粉、音声編集、未公開語句が星野真綾へ収束。",
+      "image": "../day09/images/evidence-board-final.png",
+      "link": null,
+      "evidenceId": null,
+      "tags": [],
+      "classification": "A",
+      "eventId": "day09_emergency_01"
+    }
+  ]
+}

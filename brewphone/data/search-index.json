@@ -1,0 +1,389 @@
+{
+  "version": "1.0.0",
+  "items": [
+    {
+      "id": "msg-d1-1",
+      "day": 1,
+      "app": "messages",
+      "text": "現場連絡グループ 潮騒館スタッフ 21:12 館内封鎖。三階旧映写室Bを現状保存。関係者はロビー待機。  現場 封鎖"
+    },
+    {
+      "id": "msg-d1-2",
+      "day": 1,
+      "app": "messages",
+      "text": "真綾から館長へ 星野真綾 20:46、久世さんから「第2巻を先に回して」と連絡がありました。  20:46 音声"
+    },
+    {
+      "id": "photo-d1-1",
+      "day": 1,
+      "app": "photos",
+      "text": "旧映写室B 全景  倒れた脚立、散乱工具、映写機、作業机が写る。 EV-003 現場"
+    },
+    {
+      "id": "photo-d1-2",
+      "day": 1,
+      "app": "photos",
+      "text": "遺体発見時  久世は脚立の真下ではなく西側に倒れていた。 EV-004 遺体 脚立"
+    },
+    {
+      "id": "photo-d1-3",
+      "day": 1,
+      "app": "photos",
+      "text": "二種類の錠  ICカードリーダーの横に旧式鍵穴が残る。 EV-005 "
+    },
+    {
+      "id": "photo-d1-4",
+      "day": 1,
+      "app": "photos",
+      "text": "脚立と作業用手袋  手袋の掌に油汚れがなく、工具は一方向へ散る。 EV-006 "
+    },
+    {
+      "id": "contact-maya",
+      "day": 1,
+      "app": "contacts",
+      "text": "星野真綾 左利き / アーカイブ主任 39歳。潮騒館映像アーカイブ主任。映像修復と音声ノイズ除去を担当。  真綾"
+    },
+    {
+      "id": "contact-kuze",
+      "day": 1,
+      "app": "contacts",
+      "text": "久世新 被害者 47歳。ドキュメンタリー監督。開館記念作品「最後の映写」を制作。  "
+    },
+    {
+      "id": "contact-miyahara",
+      "day": 1,
+      "app": "contacts",
+      "text": "宮原孝志  51歳。施設管理責任者。旧設備と鍵を管理。  "
+    },
+    {
+      "id": "map-floor3",
+      "day": 1,
+      "app": "map",
+      "text": "潮騒館3階図  映写室Bから非常階段まで近く、二階アーカイブ室へ数分で移動できる。 EV-MAP-01 "
+    },
+    {
+      "id": "mission-1",
+      "day": 1,
+      "app": "mission",
+      "text": "Day1 Mission  現場の不自然な点を3つ記録する。  "
+    },
+    {
+      "id": "log-access",
+      "day": 2,
+      "app": "files",
+      "text": "映写室B 入退室ログ  20:24 久世新 IC入室。以降、非常解錠まで電子記録なし。 EV-059 20:24 ログ"
+    },
+    {
+      "id": "int-maya-1",
+      "day": 2,
+      "app": "interviews",
+      "text": "INT-001 星野真綾 初回 2026-10-18 22:10 / ロビー会議室 「20:20からアーカイブ室。20:46に久世さんとインターホンで話しました。私も返事をしました」 INT-001 "
+    },
+    {
+      "id": "int-rin-1",
+      "day": 2,
+      "app": "interviews",
+      "text": "INT-002 早瀬凛 初回  「20:20以降は会っていません」—ただし廊下映像では20:22に口論。 INT-002 "
+    },
+    {
+      "id": "int-miya-1",
+      "day": 2,
+      "app": "interviews",
+      "text": "INT-003 宮原孝志 初回  「旧式鍵は誰も使用していません。管理棚にありました」 INT-003 "
+    },
+    {
+      "id": "audio-2046",
+      "day": 2,
+      "app": "recorder",
+      "text": "20:46 館内インターホン 再生時間 00:07 久世の声「第2巻を先に回して」。返答側の音声は記録されていない。 EV-093 20:46 音声"
+    },
+    {
+      "id": "call-day2",
+      "day": 2,
+      "app": "calls",
+      "text": "通話・館内連絡履歴  20:46 館内放送系統 B-ROOM / 送信元表示なし。 EV-CALL-02 "
+    },
+    {
+      "id": "note-facility",
+      "day": 2,
+      "app": "system-notes",
+      "text": "映写室B 扉仕様  扉は外へ出て閉じると自動ラッチ。ICカードと保存用旧式錠を併設。  "
+    },
+    {
+      "id": "news-current",
+      "day": 3,
+      "app": "news",
+      "text": "潮騒館で監督死亡  開館記念上映会後、旧映写室で久世新監督が死亡。警察は事故と事件の両面で調査。  "
+    },
+    {
+      "id": "news-puzzle",
+      "day": 3,
+      "app": "news",
+      "text": "日曜版「消えた座席番号」  欠けた座席番号を求める読者クイズ。  13"
+    },
+    {
+      "id": "photo-staff",
+      "day": 3,
+      "app": "photos",
+      "text": "潮騒館スタッフ集合写真  開館前の記念写真。真綾は左手で小型カッターを持つ。 EV-123 "
+    },
+    {
+      "id": "news-article13",
+      "day": 3,
+      "app": "news",
+      "text": "ARTICLE-13 御影座火災  2004年火災で、13歳少女が避難誘導を手伝ったとの記事。  "
+    },
+    {
+      "id": "browser-d3",
+      "day": 3,
+      "app": "browser",
+      "text": "検索履歴  御影座 火災 13 / 小川 結衣 / FRAME 13  ARTICLE-13 FRAME13"
+    },
+    {
+      "id": "contact-yui",
+      "day": 3,
+      "app": "contacts",
+      "text": "白石結衣  35歳。児童書翻訳者。旧姓・小川。2004年8月時点13歳。  "
+    },
+    {
+      "id": "mail-deleted",
+      "day": 4,
+      "app": "mail",
+      "text": "削除済み：制作支援条件 久世新 ↔ 東浜開発 久世：公開版から企業名を外します。制作支援金は30,000,000円でお願いします。 EV-007 ",
+      "eventId": "day04_emergency_01"
+    },
+    {
+      "id": "social-scheduled",
+      "day": 4,
+      "app": "files",
+      "text": "SNS予約投稿履歴  作成18:55 / 公開予定20:50 / 状態：自動公開済み。 EV-096 "
+    },
+    {
+      "id": "int-rio",
+      "day": 4,
+      "app": "interviews",
+      "text": "INT-004 東堂理央  「父の代理で来ました」—実際は18:24に久世へ社内資料USBを渡していた。 INT-004 "
+    },
+    {
+      "id": "contact-todo",
+      "day": 4,
+      "app": "contacts",
+      "text": "東堂修一  58歳。東浜開発会長。2004年当時は広報責任者。  "
+    },
+    {
+      "id": "site-tohama",
+      "day": 4,
+      "app": "browser",
+      "text": "東浜開発 会社沿革  2004年地域文化支援事業の記録。  "
+    },
+    {
+      "id": "cctv-yui",
+      "day": 5,
+      "app": "photos",
+      "text": "裏口カメラ 19:12  白石結衣が真綾へ封筒を渡している。 EV-041 "
+    },
+    {
+      "id": "diary-yui",
+      "day": 5,
+      "app": "files",
+      "text": "白石結衣 日記写し  「出口の前に大きな壁があった。二人の手を引いて外へ出た」 EV-043 "
+    },
+    {
+      "id": "photo-fire",
+      "day": 5,
+      "app": "photos",
+      "text": "2004年 御影座イベント写真  非常口前に仮設展示壁。結衣は離れた場所でキャンドルを持つ。 EV-018 "
+    },
+    {
+      "id": "bus-yui",
+      "day": 5,
+      "app": "map",
+      "text": "白石結衣 移動記録  19:17 海凪中央発。19:24 車内カメラ。20:31には現場から離れている。  "
+    },
+    {
+      "id": "fire-report",
+      "day": 5,
+      "app": "files",
+      "text": "消防報告書 FR-2004-13  出火地点は舞台袖の装飾照明。資料は12ページの次が14ページ。  "
+    },
+    {
+      "id": "frame13",
+      "day": 5,
+      "app": "browser",
+      "text": "FRAME 13  白石結衣とみられる匿名ブログ。実名公開への恐怖を綴る。  "
+    },
+    {
+      "id": "heart-log",
+      "day": 6,
+      "app": "files",
+      "text": "スマートウォッチ心拍  20:30:52 急上昇。20:31:14以降、記録なし。 EV-069 ",
+      "eventId": "day06_emergency_01"
+    },
+    {
+      "id": "vibration-log",
+      "day": 6,
+      "app": "files",
+      "text": "床振動センサー  20:31:06 映写室Bで単発の強い振動。 EV-070 ",
+      "eventId": "day06_emergency_01"
+    },
+    {
+      "id": "motor-log",
+      "day": 6,
+      "app": "files",
+      "text": "映写機モーターログ  20:29:48 急停止。電源ケーブルの瞬断。 EV-003 "
+    },
+    {
+      "id": "audio-compare",
+      "day": 6,
+      "app": "recorder",
+      "text": "音声波形比較  19:10リハーサルと20:46音声で、咳払いと椅子音まで一致。 EV-004 ",
+      "eventId": "day06_emergency_01"
+    },
+    {
+      "id": "broadcast-log",
+      "day": 6,
+      "app": "files",
+      "text": "館内放送予約ログ  20:46:00 R2_pre_1910_MA.wav 自動再生。 EV-093 "
+    },
+    {
+      "id": "int-odagiri",
+      "day": 6,
+      "app": "interviews",
+      "text": "INT-006 小田切蓮  「予約機能はあります。ただし当夜の音声ファイルは私の命名ではありません」 INT-006 "
+    },
+    {
+      "id": "edit-notes",
+      "day": 7,
+      "app": "files",
+      "text": "久世 編集指示  少女の顔を3秒長く / 企業看板は切る / 少女の手元から炎へ。 EV-008 "
+    },
+    {
+      "id": "narration",
+      "day": 7,
+      "app": "files",
+      "text": "未公開ナレーション  「一人の少女が街の名前を変え、やがて自分の名前を失った」 EV-009 "
+    },
+    {
+      "id": "int-maya-2",
+      "day": 7,
+      "app": "interviews",
+      "text": "INT-007 星野真綾 再聴取  「上映されれば、結衣さんはまた名前を失うことになる」 INT-007 "
+    },
+    {
+      "id": "int-kamiya",
+      "day": 7,
+      "app": "interviews",
+      "text": "INT-008 神谷直人  「久世から未公開映像の存在を聞いた。21:30に会う予定だった」 INT-008 "
+    },
+    {
+      "id": "kamiya-note",
+      "day": 7,
+      "app": "system-notes",
+      "text": "神谷記者メモ  企業責任を示す看板／非常口前の展示壁／少女は救助側。  "
+    },
+    {
+      "id": "weapon",
+      "day": 8,
+      "app": "evidence",
+      "text": "EV-081 巻き取りハンドル  映写機2号裏から発見。表面に清拭筋。 EV-081 ",
+      "eventId": "day08_emergency_01"
+    },
+    {
+      "id": "master-key",
+      "day": 8,
+      "app": "evidence",
+      "text": "M-02 旧式マスターキー  電子錠から独立した真鍮製マスターキー。 EV-064 "
+    },
+    {
+      "id": "key-weight",
+      "day": 8,
+      "app": "files",
+      "text": "鍵棚重量センサー  20:21 重量減少。20:39 復帰。管理簿記載なし。 EV-136 "
+    },
+    {
+      "id": "latch-spec",
+      "day": 8,
+      "app": "browser",
+      "text": "保存映写館の扉仕様  旧式鍵で解錠後、退出して扉を閉めるとラッチが掛かる。  "
+    },
+    {
+      "id": "wayback",
+      "day": 8,
+      "app": "browser",
+      "text": "保存された東浜開発ページ  「避難導線を変更した特設展示」の記載。  "
+    },
+    {
+      "id": "int-miya-2",
+      "day": 8,
+      "app": "interviews",
+      "text": "INT-010 宮原孝志 再聴取  管理簿改ざんは以前の鍵紛失を隠すため。当夜は地下機械室の映像アリバイあり。  "
+    },
+    {
+      "id": "impact-report",
+      "day": 9,
+      "app": "evidence",
+      "text": "打撃方向鑑定  久世の右後方から、左手で斜めに振り下ろした軌道に整合。 EV-121 "
+    },
+    {
+      "id": "brass-report",
+      "day": 9,
+      "app": "evidence",
+      "text": "真鍮粉鑑定  真綾の左袖、M-02、鍵穴の粒子が同系統。 EV-125 "
+    },
+    {
+      "id": "terminal-gap",
+      "day": 9,
+      "app": "files",
+      "text": "アーカイブ端末操作履歴  20:23:40 ロック / 20:38:02 再開。 EV-140 "
+    },
+    {
+      "id": "audio-project",
+      "day": 9,
+      "app": "files",
+      "text": "音声編集プロジェクト履歴  作成者 MAAYA.H / R2_pre_1910_MA。 EV-129 "
+    },
+    {
+      "id": "photo-stairs",
+      "day": 9,
+      "app": "photos",
+      "text": "階段踊り場 20:34  真綾が三階から二階へ下る姿。左袖に金色微粒子。 EV-085 "
+    },
+    {
+      "id": "evidence-final",
+      "day": 9,
+      "app": "evidence",
+      "text": "最終証拠ボード  左利き、離席、旧式鍵、真鍮粉、音声編集、未公開語句が星野真綾へ収束。  ",
+      "eventId": "day09_emergency_01"
+    },
+    {
+      "id": "final-report",
+      "day": 10,
+      "app": "files",
+      "text": "捜査報告書 最終版  星野真綾を、20:31の久世新殺害、事故偽装、死亡時刻偽装の被疑者として特定。供述に依存せず証拠で成立。  "
+    },
+    {
+      "id": "corrected-news",
+      "day": 10,
+      "app": "news",
+      "text": "御影座火災報告を再調査  海凪市は非常口前展示壁と企業関与を再検証。星野達郎への公式謝罪を決定。  "
+    },
+    {
+      "id": "tatsuro-letter",
+      "day": 10,
+      "app": "mail",
+      "text": "星野達郎から真綾へ  名誉が戻ることより、お前が誰かの明日を奪わないことを願っていた。  "
+    },
+    {
+      "id": "yui-statement",
+      "day": 10,
+      "app": "system-notes",
+      "text": "白石結衣 コメント  「真実が公開されることと、私の人生が公開されることは同じではありません」  "
+    },
+    {
+      "id": "mission-complete",
+      "day": 10,
+      "app": "mission",
+      "text": "CASE COMPLETE  資料の編集履歴と欠落を含めて、事件を再構成した。  "
+    }
+  ]
+}

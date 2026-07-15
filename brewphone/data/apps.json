@@ -1,0 +1,107 @@
+{
+  "version": "1.0.0",
+  "apps": [
+    {
+      "id": "messages",
+      "label": "Messages",
+      "order": 1,
+      "icon": "💬"
+    },
+    {
+      "id": "mail",
+      "label": "Mail",
+      "order": 2,
+      "icon": "✉️"
+    },
+    {
+      "id": "photos",
+      "label": "Photos",
+      "order": 3,
+      "icon": "🖼️"
+    },
+    {
+      "id": "files",
+      "label": "Files",
+      "order": 4,
+      "icon": "📁"
+    },
+    {
+      "id": "recorder",
+      "label": "Recorder",
+      "order": 5,
+      "icon": "🎙️"
+    },
+    {
+      "id": "calls",
+      "label": "Calls",
+      "order": 6,
+      "icon": "☎️"
+    },
+    {
+      "id": "contacts",
+      "label": "Contacts",
+      "order": 7,
+      "icon": "👤"
+    },
+    {
+      "id": "calendar",
+      "label": "Calendar",
+      "order": 8,
+      "icon": "📅"
+    },
+    {
+      "id": "system-notes",
+      "label": "System Notes",
+      "order": 9,
+      "icon": "🗒️"
+    },
+    {
+      "id": "browser",
+      "label": "Browser",
+      "order": 10,
+      "icon": "🌐"
+    },
+    {
+      "id": "news",
+      "label": "News",
+      "order": 11,
+      "icon": "📰"
+    },
+    {
+      "id": "interviews",
+      "label": "Interviews",
+      "order": 12,
+      "icon": "🗣️"
+    },
+    {
+      "id": "evidence",
+      "label": "Evidence",
+      "order": 13,
+      "icon": "🔎"
+    },
+    {
+      "id": "map",
+      "label": "Map",
+      "order": 14,
+      "icon": "🗺️"
+    },
+    {
+      "id": "investigation-notes",
+      "label": "Investigation Notes",
+      "order": 15,
+      "icon": "✍️"
+    },
+    {
+      "id": "mission",
+      "label": "Mission",
+      "order": 16,
+      "icon": "🎯"
+    },
+    {
+      "id": "settings",
+      "label": "Settings",
+      "order": 17,
+      "icon": "⚙️"
+    }
+  ]
+}

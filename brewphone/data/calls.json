@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0",
+  "items": [
+    {
+      "id": "call-day2",
+      "day": 2,
+      "app": "calls",
+      "title": "通話・館内連絡履歴",
+      "subtitle": "",
+      "body": "20:46 館内放送系統 B-ROOM / 送信元表示なし。",
+      "image": null,
+      "link": null,
+      "evidenceId": "EV-CALL-02",
+      "tags": [],
+      "classification": "B"
+    }
+  ]
+}

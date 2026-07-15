@@ -1,0 +1,53 @@
+{
+  "version": "1.0.0",
+  "events": [
+    {
+      "id": "day04_emergency_01",
+      "trigger": "deleted_mail_opened",
+      "vibration": [
+        180,
+        100,
+        180
+      ],
+      "message": "削除済みメールから新しい交渉記録が復元されました。",
+      "target": "../brewphone/?event=day04_emergency_01"
+    },
+    {
+      "id": "day06_emergency_01",
+      "trigger": "audio_match_solved",
+      "vibration": [
+        120,
+        80,
+        120,
+        80,
+        240
+      ],
+      "message": "音声一致を確認。心拍・振動・機材ログが同期されました。",
+      "target": "../brewphone/?event=day06_emergency_01"
+    },
+    {
+      "id": "day08_emergency_01",
+      "trigger": "hidden_cavity_opened",
+      "vibration": [
+        250,
+        100,
+        250
+      ],
+      "message": "映写機2号の裏から未登録の機械部品が発見されました。",
+      "target": "../brewphone/?event=day08_emergency_01"
+    },
+    {
+      "id": "day09_emergency_01",
+      "trigger": "evidence_links_complete",
+      "vibration": [
+        100,
+        60,
+        100,
+        60,
+        300
+      ],
+      "message": "動機・機会・手段が一人の人物へ収束しました。",
+      "target": "../brewphone/?event=day09_emergency_01"
+    }
+  ]
+}

@@ -1,0 +1,1153 @@
+{
+  "series": "潮騒館の最後の編集",
+  "version": "1.0.0",
+  "basePaths": {
+    "brewphone": "../brewphone/",
+    "shared": "../shared/"
+  },
+  "days": [
+    {
+      "day": 1,
+      "slug": "day01",
+      "title": "閉じた映写室",
+      "code": "PROJECTOR",
+      "mission": "現場写真を調べ、事故では説明しにくい点を3つ捜査ノートへ記録する。",
+      "intro": "2026年10月18日、午後9時18分。海辺の映像資料館「潮騒館」は、再開館記念上映会の直後に閉鎖された。旧映写室Bで、ドキュメンタリー監督・久世新が倒れているのが見つかったためだ。",
+      "sections": [
+        {
+          "type": "narrative",
+          "heading": "閉鎖された館内",
+          "body": "潮騒館へ到着したブリューたちを迎えたのは、上映会の余韻ではなく、消灯したロビーと立入禁止のテープだった。三階の旧映写室Bでは、倒れた脚立、散乱した工具、その少し離れた床に久世が横たわっている。施設管理責任者の宮原は「一人で映写機を調整していた最中の事故だと思う」と説明した。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "リッシュ",
+          "body": "事故って言うには、みんな説明が早すぎない？"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ブリュー",
+          "body": "結論を急いでいるのか、結論を決めているのか。まず現場をそのまま見る。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "カプくん",
+          "body": "この扉、カードを当てるところと鍵穴が両方あるよ。入口は一つなのに。"
+        },
+        {
+          "type": "narrative",
+          "heading": "最後の声",
+          "body": "アーカイブ主任の星野真綾は、午後8時46分に久世から館内インターホンで「第2巻を先に回して」と指示されたと証言した。さらに午後8時50分、久世のSNSには上映会についての投稿が公開されている。表面上、久世は少なくとも8時50分まで生きていたことになる。"
+        },
+        {
+          "type": "narrative",
+          "heading": "現場に残った違和感",
+          "body": "しかし、遺体は脚立の真下ではない。作業用手袋の掌は妙にきれいで、工具は同じ方向へ押し出されたように散らばっている。映写機のハンドル取付部には新しい擦れがあった。どれも単独では殺人を示さないが、自然な事故として受け入れるには小さな違和感が重なりすぎていた。"
+        }
+      ],
+      "exploration": {
+        "mode": "hotspots",
+        "required": 3,
+        "hotspots": [
+          {
+            "id": "door",
+            "label": "映写室の扉",
+            "image": "../day01/images/projection-door-dual-lock.jpg",
+            "finding": "ICカードリーダーとは別に旧式鍵穴が残る。"
+          },
+          {
+            "id": "ladder",
+            "label": "脚立と工具",
+            "image": "../day01/images/ladder-tools-floor.jpg",
+            "finding": "遺体位置が脚立の落下軸から外れ、手袋の掌が清潔。"
+          },
+          {
+            "id": "projector",
+            "label": "映写機2号",
+            "image": "../day01/images/projector-two.jpg",
+            "finding": "巻き取りハンドル取付部に新しい擦れ。"
+          },
+          {
+            "id": "desk",
+            "label": "久世の作業机",
+            "image": "../day01/images/kuze-work-desk.jpg",
+            "finding": "SNS管理画面らしきものが開いたまま。"
+          },
+          {
+            "id": "intercom",
+            "label": "インターホン",
+            "image": "../day01/images/intercom-wall.jpg",
+            "finding": "通話以外の再生機能を示す記号がある。"
+          }
+        ]
+      },
+      "question": "久世の死は、事故と断定できるか？",
+      "answer": {
+        "type": "text",
+        "accepted": [
+          "できない",
+          "断定できない",
+          "事故と断定できない",
+          "いいえ",
+          "否"
+        ]
+      },
+      "hints": [
+        "現場に残された物の位置と状態を見てください。",
+        "BrewPhoneの写真アプリで、脚立・遺体位置・作業用手袋を比較してください。",
+        "本当に脚立から落ちたなら、遺体と脚立はどの位置関係になり、手袋にはどのような汚れが付くでしょうか。",
+        "遺体は脚立の真下になく、工具や手袋の状態も自然な作業事故と一致しません。"
+      ],
+      "success": {
+        "answer": "断定できない。",
+        "materials": [
+          "現場全景",
+          "脚立と工具の写真",
+          "遺体位置",
+          "作業用手袋"
+        ],
+        "facts": [
+          "遺体が脚立の落下軸から外れている。",
+          "工具の散乱方向が不自然。",
+          "作業用手袋に油汚れがない。"
+        ],
+        "connection": "複数の配置が実際の作業事故より、事故に見せるため後から整えた状態と整合する。",
+        "conclusion": "久世の死は事故と断定できず、現場偽装を伴う事件の可能性がある。",
+        "remaining": "午後8時46分の声と午後8時50分の投稿は、本当に生存証明になるのか。"
+      },
+      "brewphone_unlock": [
+        "messages_day01",
+        "photos_day01",
+        "contacts_core",
+        "map_floor3",
+        "mission_day01"
+      ],
+      "images": [
+        "../shared/images/scenes/shiosai-exterior-dusk.jpg",
+        "images/projection-room-wide.jpg",
+        "images/body-discovery-wide.jpg"
+      ],
+      "emergency": null,
+      "ui": {
+        "show_next_day_button": false,
+        "show_brewphone_button": true,
+        "hide_brew_code_until_correct": true,
+        "persist_progress": true,
+        "hint_progression": 4,
+        "answer_normalization": [
+          "trim",
+          "unicode_nfkc",
+          "lowercase_ascii",
+          "remove_spaces",
+          "remove_punctuation"
+        ]
+      }
+    },
+    {
+      "day": 2,
+      "slug": "day02",
+      "title": "20時46分の声",
+      "code": "VOICE46",
+      "mission": "20時20分から21時07分までの証言とログをタイムラインへ配置する。",
+      "intro": "現場の不自然さは確認できた。しかし事件を殺人として組み立てるには、久世がいつ死亡したのかを確定しなければならない。",
+      "sections": [
+        {
+          "type": "narrative",
+          "heading": "三つの証言",
+          "body": "真綾は午後8時46分に久世の声を聞いた。制作助手の早瀬凛は午後8時22分ごろまで久世と口論していた。施設管理責任者の宮原孝志は、映写室Bへの入室ログには午後8時24分の久世しか記録されていないと説明する。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "リッシュ",
+          "body": "入室ログに久世さんしかいないなら、やっぱり一人だったの？"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ブリュー",
+          "body": "ログにないことと、入れないことは同じではない。扉には二つの仕組みがある。"
+        },
+        {
+          "type": "narrative",
+          "heading": "録音された声",
+          "body": "BrewPhoneで音声を再生すると、久世は「第2巻を先に回して」と短く話したあと、数秒の無音を挟んで切れる。真綾は自分が「分かりました」と返答したと話すが、保存された記録に返答音声はない。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "カプくん",
+          "body": "電話みたいに話したなら、真綾さんの声も少しくらい残らないのかな。"
+        },
+        {
+          "type": "narrative",
+          "heading": "自動で閉じる扉",
+          "body": "映写室Bの扉は、外へ出て閉めれば自動ラッチが掛かる。つまり、発見時に扉が閉まっていたこと自体は、犯人が室内に残った証明にも、誰も出入りしていない証明にもならない。"
+        }
+      ],
+      "exploration": {
+        "mode": "timeline",
+        "required": 6,
+        "events": [
+          "20:16 久世がホール退出",
+          "20:22 久世と早瀬が口論",
+          "20:24 久世がIC入室",
+          "20:46 インターホン音声",
+          "20:50 SNS投稿",
+          "21:07 遺体発見"
+        ]
+      },
+      "question": "20時46分の音声は、久世が生きていた証明になるか？",
+      "answer": {
+        "type": "text",
+        "accepted": [
+          "ならない",
+          "証明にならない",
+          "生存証明にならない",
+          "いいえ",
+          "否"
+        ]
+      },
+      "hints": [
+        "音声が聞こえたことと、その瞬間に本人が話したことを分けてください。",
+        "BrewPhoneのレコーダーと施設資料で、インターホンの記録方式を確認してください。",
+        "真綾の返答は記録されているでしょうか。また、再生機能を排除できるでしょうか。",
+        "保存されているのは久世の音声だけで、録音の予約再生でも同じ状況を作れます。"
+      ],
+      "success": {
+        "answer": "生存証明にはならない。",
+        "materials": [
+          "20時46分音声",
+          "インターホン仕様",
+          "真綾の事情聴取",
+          "入退室ログ"
+        ],
+        "facts": [
+          "返答側の音声記録がない。",
+          "設備には音源再生機能がある。",
+          "音声ファイルの作成時刻はまだ確認されていない。"
+        ],
+        "connection": "音声の存在だけでは、リアルタイム通話と録音再生を区別できない。",
+        "conclusion": "午後8時46分を死亡時刻の下限にはできない。",
+        "remaining": "音声はいつ、どの場面から作られたのか。"
+      },
+      "brewphone_unlock": [
+        "interviews_day02",
+        "access_logs",
+        "calls_day02",
+        "audio_2046",
+        "facility_memo"
+      ],
+      "images": [
+        "../shared/images/scenes/third-floor-hall.jpg",
+        "images/archive-room.jpg"
+      ],
+      "emergency": null,
+      "ui": {
+        "show_next_day_button": false,
+        "show_brewphone_button": true,
+        "hide_brew_code_until_correct": true,
+        "persist_progress": true,
+        "hint_progression": 4,
+        "answer_normalization": [
+          "trim",
+          "unicode_nfkc",
+          "lowercase_ascii",
+          "remove_spaces",
+          "remove_punctuation"
+        ]
+      }
+    },
+    {
+      "day": 3,
+      "slug": "day03",
+      "title": "新聞の13番",
+      "code": "SEAT13",
+      "mission": "海凪新聞の日曜クイズを解き、得られた番号をアーカイブ検索へ入力する。",
+      "intro": "事件当夜の記録だけでは、関係者が隠している理由を説明できない。ブリューは、久世のブラウザ履歴に残っていた地域新聞の古い記事へ目を向けた。",
+      "sections": [
+        {
+          "type": "narrative",
+          "heading": "事件と無関係な日曜版",
+          "body": "海凪新聞の日曜版には、旧映画館の座席番号を使った読者クイズが掲載されていた。事件記事ではない。欠けた座席番号を規則から求める、地域資料館との共同企画だった。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "リッシュ",
+          "body": "こんなときに新聞クイズ？"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ブリュー",
+          "body": "久世は正解ページを開いたあと、記事アーカイブへ移動している。遊びで終わらなかった可能性がある。"
+        },
+        {
+          "type": "narrative",
+          "heading": "ARTICLE-13",
+          "body": "答えの13を検索欄へ入れると、2004年8月の御影座火災記事「ARTICLE-13」が表示された。記事には、避難誘導を手伝った“13歳の少女”が匿名で登場する。その後の関連記事では、同じ少女がキャンドルを持っていたという噂だけが残っていた。"
+        },
+        {
+          "type": "narrative",
+          "heading": "現在へつながる名前",
+          "body": "地域史アーカイブ、匿名ブログ「FRAME 13」、人物プロフィールを照合すると、当時の少女の旧姓が小川であったこと、現在の白石結衣と年齢が一致することが分かる。"
+        }
+      ],
+      "exploration": {
+        "mode": "puzzle_and_search",
+        "required": 2,
+        "puzzle_id": "newspaper-seat-puzzle",
+        "search_term": "ARTICLE-13"
+      },
+      "question": "22年前の記事の「13歳の少女」は、現在の誰につながるか？",
+      "answer": {
+        "type": "text",
+        "accepted": [
+          "白石結衣",
+          "白石 結衣",
+          "結衣",
+          "しらいしゆい"
+        ]
+      },
+      "hints": [
+        "記事の年と、人物の生年月日を照合してください。",
+        "海凪新聞のARTICLE-13、御影座アーカイブ、人物プロフィールを確認してください。",
+        "2004年8月時点で13歳になる人物と、旧姓「小川」を探してください。",
+        "1991年2月10日生まれで、旧姓が小川の白石結衣です。"
+      ],
+      "success": {
+        "answer": "白石結衣。",
+        "materials": [
+          "新聞クイズ",
+          "ARTICLE-13",
+          "人物プロフィール",
+          "FRAME 13"
+        ],
+        "facts": [
+          "2004年8月時点で13歳。",
+          "記事の少女の旧姓は小川。",
+          "ブログの半券と人物情報が一致。"
+        ],
+        "connection": "年齢、旧姓、匿名ブログの記憶が一人の人物へ収束する。",
+        "conclusion": "御影座火災の記事に登場する少女は現在の白石結衣。",
+        "remaining": "結衣は火災を起こしたのか、それとも別の理由で名前を変えたのか。"
+      },
+      "brewphone_unlock": [
+        "news_day03",
+        "newspaper_puzzle",
+        "article_13",
+        "characters_extended",
+        "browser_history_day03"
+      ],
+      "images": [
+        "../shared/images/people/staff-group-lobby.jpg"
+      ],
+      "emergency": null,
+      "ui": {
+        "show_next_day_button": false,
+        "show_brewphone_button": true,
+        "hide_brew_code_until_correct": true,
+        "persist_progress": true,
+        "hint_progression": 4,
+        "answer_normalization": [
+          "trim",
+          "unicode_nfkc",
+          "lowercase_ascii",
+          "remove_spaces",
+          "remove_punctuation"
+        ]
+      }
+    },
+    {
+      "day": 4,
+      "slug": "day04",
+      "title": "予約された生存",
+      "code": "SCHEDULED",
+      "mission": "削除済みメールを復元し、20時50分の投稿が公開された仕組みを確認する。",
+      "intro": "20時46分の音声に続き、20時50分のSNS投稿も生存証明として扱われていた。だが久世の端末には、公開時刻とは別の作成時刻が残っていた。",
+      "sections": [
+        {
+          "type": "narrative",
+          "heading": "公開された時刻、作られた時刻",
+          "body": "SNS管理画面には、投稿作成18時55分、公開予定20時50分と記録されている。文章は過去の告知投稿と同じテンプレートで、久世がその時刻に端末を操作する必要はない。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "カプくん",
+          "body": "投稿が動いたんじゃなくて、時計が来たら勝手に開いたんだ。"
+        },
+        {
+          "type": "narrative",
+          "heading": "削除済みメール",
+          "body": "復元されたメールには、久世と東浜開発の交渉が残っていた。久世は作品から企業名を外す条件として、制作支援金3000万円を求めている。作品は真実を暴くためだけに作られていたわけではなかった。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "リッシュ",
+          "body": "東堂さんなら、久世さんを止めたい理由がある。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ブリュー",
+          "body": "理由はある。しかし午後8時31分、東堂は舞台上のライブ映像に連続して映っている。動機だけで犯人にはできない。"
+        }
+      ],
+      "exploration": {
+        "mode": "mail_recovery",
+        "required": 3,
+        "items": [
+          "予約投稿画面",
+          "削除済み交渉メール",
+          "東堂のライブ配信"
+        ]
+      },
+      "question": "20時50分の投稿から、死亡時刻を20時50分以降と判断できるか？",
+      "answer": {
+        "type": "text",
+        "accepted": [
+          "できない",
+          "判断できない",
+          "20時50分以降とはいえない",
+          "いいえ",
+          "否"
+        ]
+      },
+      "hints": [
+        "投稿が公開された時刻と、投稿を作成した時刻を区別してください。",
+        "BrewPhoneのSNS画面で、時計アイコンと作成履歴を確認してください。",
+        "投稿作成は18時55分です。20時50分に必要だった操作は何でしょうか。",
+        "予約投稿なので、久世が死亡していても20時50分に自動公開されます。"
+      ],
+      "success": {
+        "answer": "判断できない。",
+        "materials": [
+          "SNS予約履歴",
+          "投稿テンプレート",
+          "端末作成時刻"
+        ],
+        "facts": [
+          "投稿は18時55分に作成済み。",
+          "20時50分は予約された公開時刻。"
+        ],
+        "connection": "公開時刻に本人の操作を必要としない。",
+        "conclusion": "SNS投稿も生存証明から除外される。",
+        "remaining": "20時46分の音声と20時50分の投稿を除いた場合、実際の死亡時刻はいつか。"
+      },
+      "brewphone_unlock": [
+        "deleted_mail_day04",
+        "social_schedule",
+        "todo_mail",
+        "rio_interview",
+        "emergency_mail_day04"
+      ],
+      "images": [
+        "images/todo-live-talk.jpg",
+        "images/rio-kuze-meeting.jpg",
+        "images/scheduled-social-post.png"
+      ],
+      "emergency": {
+        "id": "day04_emergency_01",
+        "trigger": "deleted_mail_opened",
+        "vibration": [
+          180,
+          100,
+          180
+        ],
+        "message": "削除済みメールから新しい交渉記録が復元されました。",
+        "target": "../brewphone/?event=day04_emergency_01"
+      },
+      "ui": {
+        "show_next_day_button": false,
+        "show_brewphone_button": true,
+        "hide_brew_code_until_correct": true,
+        "persist_progress": true,
+        "hint_progression": 4,
+        "answer_normalization": [
+          "trim",
+          "unicode_nfkc",
+          "lowercase_ascii",
+          "remove_spaces",
+          "remove_punctuation"
+        ]
+      }
+    },
+    {
+      "day": 5,
+      "slug": "day05",
+      "title": "火災の日の少女",
+      "code": "EXITWALL",
+      "mission": "2004年の古写真、日記、消防資料を照合し、結衣に関する二つの疑いを検証する。",
+      "intro": "白石結衣は事件当日の来館を否定していた。しかし裏口カメラには、午後7時12分に真綾へ封筒を渡す姿が残っていた。",
+      "sections": [
+        {
+          "type": "narrative",
+          "heading": "結衣の嘘",
+          "body": "封筒の中身は、2004年当時の日記の写しだった。結衣は再び名前が報道されることを恐れ、潮騒館へ行った事実を隠していた。だが午後7時17分発のバスに乗り、午後7時24分には車内カメラへ写っている。現事件の犯行時刻には館内にいない。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "リッシュ",
+          "body": "嘘はついていた。でも、殺したことを隠す嘘じゃなかった。"
+        },
+        {
+          "type": "narrative",
+          "heading": "キャンドルと炎",
+          "body": "古写真では、結衣が小さなキャンドルを持っている。しかし消防資料の出火地点は舞台袖の装飾照明付近。結衣のいた場所とは離れている。日記には「出口の前の壁」「二人の手を引いた」と記されていた。"
+        },
+        {
+          "type": "narrative",
+          "heading": "塞がれた非常口",
+          "body": "別の写真を拡大すると、非常口の前にスポンサー展示壁が置かれている。火災の発生と被害拡大は別問題だった。結衣は出火原因ではなく、避難を手伝っていた可能性が高い。"
+        }
+      ],
+      "exploration": {
+        "mode": "document_compare",
+        "required": 4,
+        "items": [
+          "裏口カメラ",
+          "バス時刻表",
+          "2004年日記",
+          "非常口写真"
+        ]
+      },
+      "question": "白石結衣が火災の出火原因だったといえるか？",
+      "answer": {
+        "type": "text",
+        "accepted": [
+          "いえない",
+          "言えない",
+          "出火原因ではない",
+          "断定できない",
+          "いいえ",
+          "否"
+        ]
+      },
+      "hints": [
+        "キャンドルを持っていたことと、火元になったことを分けてください。",
+        "消防資料の出火地点、古写真の結衣の位置、日記を比較してください。",
+        "結衣の位置と舞台袖の装飾照明は一致していますか。",
+        "結衣は火元から離れ、むしろ避難誘導をしていました。"
+      ],
+      "success": {
+        "answer": "出火原因だったとはいえない。",
+        "materials": [
+          "消防報告書",
+          "結衣の日記",
+          "古写真",
+          "非常口写真"
+        ],
+        "facts": [
+          "出火地点は舞台袖の装飾照明。",
+          "結衣の位置は火元と異なる。",
+          "日記と写真は避難誘導を示す。"
+        ],
+        "connection": "キャンドルの存在だけが切り取られ、火災原因と誤って結び付けられた。",
+        "conclusion": "結衣は火災原因ではなく、噂と編集によって原因人物にされた。",
+        "remaining": "誰が、何のためにその誤解を維持したのか。"
+      },
+      "brewphone_unlock": [
+        "fire_files_day05",
+        "yui_diary",
+        "bus_schedule",
+        "old_photos",
+        "yui_interview",
+        "frame13"
+      ],
+      "images": [
+        "images/yui-envelope-cctv.jpg",
+        "images/yui-2004.jpg",
+        "images/exit-wall-archive-photo.jpg",
+        "images/bus-camera-yui.jpg"
+      ],
+      "emergency": null,
+      "ui": {
+        "show_next_day_button": false,
+        "show_brewphone_button": true,
+        "hide_brew_code_until_correct": true,
+        "persist_progress": true,
+        "hint_progression": 4,
+        "answer_normalization": [
+          "trim",
+          "unicode_nfkc",
+          "lowercase_ascii",
+          "remove_spaces",
+          "remove_punctuation"
+        ]
+      }
+    },
+    {
+      "day": 6,
+      "slug": "day06",
+      "title": "再生された声",
+      "code": "2031",
+      "mission": "心拍、床振動、映写機モーター、二つの音声を同一時系列へ重ねる。",
+      "intro": "20時46分と20時50分が生存時刻から外れた。残るのは、本人の身体と機材が自動的に残した記録だった。",
+      "sections": [
+        {
+          "type": "narrative",
+          "heading": "三つの停止",
+          "body": "久世のスマートウォッチは午後8時30分52秒に心拍の急上昇を記録し、8時31分14秒以降の記録がない。床振動センサーは8時31分06秒に強い単発振動を検出。映写機モーターはその直前に急停止している。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ブリュー",
+          "body": "人の証言は変わる。自動記録も誤差はある。しかし独立した三つが同じ一分へ集まっている。"
+        },
+        {
+          "type": "narrative",
+          "heading": "同じ咳払い",
+          "body": "午後8時46分の音声と、午後7時10分のリハーサル録音を比較すると、久世の言葉だけでなく、後方の咳払いと椅子が擦れる音まで一致した。20時46分の声は、19時10分の録音から切り出されたものだった。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "カプくん",
+          "body": "声だけじゃなくて、後ろの人まで同じ動きをしてる。時間をもう一回流したんだね。"
+        }
+      ],
+      "exploration": {
+        "mode": "log_overlay",
+        "required": 4,
+        "items": [
+          "心拍ログ",
+          "振動ログ",
+          "モーターログ",
+          "音声波形比較"
+        ]
+      },
+      "question": "久世が死亡した可能性が最も高い時刻は？",
+      "answer": {
+        "type": "text",
+        "accepted": [
+          "20時31分",
+          "20:31",
+          "2031",
+          "午後8時31分",
+          "8時31分"
+        ]
+      },
+      "hints": [
+        "一つの記録ではなく、独立した三種類の時刻を重ねてください。",
+        "BrewPhoneの健康ログ、施設センサー、機材ログを確認してください。",
+        "心拍停止、床の衝撃、機材停止が集中する一分を探してください。",
+        "三つの記録は20時31分前後に集中しています。"
+      ],
+      "success": {
+        "answer": "20時31分前後。",
+        "materials": [
+          "心拍ログ",
+          "床振動ログ",
+          "映写機モーターログ",
+          "音声波形"
+        ],
+        "facts": [
+          "心拍は20時31分14秒以降消失。",
+          "20時31分06秒に強い衝撃。",
+          "20時46分音声は19時10分音源と一致。"
+        ],
+        "connection": "身体と機材の独立記録が同一時刻へ集中し、後の声は録音だった。",
+        "conclusion": "犯行時刻は20時31分前後。",
+        "remaining": "その時刻に電子ログを残さず映写室へ入れた人物は誰か。"
+      },
+      "brewphone_unlock": [
+        "heart_log",
+        "vibration_log",
+        "motor_log",
+        "audio_compare",
+        "broadcast_log",
+        "odagiri_interview"
+      ],
+      "images": [
+        "images/kuze-rehearsal.jpg"
+      ],
+      "emergency": {
+        "id": "day06_emergency_01",
+        "trigger": "audio_match_solved",
+        "vibration": [
+          120,
+          80,
+          120,
+          80,
+          240
+        ],
+        "message": "音声一致を確認。心拍・振動・機材ログが同期されました。",
+        "target": "../brewphone/?event=day06_emergency_01"
+      },
+      "ui": {
+        "show_next_day_button": false,
+        "show_brewphone_button": true,
+        "hide_brew_code_until_correct": true,
+        "persist_progress": true,
+        "hint_progression": 4,
+        "answer_normalization": [
+          "trim",
+          "unicode_nfkc",
+          "lowercase_ascii",
+          "remove_spaces",
+          "remove_punctuation"
+        ]
+      }
+    },
+    {
+      "day": 7,
+      "slug": "day07",
+      "title": "名前を失う人",
+      "code": "LOSTNAME",
+      "mission": "久世の編集指示と未公開ナレーションから、作品が作る因果関係を読み解く。",
+      "intro": "久世が隠していたのは企業との金銭交渉だけではない。作品そのものが、22年前の誤解を再び作ろうとしていた。",
+      "sections": [
+        {
+          "type": "narrative",
+          "heading": "三秒長い顔",
+          "body": "編集指示には「少女の顔を3秒長く」「企業看板は切る」「少女の手元から炎へ」とある。事実を捏造せずとも、映像の順番と長さで観客に原因を連想させることはできる。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ブリュー",
+          "body": "映像に嘘を足す必要はない。都合の悪い場面を外し、別の場面を隣へ置けば、見る側が自分で誤解してくれる。"
+        },
+        {
+          "type": "narrative",
+          "heading": "失われる名前",
+          "body": "未公開ナレーションには「一人の少女が街の名前を変え、やがて自分の名前を失った」と書かれていた。結衣が旧姓を変え、過去から離れて暮らしていることを作品の劇的な材料にする文章だった。"
+        },
+        {
+          "type": "narrative",
+          "heading": "真綾の言葉",
+          "body": "再聴取で真綾は、「上映されれば、結衣さんはまた名前を失うことになる」と話した。この時点で未公開ナレーションは真綾へ提示されていなかった。"
+        }
+      ],
+      "exploration": {
+        "mode": "edit_sequence",
+        "required": 3,
+        "items": [
+          "少女の手元",
+          "炎の映像",
+          "企業看板を除いた画角"
+        ]
+      },
+      "question": "久世の作品は、誰を再び傷つける構成だったか？",
+      "answer": {
+        "type": "text",
+        "accepted": [
+          "白石結衣",
+          "白石 結衣",
+          "結衣",
+          "しらいしゆい"
+        ]
+      },
+      "hints": [
+        "編集で長く映され、炎の直前へ置かれる人物を確認してください。",
+        "BrewPhoneのファイルで編集指示とナレーション原稿を比較してください。",
+        "「少女」「名前を失う」という表現は、これまでの誰の経歴と一致しますか。",
+        "白石結衣を再び火災原因だと思わせる構成です。"
+      ],
+      "success": {
+        "answer": "白石結衣。",
+        "materials": [
+          "編集指示書",
+          "未公開ナレーション",
+          "2004年映像",
+          "結衣の人物情報"
+        ],
+        "facts": [
+          "結衣の顔を長く映す指示。",
+          "企業責任を示す看板を外す指示。",
+          "旧姓変更を劇的に扱う原稿。"
+        ],
+        "connection": "映像順序と省略によって、結衣と火災の因果関係を再形成しようとしていた。",
+        "conclusion": "久世の作品は白石結衣を二度目の虚偽で傷つける。",
+        "remaining": "真綾はなぜ未公開原稿と同じ言葉を知っていたのか。"
+      },
+      "brewphone_unlock": [
+        "edit_notes",
+        "narration_draft",
+        "frame13_full",
+        "interviews_day07",
+        "kamiya_notes"
+      ],
+      "images": [
+        "images/kuze-edit-notes.jpg",
+        "images/narration-draft.jpg"
+      ],
+      "emergency": null,
+      "ui": {
+        "show_next_day_button": false,
+        "show_brewphone_button": true,
+        "hide_brew_code_until_correct": true,
+        "persist_progress": true,
+        "hint_progression": 4,
+        "answer_normalization": [
+          "trim",
+          "unicode_nfkc",
+          "lowercase_ascii",
+          "remove_spaces",
+          "remove_punctuation"
+        ]
+      }
+    },
+    {
+      "day": 8,
+      "slug": "day08",
+      "title": "記録されない鍵",
+      "code": "MASTERKEY",
+      "mission": "映写室、鍵管理棚、映写技術サイトを調べ、電子ログの空白を説明する。",
+      "intro": "午後8時31分に映写室Bへ入れた人物を探すと、ICカードログは久世以外を示さない。だが扉には、最初からもう一つの入口が残されていた。",
+      "sections": [
+        {
+          "type": "narrative",
+          "heading": "古い鍵穴",
+          "body": "映写室Bは保存建築のため、ICカード化後も旧式シリンダー錠を撤去していなかった。旧式マスターキーM-02を使えば、電子ログを残さず解錠できる。退出後は自動ラッチが掛かるため、発見時の閉鎖状態も再現できる。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "カプくん",
+          "body": "新しい記録がないんじゃなくて、古い方法を使ったから新しい記録に入らなかったんだ。"
+        },
+        {
+          "type": "narrative",
+          "heading": "棚から消えた重量",
+          "body": "鍵管理棚の重量センサーは午後8時21分に減少し、8時39分に元へ戻っている。管理簿上は一度も持ち出されていない。誰かが記録を書かずにM-02を使った。"
+        },
+        {
+          "type": "narrative",
+          "heading": "映写機の裏",
+          "body": "映写機2号、鍵穴、鍵棚の三か所を調べ終えると、映写機裏の空洞を確認するボタンが現れる。中には清拭された巻き取りハンドルが隠されていた。"
+        }
+      ],
+      "exploration": {
+        "mode": "conditional_hotspots",
+        "required": 3,
+        "hotspots": [
+          "映写機2号",
+          "旧式鍵穴",
+          "鍵管理棚"
+        ],
+        "action_label": "映写機の裏を調べる"
+      },
+      "question": "電子ログを残さず映写室Bへ入る方法は？",
+      "answer": {
+        "type": "text",
+        "accepted": [
+          "旧式マスターキー",
+          "マスターキー",
+          "旧式鍵",
+          "M-02",
+          "m02",
+          "旧式マスターキーM-02"
+        ]
+      },
+      "hints": [
+        "電子設備を使わない入室方法を探してください。",
+        "扉の写真、鍵管理棚、映写技術保存会のページを確認してください。",
+        "ICカードリーダーとは別に残されているものは何でしょうか。",
+        "旧式マスターキーM-02なら電子ログを残さず入室できます。"
+      ],
+      "success": {
+        "answer": "旧式マスターキーM-02を使う。",
+        "materials": [
+          "扉の二重錠",
+          "技術仕様",
+          "鍵棚重量ログ",
+          "自動ラッチ記録"
+        ],
+        "facts": [
+          "旧式鍵はICシステムと独立。",
+          "20時21分から20時39分までM-02相当の重量が消失。",
+          "退出後は自動施錠。"
+        ],
+        "connection": "旧式鍵で入室し、退出後にラッチを閉じれば電子ログのない閉鎖室を作れる。",
+        "conclusion": "密室と入退室ログの矛盾は旧式マスターキーで解消する。",
+        "remaining": "誰がM-02を使い、ハンドルを凶器として扱えたのか。"
+      },
+      "brewphone_unlock": [
+        "weapon_handle",
+        "master_key",
+        "key_weight_log",
+        "latch_spec",
+        "deleted_company_page",
+        "miyahara_reinterview"
+      ],
+      "images": [
+        "images/key-cabinet.jpg",
+        "images/projector-hidden-cavity.jpg",
+        "images/master-key-m02.jpg",
+        "images/weapon-handle-evidence.jpg"
+      ],
+      "emergency": {
+        "id": "day08_emergency_01",
+        "trigger": "hidden_cavity_opened",
+        "vibration": [
+          250,
+          100,
+          250
+        ],
+        "message": "映写機2号の裏から未登録の機械部品が発見されました。",
+        "target": "../brewphone/?event=day08_emergency_01"
+      },
+      "ui": {
+        "show_next_day_button": false,
+        "show_brewphone_button": true,
+        "hide_brew_code_until_correct": true,
+        "persist_progress": true,
+        "hint_progression": 4,
+        "answer_normalization": [
+          "trim",
+          "unicode_nfkc",
+          "lowercase_ascii",
+          "remove_spaces",
+          "remove_punctuation"
+        ]
+      }
+    },
+    {
+      "day": 9,
+      "slug": "day09",
+      "title": "左手の編集者",
+      "code": "LEFTHAND",
+      "mission": "動機・機会・手段の証拠を証拠ボード上で一人の人物へ接続する。",
+      "intro": "犯行時刻、侵入方法、凶器がそろった。残るのは、それらすべてを同時に満たす人物の特定だった。",
+      "sections": [
+        {
+          "type": "narrative",
+          "heading": "左からの一撃",
+          "body": "打撃方向鑑定では、犯人は久世の右後方から左手でハンドルを振った可能性が高い。真綾と神谷は左利きだが、神谷は午後8時20分から8時42分まで新聞社の配信へ連続出演している。"
+        },
+        {
+          "type": "narrative",
+          "heading": "消えた十四分",
+          "body": "真綾のアーカイブ端末は午後8時23分40秒にロックされ、8時38分02秒に再開している。映写室までの往復と、午後8時31分の犯行が成立する空白だった。"
+        },
+        {
+          "type": "narrative",
+          "heading": "袖口と鍵",
+          "body": "イベント写真に写った真綾の左袖には金色の微粒子がある。鑑定では、M-02と鍵穴に由来する真鍮粒子と同系統だった。さらに20時46分の音声プロジェクトは、真綾のアカウントと固有の命名規則で作られている。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "リッシュ",
+          "body": "左利きだけじゃない。時間も、鍵も、音声も、全部同じ人につながる。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ブリュー",
+          "body": "そして真綾は、見せられていないナレーションと同じ言葉を知っていた。"
+        }
+      ],
+      "exploration": {
+        "mode": "evidence_board",
+        "required_links": [
+          [
+            "星野真綾",
+            "20:23-20:38離席"
+          ],
+          [
+            "星野真綾",
+            "M-02真鍮粉"
+          ],
+          [
+            "星野真綾",
+            "音声編集履歴"
+          ],
+          [
+            "星野真綾",
+            "左利き"
+          ],
+          [
+            "星野真綾",
+            "未公開語句"
+          ]
+        ]
+      },
+      "question": "久世を殺害した人物は誰か？",
+      "answer": {
+        "type": "text",
+        "accepted": [
+          "星野真綾",
+          "星野 真綾",
+          "真綾",
+          "ほしのまあや"
+        ]
+      },
+      "hints": [
+        "一つの特徴ではなく、手段・機会・音声偽装をすべて満たす人物を探してください。",
+        "BrewPhoneの鑑定、端末ログ、音声編集履歴、人物写真を比較してください。",
+        "左利きで、20時31分に不在となり、M-02の粉末と音声プロジェクトにつながる人物です。",
+        "すべての条件を満たすのは星野真綾です。"
+      ],
+      "success": {
+        "answer": "星野真綾。",
+        "materials": [
+          "打撃方向鑑定",
+          "端末離席ログ",
+          "真鍮粉鑑定",
+          "音声編集履歴",
+          "未公開語句"
+        ],
+        "facts": [
+          "左利きの打撃に整合。",
+          "犯行時間に14分以上離席。",
+          "袖口粉末と鍵・鍵穴が一致。",
+          "予約音声を真綾のアカウントで作成。",
+          "未公開原稿の表現を事前に知る。"
+        ],
+        "connection": "動機だけでなく、機会、侵入手段、凶器、偽装作業、秘密情報が真綾へ収束する。",
+        "conclusion": "久世新を殺害したのは星野真綾。",
+        "remaining": "真綾が守ろうとしたものは、父の名誉だけだったのか。"
+      },
+      "brewphone_unlock": [
+        "impact_report",
+        "brass_report",
+        "terminal_gap",
+        "audio_project_history",
+        "final_evidence_board",
+        "takanashi_interview"
+      ],
+      "images": [
+        "images/stair-landing-2034.jpg",
+        "images/brass-powder-micro.jpg",
+        "images/impact-angle-diagram.png",
+        "images/evidence-board-final.png"
+      ],
+      "emergency": {
+        "id": "day09_emergency_01",
+        "trigger": "evidence_links_complete",
+        "vibration": [
+          100,
+          60,
+          100,
+          60,
+          300
+        ],
+        "message": "動機・機会・手段が一人の人物へ収束しました。",
+        "target": "../brewphone/?event=day09_emergency_01"
+      },
+      "ui": {
+        "show_next_day_button": false,
+        "show_brewphone_button": true,
+        "hide_brew_code_until_correct": true,
+        "persist_progress": true,
+        "hint_progression": 4,
+        "answer_normalization": [
+          "trim",
+          "unicode_nfkc",
+          "lowercase_ascii",
+          "remove_spaces",
+          "remove_punctuation"
+        ]
+      }
+    },
+    {
+      "day": 10,
+      "slug": "day10",
+      "title": "最後の編集",
+      "code": "LASTFRAME",
+      "mission": "犯人、時刻、侵入方法、偽装、動機、22年前の火災を一つの説明へ再構成する。",
+      "intro": "決定的な証拠はすでにそろっている。Day10で新しい証拠は追加されない。必要なのは、誰かが切り取った場面を正しい順番へ戻すことだけだった。",
+      "sections": [
+        {
+          "type": "narrative",
+          "heading": "午後8時31分",
+          "body": "真綾は午後8時23分にアーカイブ室を離れ、M-02で映写室Bへ入った。久世へ上映中止を求めたが、久世は結衣を作品に必要な犠牲として扱い、企業責任を外した編集を変えようとしなかった。午後8時31分、真綾は左手で巻き取りハンドルを振り下ろした。"
+        },
+        {
+          "type": "narrative",
+          "heading": "二つの生存証明",
+          "body": "真綾は現場を脚立事故に見せ、凶器を映写機裏へ隠した。午後8時46分には19時10分の音源が予約再生され、午後8時50分には久世が事前設定したSNS投稿が公開された。二つの時刻が、実際の死亡を後ろへずらした。"
+        },
+        {
+          "type": "narrative",
+          "heading": "22年前に消された場面",
+          "body": "御影座火災の火元は舞台袖の装飾照明だった。被害を拡大したのは、東浜開発が非常口前へ設置した展示壁。結衣は原因人物ではなく避難を手伝った。久世はその映像を隠し、22年後も企業名を外して結衣だけを印象に残す作品を作ろうとした。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "ブリュー",
+          "body": "真綾は記録を守ろうとした。だが、久世と同じように、自分が残したい結末を選び、他人の人生を切り取った。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "リッシュ",
+          "body": "結衣さんを守りたかったことと、久世さんを殺したことは、別々に考えないといけない。"
+        },
+        {
+          "type": "dialogue",
+          "speaker": "カプくん",
+          "body": "見せなかった場面にも、そこにいた人の続きがあるんだね。"
+        },
+        {
+          "type": "narrative",
+          "heading": "記録のその後",
+          "body": "真綾は証拠に基づき逮捕された。御影座火災は再調査され、星野達郎への公式謝罪が決定する。白石結衣は実名公表を拒み、「真実が公開されることと、私の人生が公開されることは同じではない」と伝えた。"
+        }
+      ],
+      "exploration": {
+        "mode": "final_reconstruction",
+        "fields": [
+          "犯人",
+          "犯行時刻",
+          "侵入方法",
+          "20時46分の声",
+          "真の動機",
+          "2004年火災の主要責任",
+          "決定的証拠3点"
+        ]
+      },
+      "question": "星野真綾は、何を守るために久世新を殺したのか？",
+      "answer": {
+        "type": "text",
+        "accepted": [
+          "白石結衣を二度目の虚偽から守るため",
+          "結衣を二度目の虚偽から守るため",
+          "白石結衣を守るため",
+          "結衣を守るため",
+          "結衣の人生を守るため"
+        ]
+      },
+      "hints": [
+        "父の名誉だけでは説明できない、事件直前に真綾が受け取ったものを考えてください。",
+        "白石結衣の日記、久世の編集指示、未公開ナレーション、真綾の再聴取を比較してください。",
+        "久世の作品が公開された場合、再び火災原因だと思われる人物は誰でしょうか。",
+        "真綾は、白石結衣が二度目の虚偽によって再び加害者にされることを止めようとしました。"
+      ],
+      "success": {
+        "answer": "白石結衣を二度目の虚偽から守るため。",
+        "materials": [
+          "結衣の日記",
+          "編集指示",
+          "未公開ナレーション",
+          "交渉メール",
+          "真綾の発言"
+        ],
+        "facts": [
+          "結衣は火災原因ではない。",
+          "久世は結衣を原因に見せる編集を計画。",
+          "真綾は結衣と連絡を取り、上映中止を求めていた。"
+        ],
+        "connection": "父の名誉回復だけでなく、結衣の人生が再び虚偽によって破壊されることへの恐怖が直接動機となった。",
+        "conclusion": "真綾の動機には理解可能な背景があるが、殺人は正当化されない。",
+        "remaining": "真実を残すとき、誰の人生をどこまで公開してよいのか。"
+      },
+      "brewphone_unlock": [
+        "final_report",
+        "corrected_article",
+        "tatsuro_letter",
+        "epilogue_files",
+        "case_complete"
+      ],
+      "images": [
+        "images/maya-final-interview.jpg"
+      ],
+      "emergency": null,
+      "ui": {
+        "show_next_day_button": false,
+        "show_brewphone_button": true,
+        "hide_brew_code_until_correct": true,
+        "persist_progress": true,
+        "hint_progression": 4,
+        "answer_normalization": [
+          "trim",
+          "unicode_nfkc",
+          "lowercase_ascii",
+          "remove_spaces",
+          "remove_punctuation"
+        ]
+      }
+    }
+  ]
+}

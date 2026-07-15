@@ -1,0 +1,1 @@
+(function(){window.BP={...(window.BP||{}),readState(){return {unlocked:BMStorage.get('unlocked_days',[]),read:BMStorage.get('read_items',[]),selectedEvidence:BMStorage.get('selected_evidence',[]),vibration:BMStorage.get('vibration_enabled',true)}}}})();

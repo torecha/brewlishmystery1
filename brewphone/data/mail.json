@@ -1,0 +1,32 @@
+{
+  "version": "1.0.0",
+  "items": [
+    {
+      "id": "mail-deleted",
+      "day": 4,
+      "app": "mail",
+      "title": "削除済み：制作支援条件",
+      "subtitle": "久世新 ↔ 東浜開発",
+      "body": "久世：公開版から企業名を外します。制作支援金は30,000,000円でお願いします。",
+      "image": "images/evidence/deleted-email-thread.png",
+      "link": null,
+      "evidenceId": "EV-007",
+      "tags": [],
+      "classification": "A",
+      "eventId": "day04_emergency_01"
+    },
+    {
+      "id": "tatsuro-letter",
+      "day": 10,
+      "app": "mail",
+      "title": "星野達郎から真綾へ",
+      "subtitle": "",
+      "body": "名誉が戻ることより、お前が誰かの明日を奪わないことを願っていた。",
+      "image": null,
+      "link": null,
+      "evidenceId": null,
+      "tags": [],
+      "classification": "C"
+    }
+  ]
+}
