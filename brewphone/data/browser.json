@@ -1,13 +1,134 @@
 {
-  "version": "1.0.0",
+  "version": "2.0.0",
   "items": [
+    {
+      "id": "archive-item-13",
+      "day": 3,
+      "app": "browser",
+      "title": "御影座アーカイブ「収蔵品13」",
+      "subtitle": "欠けた座席札と寄贈メモ",
+      "evidenceId": "ARCH-13",
+      "tags": [
+        "13番席",
+        "旧姓"
+      ],
+      "classification": "A",
+      "format": "browser",
+      "body": "欠落していた13番座席札の収蔵ページ。寄贈者メモには「O.Y.が避難時に握っていた半券と同じ箱から」とあるが、個人名は伏せられている。",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "ARCH-ITEM-13"
+        },
+        {
+          "label": "作成・取得",
+          "value": "整理 2016-08-21"
+        },
+        {
+          "label": "出所",
+          "value": "御影座記憶アーカイブ"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "寄贈記録",
+          "body": "箱ラベル「小川家／映画半券・学校新聞」。寄贈者希望により氏名非公開。半券の日付は2004年8月21日、座席は13。"
+        },
+        {
+          "heading": "写真コメント",
+          "body": "匿名投稿「この子は火をつけたのではなく、川側へ連れていってくれた」。投稿者本人確認は未実施で、補助情報として扱う。"
+        }
+      ],
+      "link": "../sites/mikage-archive/item-13.html"
+    },
+    {
+      "id": "archive-memory-post",
+      "day": 3,
+      "app": "browser",
+      "title": "市民投稿「川側の土手」",
+      "subtitle": "本人確認なし / 参考情報",
+      "evidenceId": null,
+      "tags": [
+        "市民記憶"
+      ],
+      "classification": "E",
+      "format": "browser",
+      "body": "御影座火災を振り返る市民投稿。避難誘導した少女の記憶のほか、上映作品、売店、座席の話など互いに矛盾する記憶も多数ある。",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "MEMORY-POST-44"
+        },
+        {
+          "label": "作成・取得",
+          "value": "投稿 2014-08-20"
+        },
+        {
+          "label": "出所",
+          "value": "御影座記憶アーカイブ"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "信頼性",
+          "body": "投稿は10年後の記憶で、日時や人数に誤りがある。公的記録を補助する手掛かりにはなるが、単独で事実認定しない。"
+        }
+      ],
+      "link": "../sites/mikage-archive/memory-posts.html"
+    },
+    {
+      "id": "browser-bookmarks-d3",
+      "day": 3,
+      "app": "browser",
+      "title": "久世PC ブックマーク「R2_RESEARCH」",
+      "subtitle": "32件 / 事件無関係の資料を含む",
+      "evidenceId": null,
+      "tags": [
+        "ブラウザ"
+      ],
+      "classification": "E",
+      "format": "browser",
+      "body": "久世の調査フォルダ。御影座資料のほか、古い映写機、海辺の天気、音楽著作権、飲食店など制作周辺情報も大量に保存されている。",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "BOOKMARK-R2"
+        },
+        {
+          "label": "作成・取得",
+          "value": "最終更新 2026-10-18 18:38"
+        },
+        {
+          "label": "出所",
+          "value": "久世新ノートPC"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "意味のある並び",
+          "body": "FRAME 13、ARTICLE-13、東浜開発旧CSR、消防開示請求ページが同じサブフォルダ。保存順だけでは閲覧順を確定できない。"
+        }
+      ]
+    },
     {
       "id": "browser-d3",
       "day": 3,
       "app": "browser",
       "title": "検索履歴",
       "subtitle": "",
-      "body": "御影座 火災 13 / 小川 結衣 / FRAME 13",
+      "body": "久世のノートPCに残る検索履歴。記事本文よりも、旧姓の断片、匿名ブログ、座席番号を繰り返し検索している。",
       "image": null,
       "link": null,
       "evidenceId": null,
@@ -15,7 +136,39 @@
         "ARTICLE-13",
         "FRAME13"
       ],
-      "classification": "B"
+      "classification": "B",
+      "format": "browser",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "BROWSER-HIST-KUZE-01"
+        },
+        {
+          "label": "作成・取得",
+          "value": "最終検索 2026-10-18 18:37"
+        },
+        {
+          "label": "出所",
+          "value": "久世新ノートPC"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "検索履歴",
+          "body": "17:52「御影座 火災 少女」、17:58「海凪新聞 2004 8月 13」、18:05「小川 結衣 御影座」、18:14「FRAME 13 名前」、18:37「ARTICLE-13 東浜 協賛」。"
+        },
+        {
+          "heading": "削除状況",
+          "body": "履歴削除は行われていない。検索結果から開いた一部ページはブックマークへ保存され、作品用の調査フォルダと同期されている。"
+        }
+      ],
+      "annotations": [
+        "「小川」と「結衣」の関係は検索語だけでは確定しない。人物情報とアーカイブ側の記録が必要。"
+      ]
     },
     {
       "id": "site-tohama",
@@ -23,12 +176,41 @@
       "app": "browser",
       "title": "東浜開発 会社沿革",
       "subtitle": "",
-      "body": "2004年地域文化支援事業の記録。",
+      "body": "東浜開発の現行沿革ページ。2004年の欄には「地域文化支援事業を開始」とだけあり、御影座イベント名と展示壁の記載が削除されている。",
       "image": null,
       "link": "../sites/tohama-development/history-2004.html",
       "evidenceId": null,
       "tags": [],
-      "classification": "B"
+      "classification": "B",
+      "format": "browser",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "WEB-HIST-TD-01"
+        },
+        {
+          "label": "作成・取得",
+          "value": "閲覧 2026-10-18 18:42"
+        },
+        {
+          "label": "出所",
+          "value": "久世新ブラウザ履歴"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "現行ページ",
+          "body": "2004年の説明は一行だけ。ページ更新履歴では2019年3月に写真2点とPDFリンク1件が削除されている。"
+        },
+        {
+          "heading": "次の調べ方",
+          "body": "削除前ページのURL断片「/csr/event/2004-mikage」を保存Web検索へ入力すると、2004年8月15日のスナップショットが見つかる。"
+        }
+      ]
     },
     {
       "id": "frame13",
@@ -36,12 +218,76 @@
       "app": "browser",
       "title": "FRAME 13",
       "subtitle": "",
-      "body": "白石結衣とみられる匿名ブログ。実名公開への恐怖を綴る。",
+      "body": "匿名ブログ「FRAME 13」。2004年の半券、川側の土手、名前を変えた理由を断片的に書く。投稿者は実名を公表していない。",
       "image": null,
-      "link": "../sites/frame13-blog/post-name.html",
+      "link": "../sites/frame13-blog/index.html",
       "evidenceId": null,
       "tags": [],
-      "classification": "B"
+      "classification": "B",
+      "format": "browser",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "WEB-FRAME13"
+        },
+        {
+          "label": "作成・取得",
+          "value": "保存期間 2007〜2026"
+        },
+        {
+          "label": "出所",
+          "value": "久世PCブックマーク"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "投稿の特徴",
+          "body": "一人称の記憶には事件と無関係な映画感想、翻訳、海辺の散歩も多い。火災関連だけを抜き出すと投稿者の人生全体を誤読するため、日付と継続的な生活記録を確認する必要がある。"
+        }
+      ]
+    },
+    {
+      "id": "kuze-journal-d7",
+      "day": 7,
+      "app": "browser",
+      "title": "KUZÉ DOCUMENTS 制作日誌",
+      "subtitle": "公開版と削除履歴",
+      "evidenceId": null,
+      "tags": [
+        "制作日誌"
+      ],
+      "classification": "C",
+      "format": "browser",
+      "body": "久世の公式制作日誌。表向きは「記録をありのままに」と書くが、削除済み下書きには企業交渉と観客反応を計算する記述がある。",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "WEB-KUZE-JOURNAL"
+        },
+        {
+          "label": "作成・取得",
+          "value": "2026-10-01〜18"
+        },
+        {
+          "label": "出所",
+          "value": "公開サイト・端末キャッシュ"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "削除下書き",
+          "body": "「真実そのものより、観客が何を真実と思うかが作品を完成させる」「少女の顔を忘れられない長さにする」。公開版では削除。"
+        }
+      ],
+      "link": "../sites/kuze-documents/journal.html"
     },
     {
       "id": "latch-spec",
@@ -49,12 +295,41 @@
       "app": "browser",
       "title": "保存映写館の扉仕様",
       "subtitle": "",
-      "body": "旧式鍵で解錠後、退出して扉を閉めるとラッチが掛かる。",
+      "body": "映写技術保存会の技術記事「保存映写館の扉と二重錠」。潮騒館と同型の自動ラッチ・旧式マスターキー運用を説明する。",
       "image": null,
       "link": "../sites/cinema-tech-forum/door-lock-m02.html",
       "evidenceId": null,
       "tags": [],
-      "classification": "A"
+      "classification": "A",
+      "format": "browser",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "WEB-TECH-218"
+        },
+        {
+          "label": "作成・取得",
+          "value": "公開 2022-06-14"
+        },
+        {
+          "label": "出所",
+          "value": "映写技術保存会"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "技術要点",
+          "body": "保存建築では旧錠を撤去せず、IC電気錠を追加する例がある。旧鍵での操作は電気側へ記録されず、退出後は機械ラッチが自動復帰する。"
+        },
+        {
+          "heading": "フォーラム追記",
+          "body": "会員スレッド218に「M-02型でログが残らないため、鍵棚の重量監視を併用」との投稿。投稿者は潮騒館関係者ではなく、一般的対策の共有。"
+        }
+      ]
     },
     {
       "id": "wayback",
@@ -62,12 +337,41 @@
       "app": "browser",
       "title": "保存された東浜開発ページ",
       "subtitle": "",
-      "body": "「避難導線を変更した特設展示」の記載。",
+      "body": "2004年8月15日時点の東浜開発イベント協賛ページ。現行サイトから削除された展示壁の設置写真と「避難導線を変更した特設展示」の広報文が残る。",
       "image": null,
       "link": "../sites/wayback-mock/snapshot-20040815-tohama.html",
       "evidenceId": null,
       "tags": [],
-      "classification": "A"
+      "classification": "A",
+      "format": "browser",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "WEB-SNAPSHOT-20040815"
+        },
+        {
+          "label": "作成・取得",
+          "value": "保存 2004-08-15 03:12"
+        },
+        {
+          "label": "出所",
+          "value": "公開Webスナップショット"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "保存本文",
+          "body": "「御影座の北側ロビーに、地域の未来を描く高さ2.2mの特設展示を設置。来場者の回遊性向上のため既存導線を変更しました。」安全審査に関する記述はない。"
+        },
+        {
+          "heading": "削除履歴",
+          "body": "2019年3月のサイト刷新でページ消失。削除理由は「旧事業情報整理」。同時期に消防報告の再開示請求があったが、直接の因果は未確認。"
+        }
+      ]
     }
   ]
 }

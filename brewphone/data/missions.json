@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "2.0.0",
   "items": [
     {
       "id": "mission-1",
@@ -7,12 +7,37 @@
       "app": "mission",
       "title": "Day1 Mission",
       "subtitle": "",
-      "body": "現場の不自然な点を3つ記録する。",
+      "body": "現場の不自然な点を3つ記録する。\n\nこの資料は単独で結論を示すものではありません。作成時刻、記録した人物、別系統の資料との一致を確認し、事実と推測を分けて扱ってください。",
       "image": null,
       "link": null,
       "evidenceId": null,
       "tags": [],
-      "classification": "E"
+      "classification": "E",
+      "format": "mission",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "MISSION-1"
+        },
+        {
+          "label": "作成・取得",
+          "value": "Day 1 解放資料"
+        },
+        {
+          "label": "出所",
+          "value": "調査指示"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "確認のポイント",
+          "body": "見出しや一文要約だけで判断せず、同じDayの時刻記録・写真・供述と照合してください。事件と無関係な日常情報や、別の秘密を隠すための虚偽も含まれます。"
+        }
+      ]
     },
     {
       "id": "mission-complete",
@@ -20,12 +45,37 @@
       "app": "mission",
       "title": "CASE COMPLETE",
       "subtitle": "",
-      "body": "資料の編集履歴と欠落を含めて、事件を再構成した。",
+      "body": "論理的真相、感情的背景、公開してよい範囲を分けて記録する最終ミッション。犯人の事情を理解することと、行為を正当化することは同じではない。",
       "image": null,
       "link": null,
       "evidenceId": null,
       "tags": [],
-      "classification": "E"
+      "classification": "E",
+      "format": "mission",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "MISSION-10-COMPLETE"
+        },
+        {
+          "label": "作成・取得",
+          "value": "Day10"
+        },
+        {
+          "label": "出所",
+          "value": "BrewPhone捜査端末"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "最終確認",
+          "body": "犯人／20時31分／M-02／巻き取りハンドル／予約音声／予約投稿／結衣を二度目の虚偽から守ろうとした動機、の各項目を既出資料で裏付ける。"
+        }
+      ]
     }
   ]
 }

@@ -12,6 +12,7 @@
   let codes = [];
   let items = [];
   let emergencyEvents = [];
+  let investigationPlans = [];
   let currentRoute = 'home';
   let modalKind = '';
   let lastFocused = null;
@@ -38,18 +39,22 @@
   });
 
   try {
-    const [appData, codeData, contentData, eventData] = await Promise.all([
+    const [appData, codeData, contentData, eventData, planData] = await Promise.all([
       fetchJSON('data/apps.json'),
       fetchJSON('data/access-codes.json'),
       fetchJSON('data/content.json'),
-      fetchJSON('data/emergency-events.json')
+      fetchJSON('data/emergency-events.json'),
+      fetchJSON('data/investigation-plans.json')
     ]);
     apps = appData.apps.sort((a, b) => a.order - b.order);
     codes = codeData.codes;
     items = contentData.items;
     emergencyEvents = eventData.events || [];
-    handleEmergencyEvent();
+    investigationPlans = planData.plans || [];
+    const requestedDay = Number(new URLSearchParams(location.search).get('day'));
+    if (requestedDay >= 1 && requestedDay <= 10) localStorage.setItem('brewphone_active_day', String(requestedDay));
     render('home');
+    handleEmergencyEvent();
   } catch (error) {
     main.innerHTML = `<section class="no-data" role="alert"><strong>端末を起動できませんでした</strong><br>${escapeHTML(error.message)}<br><br><button class="button" type="button" onclick="location.reload()">再読み込み</button></section>`;
   }
@@ -98,6 +103,7 @@
       search: renderSearch,
       evidence: renderEvidence,
       'investigation-notes': renderNotes,
+      mission: renderMission,
       settings: renderSettings
     };
     if (staticRoutes[nextRoute]) staticRoutes[nextRoute]();
@@ -185,7 +191,9 @@
       }
       localStorage.removeItem('brewphone_pending_code');
       if (result.already) {
+        localStorage.setItem('brewphone_active_day', String(result.entry.day));
         toast(result.message);
+        renderMission(result.entry.day);
         return;
       }
       dock.classList.remove('is-locked');
@@ -194,6 +202,7 @@
   }
 
   function showUnlockResult(entry) {
+    localStorage.setItem('brewphone_active_day', String(entry.day));
     modalKind = 'unlock';
     openModal(`
       <section class="unlock-result">
@@ -201,9 +210,13 @@
         <p class="eyebrow">ACCESS GRANTED / DAY ${entry.day}</p>
         <h2 id="modal-title">${escapeHTML(entry.label)}</h2>
         <p>新しい捜査資料がBrewPhoneへ追加されました。未読バッジの付いたアプリから確認できます。</p>
-        <button class="button primary" id="unlock-continue" type="button">追加された資料を見る</button>
+        <button class="button primary" id="unlock-continue" type="button">Day ${entry.day}の調査ミッションを開く</button>
       </section>`);
-    document.getElementById('unlock-continue').addEventListener('click', closeModal);
+    document.getElementById('unlock-continue').addEventListener('click', () => {
+      modalKind = '';
+      closeModal();
+      renderMission(entry.day);
+    });
   }
 
   function phoneHeader(title, back = true) {
@@ -276,19 +289,103 @@
     }
 
     const tags = [item.evidenceId, ...(item.tags || [])].filter(Boolean);
-    const media = item.image ? `<img src="${escapeHTML(item.image)}" alt="${escapeHTML(item.title)}">` : '';
+    const media = item.image ? `<figure class="detail-media"><img src="${escapeHTML(item.image)}" alt="${escapeHTML(item.title)}"><button class="media-zoom" type="button" data-detail-zoom>画像を拡大</button></figure>` : '';
+    const meta = (item.meta || []).length ? `<dl class="record-meta">${item.meta.map((entry) => `<div><dt>${escapeHTML(entry.label)}</dt><dd>${escapeHTML(entry.value)}</dd></div>`).join('')}</dl>` : '';
+    const transcript = (item.transcript || []).length ? `<section class="record-transcript"><h3>${escapeHTML(item.transcriptTitle || '記録全文')}</h3>${item.transcript.map((line) => `<div class="transcript-line"><strong>${escapeHTML(line.speaker || '記録')}</strong><p>${escapeHTML(line.text).replace(/\n/g, '<br>')}</p></div>`).join('')}</section>` : '';
+    const sections = (item.sections || []).length ? `<div class="record-sections">${item.sections.map((section) => `<section><h3>${escapeHTML(section.heading)}</h3><p>${escapeHTML(section.body).replace(/\n/g, '<br>')}</p></section>`).join('')}</div>` : '';
+    const annotations = (item.annotations || []).length ? `<aside class="record-annotations"><h3>捜査上の注記</h3><ul>${item.annotations.map((note) => `<li>${escapeHTML(note)}</li>`).join('')}</ul></aside>` : '';
+    const audio = item.audio ? renderAudioPlayer(item) : '';
+    const video = item.video ? `<section class="evidence-video"><p class="eyebrow">EVIDENCE VIDEO</p><video controls playsinline preload="metadata" ${item.video.poster ? `poster="${escapeHTML(item.video.poster)}"` : ''}><source src="${escapeHTML(item.video.src)}" type="video/mp4">このブラウザでは映像を再生できません。</video><p>${escapeHTML(item.video.caption || '')}</p></section>` : '';
+    const discoveries = (item.discoveries || []).length ? `<section class="visual-discoveries"><p class="eyebrow">VISUAL SEARCH</p><h3>画像・資料内の文字を調べる</h3><p>気になった固有名詞や表示を入力してください。正しい検索語なら関連サイトが見つかります。</p>${item.discoveries.map((clue, index) => `<form class="discovery-search" data-discovery data-answer="${escapeHTML(clue.answer)}" data-link="${escapeHTML(clue.link || '')}"><label>${escapeHTML(clue.prompt)}</label><div><input autocomplete="off" placeholder="検索語"><button class="button" type="submit">検索</button></div><p class="discovery-result" aria-live="polite"></p></form>`).join('')}</section>` : '';
     modalKind = 'item';
     openModal(`
-      <article class="item-detail">
+      <article class="item-detail format-${escapeHTML(item.format || item.app)}">
         <p class="eyebrow">DAY ${item.day} / ${escapeHTML(item.app)} / ${escapeHTML(item.id)}</p>
         <h2 id="modal-title">${escapeHTML(item.title)}</h2>
         ${item.subtitle ? `<p class="detail-subtitle">${escapeHTML(item.subtitle)}</p>` : ''}
+        ${meta}
         ${media}
-        <div class="detail-body">${escapeHTML(item.body).replace(/\n/g, '<br>')}</div>
+        ${audio}
+        ${video}
+        <div class="detail-body">${escapeHTML(item.body || '').replace(/\n/g, '<br>')}</div>
+        ${sections}
+        ${transcript}
+        ${annotations}
+        ${discoveries}
         <div class="detail-tags">${tags.map((tag, index) => `<span class="tag ${index === 0 && item.evidenceId ? 'evidence-id' : ''}">${escapeHTML(tag)}</span>`).join('')}</div>
         ${item.link ? `<a class="button primary site-link" href="${escapeHTML(item.link)}">関連する公開Web資料を開く ↗</a>` : ''}
       </article>`);
+    bindRichItemControls(item);
+    maybeTriggerItemEmergency(item);
     if (window.BMImageFallback) window.BMImageFallback.bind(modalBody);
+  }
+
+  function renderAudioPlayer(item) {
+    const audio = item.audio;
+    if (audio.src) {
+      return `<section class="recorder-player"><div class="waveform" aria-hidden="true">${Array.from({ length: 38 }, (_, index) => `<i style="--h:${22 + ((index * 17) % 66)}%"></i>`).join('')}</div><audio controls preload="metadata" src="${escapeHTML(audio.src)}"></audio><div class="recorder-meta"><span>${escapeHTML(audio.duration || '')}</span><span>${escapeHTML(audio.quality || '館内記録音声')}</span></div></section>`;
+    }
+    return `<section class="recorder-player" data-speech-player><div class="waveform" aria-hidden="true">${Array.from({ length: 38 }, (_, index) => `<i style="--h:${22 + ((index * 17) % 66)}%"></i>`).join('')}</div><button class="recorder-play" type="button" data-speech-play><span>▶</span><strong>音声を再生</strong></button><div class="recorder-meta"><span>${escapeHTML(audio.duration || '')}</span><span>${escapeHTML(audio.quality || '館内記録音声')}</span></div><p class="speech-note">端末の日本語音声機能で記録を再現します。再生には音量を上げてください。</p></section>`;
+  }
+
+  function bindRichItemControls(item) {
+    const zoom = modalBody.querySelector('[data-detail-zoom]');
+    if (zoom) zoom.addEventListener('click', () => modalBody.querySelector('.detail-media')?.classList.toggle('is-zoomed'));
+
+    const play = modalBody.querySelector('[data-speech-play]');
+    if (play && item.audio) {
+      let speaking = false;
+      const finish = () => {
+        speaking = false;
+        play.closest('[data-speech-player]')?.classList.remove('is-playing');
+        if (document.contains(play)) play.innerHTML = '<span>▶</span><strong>音声を再生</strong>';
+      };
+      play.addEventListener('click', () => {
+        if (!('speechSynthesis' in window)) {
+          toast('このブラウザでは音声再現を利用できません');
+          return;
+        }
+        if (speaking) {
+          window.speechSynthesis.cancel();
+          finish();
+          return;
+        }
+        window.speechSynthesis.cancel();
+        speaking = true;
+        play.closest('[data-speech-player]').classList.add('is-playing');
+        play.innerHTML = '<span>■</span><strong>再生を停止</strong>';
+        const text = item.audio.speech || (item.transcript || []).map((line) => line.text).join('。') || item.body;
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = 'ja-JP';
+        utterance.rate = item.audio.rate || 0.88;
+        utterance.pitch = item.audio.pitch || 0.82;
+        utterance.volume = 0.9;
+        utterance.onend = finish;
+        utterance.onerror = finish;
+        window.speechSynthesis.speak(utterance);
+      });
+    }
+
+    modalBody.querySelectorAll('[data-discovery]').forEach((form) => {
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const input = form.querySelector('input');
+        const result = form.querySelector('.discovery-result');
+        const expected = normalizeSearch(form.dataset.answer);
+        const actual = normalizeSearch(input.value);
+        if (actual && (actual.includes(expected) || expected.includes(actual))) {
+          result.className = 'discovery-result is-found';
+          result.innerHTML = form.dataset.link ? `一致する記録を発見しました。<br><a class="button primary" href="${escapeHTML(form.dataset.link)}">関連サイトを開く ↗</a>` : '一致する記録を発見しました。';
+        } else {
+          result.className = 'discovery-result is-miss';
+          result.textContent = '一致する記録はありません。画像に実際に写っている表記を短く入力してください。';
+        }
+      });
+    });
+  }
+
+  function normalizeSearch(value) {
+    return String(value || '').normalize('NFKC').toLowerCase().replace(/[\s　._\-・:：/]/g, '');
   }
 
   function renderSearch() {
@@ -428,6 +525,68 @@
     renderNotes();
   }
 
+  function renderMission(dayOverride) {
+    currentRoute = 'mission';
+    document.querySelectorAll('.dock button').forEach((button) => button.classList.toggle('active', button.dataset.route === 'mission'));
+    const unlockedDays = state().unlocked.map((key) => Number(key.replace('day', ''))).filter(Boolean);
+    const storedDay = Number(localStorage.getItem('brewphone_active_day'));
+    const requestedDay = Number(dayOverride);
+    const activeDay = unlockedDays.includes(requestedDay)
+      ? requestedDay
+      : (unlockedDays.includes(storedDay) ? storedDay : Math.max(...unlockedDays, 1));
+    localStorage.setItem('brewphone_active_day', String(activeDay));
+    const plan = investigationPlans.find((candidate) => candidate.day === activeDay);
+    if (!plan) {
+      main.innerHTML = `${phoneHeader('Mission')}<div class="no-data">Day ${activeDay}の調査計画を読み込めませんでした。</div>`;
+      bindBack();
+      return;
+    }
+
+    const read = new Set(state().read);
+    const requiredItems = plan.required.map((id) => items.find((item) => item.id === id)).filter(Boolean);
+    const recommendedItems = plan.recommended.map((id) => items.find((item) => item.id === id)).filter(Boolean);
+    const completedRequired = requiredItems.filter((item) => read.has(item.id));
+    const remaining = requiredItems.filter((item) => !read.has(item.id));
+    const percent = Math.round(completedRequired.length / Math.max(requiredItems.length, 1) * 100);
+    const phoneComplete = BMStorage.get(`${dayKey(activeDay)}_phone_complete`, false);
+
+    const missionItem = (item, required) => `<button class="mission-file ${read.has(item.id) ? 'is-read' : ''}" data-item-id="${escapeHTML(item.id)}" type="button"><span class="mission-check">${read.has(item.id) ? '✓' : '○'}</span><span><small>${required ? '必読' : '参考'} / ${escapeHTML(item.app)}</small><strong>${escapeHTML(item.title)}</strong><p>${escapeHTML(item.subtitle || item.body.slice(0, 72))}</p></span><span class="mission-open">開く</span></button>`;
+
+    main.innerHTML = `${phoneHeader(`Day ${activeDay} Mission`)}
+      <nav class="mission-day-tabs" aria-label="解放済みDayの調査ミッション">${unlockedDays.sort((a, b) => a - b).map((day) => `<button type="button" data-mission-day="${day}" class="${day === activeDay ? 'active' : ''}">D${day}</button>`).join('')}</nav>
+      <section class="mission-dashboard">
+        <p class="eyebrow">INVESTIGATION ${String(activeDay).padStart(2, '0')} / 10</p>
+        <h1>${escapeHTML(plan.title)}</h1>
+        <p>${escapeHTML(plan.briefing)}</p>
+        <div class="mission-progress-head"><strong>${completedRequired.length}<small> / ${requiredItems.length}</small></strong><span>必読資料を確認</span></div>
+        <div class="mission-progress"><i style="width:${percent}%"></i></div>
+      </section>
+      <section class="mission-files">
+        <div class="mission-section-title"><h2>必読資料</h2><span>${remaining.length ? `残り${remaining.length}件` : '確認完了'}</span></div>
+        ${requiredItems.map((item) => missionItem(item, true)).join('')}
+      </section>
+      ${recommendedItems.length ? `<section class="mission-files optional"><div class="mission-section-title"><h2>参考資料・寄り道</h2><span>推理の背景</span></div>${recommendedItems.map((item) => missionItem(item, false)).join('')}</section>` : ''}
+      <section class="mission-finish ${remaining.length ? 'is-locked' : ''}">
+        <p class="eyebrow">FINAL STEP</p>
+        <h2>${remaining.length ? '今日の問いはまだロックされています' : (phoneComplete ? 'BrewPhone調査は完了済みです' : 'BrewPhone調査を完了できます')}</h2>
+        <p>${remaining.length ? `必読資料をあと${remaining.length}件開いて確認してください。任意資料は未読でも進めます。` : '必読資料を確認しました。Dayサイトへ戻ると、今日の問いが表示されます。'}</p>
+        <button class="button primary" id="complete-phone-mission" type="button" ${remaining.length ? 'disabled' : ''}>${escapeHTML(plan.returnLabel)}</button>
+      </section>`;
+    bindBack();
+    bindItemButtons(main);
+    document.querySelectorAll('[data-mission-day]').forEach((button) => button.addEventListener('click', () => renderMission(Number(button.dataset.missionDay))));
+    document.getElementById('complete-phone-mission').addEventListener('click', () => {
+      if (remaining.length) return;
+      BMStorage.set(`${dayKey(activeDay)}_phone_complete`, true);
+      localStorage.setItem('brewphone_active_day', String(activeDay));
+      location.href = `../day${String(activeDay).padStart(2, '0')}/?stage=question#question-card`;
+    });
+
+    if (!remaining.length && plan.emergency?.triggerComplete) {
+      window.setTimeout(() => triggerEmergency(plan.emergency.id), 220);
+    }
+  }
+
   function renderSettings() {
     const current = state();
     main.innerHTML = `${phoneHeader('Settings')}
@@ -445,7 +604,7 @@
     document.getElementById('vibration-toggle').addEventListener('change', (event) => BMStorage.set('vibration_enabled', event.target.checked));
     document.getElementById('reset-progress').addEventListener('click', () => {
       if (!window.confirm('すべての進行状況と捜査ノートを削除しますか？この操作は元に戻せません。')) return;
-      Object.keys(localStorage).filter((key) => key.startsWith(BMStorage.prefix) || key === 'brewphone_pending_code').forEach((key) => localStorage.removeItem(key));
+      Object.keys(localStorage).filter((key) => key.startsWith(BMStorage.prefix) || key === 'brewphone_pending_code' || key === 'brewphone_active_day').forEach((key) => localStorage.removeItem(key));
       location.reload();
     });
   }
@@ -460,6 +619,7 @@
 
   function closeModal() {
     if (modal.classList.contains('hidden')) return;
+    if ('speechSynthesis' in window) window.speechSynthesis.cancel();
     modal.classList.add('hidden');
     document.body.style.overflow = '';
     const kind = modalKind;
@@ -471,26 +631,70 @@
   }
 
   function handleEmergencyEvent() {
-    const eventId = new URLSearchParams(location.search).get('event');
-    if (!eventId) return;
-    const emergency = emergencyEvents.find((candidate) => candidate.id === eventId);
-    if (!emergency) return;
-
-    BMStorage.set(`event_${eventId}`, true);
-    const arrivalKey = `event_arrival_${eventId}`;
-    if (!BMStorage.get(arrivalKey, false)) {
-      BMStorage.set(arrivalKey, true);
-      banner.innerHTML = `<strong>EMERGENCY UPDATE</strong><br>${escapeHTML(emergency.message)}`;
-      banner.classList.remove('hidden');
-      document.querySelector('.phone-shell').classList.add('phone-shake');
-      window.setTimeout(() => document.querySelector('.phone-shell').classList.remove('phone-shake'), 400);
-
-      if (state().vibration && navigator.vibrate && !BMStorage.get(`vibrated_${eventId}`, false)) {
-        navigator.vibrate(emergency.vibration || [180, 100, 180]);
-        BMStorage.set(`vibrated_${eventId}`, true);
-      }
+    const url = new URL(location.href);
+    const queryEvent = url.searchParams.get('event');
+    const pendingEvent = emergencyEvents.find((event) => BMStorage.get(`event_pending_${event.id}`, false));
+    const eventId = queryEvent || pendingEvent?.id;
+    if (eventId) triggerEmergency(eventId, false);
+    if (queryEvent) {
+      url.searchParams.delete('event');
+      history.replaceState(null, '', `${url.pathname}${url.search}${url.hash}`);
     }
-    history.replaceState(null, '', location.pathname + location.hash);
+  }
+
+  function maybeTriggerItemEmergency(item) {
+    const plan = investigationPlans.find((candidate) => candidate.day === item.day);
+    if (plan?.emergency?.triggerItem === item.id) triggerEmergency(plan.emergency.id, true);
+  }
+
+  function triggerEmergency(eventId, userActivated = false) {
+    const emergency = emergencyEvents.find((candidate) => candidate.id === eventId);
+    if (!emergency || BMStorage.get(`event_${eventId}`, false)) return;
+    BMStorage.set(`event_${eventId}`, true);
+    BMStorage.remove(`event_pending_${eventId}`);
+    banner.innerHTML = `<div><strong>EMERGENCY UPDATE</strong><br>${escapeHTML(emergency.message)}</div><button type="button" data-emergency-ack>通知を確認</button>`;
+    banner.classList.remove('hidden');
+    banner.querySelector('[data-emergency-ack]').addEventListener('click', () => {
+      activateEmergencyEffects(emergency, true);
+      banner.classList.add('is-acknowledged');
+      window.setTimeout(() => banner.classList.add('hidden'), 4200);
+    });
+    activateEmergencyEffects(emergency, userActivated);
+    toast('緊急更新を受信しました');
+  }
+
+  function activateEmergencyEffects(emergency, userActivated) {
+    const shell = document.querySelector('.phone-shell');
+    shell.classList.remove('phone-shake');
+    void shell.offsetWidth;
+    shell.classList.add('phone-shake');
+    window.setTimeout(() => shell.classList.remove('phone-shake'), 520);
+    if (state().vibration && navigator.vibrate) {
+      try { navigator.vibrate(emergency.vibration || [180, 100, 180]); } catch (_) {}
+    }
+    if (userActivated) playEmergencyTone();
+  }
+
+  function playEmergencyTone() {
+    try {
+      const AudioContext = window.AudioContext || window.webkitAudioContext;
+      if (!AudioContext) return;
+      const context = new AudioContext();
+      const gain = context.createGain();
+      gain.gain.setValueAtTime(0.0001, context.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.12, context.currentTime + 0.02);
+      gain.gain.exponentialRampToValueAtTime(0.0001, context.currentTime + 0.56);
+      gain.connect(context.destination);
+      [0, 0.22].forEach((offset) => {
+        const oscillator = context.createOscillator();
+        oscillator.type = 'sine';
+        oscillator.frequency.value = 720;
+        oscillator.connect(gain);
+        oscillator.start(context.currentTime + offset);
+        oscillator.stop(context.currentTime + offset + 0.14);
+      });
+      window.setTimeout(() => context.close(), 900);
+    } catch (_) {}
   }
 
   function toast(text) {

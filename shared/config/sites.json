@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "2.0.0",
   "base": "../sites/",
   "sites": [
     {
@@ -356,7 +356,123 @@
       ],
       "quiz": null,
       "visual": "観測データサイト。表と簡潔なグラフ中心。",
-      "image": "images/weather-chart.png"
+      "image": "images/weather-chart.jpg"
+    },
+    {
+      "id": "SITE-13",
+      "slug": "minagi-city-data",
+      "name": "海凪市オープンデータ",
+      "unlock": 2,
+      "type": "open-data",
+      "role": "施設台帳、調達記録、安全会議録、端末資産票を公開する市のデータポータル。",
+      "pages": [
+        "index.html",
+        "facility-ledger.html",
+        "procurement-2004.html",
+        "safety-minutes.html",
+        "file-arc-t04.html"
+      ],
+      "entry": "館内図の管理番号、端末資産ラベル",
+      "clues": [
+        "映写室Bの二系統錠",
+        "2004年展示壁の調達番号",
+        "ARC-T04の設置場所"
+      ],
+      "noise": [
+        "AED設置一覧",
+        "公共施設電力使用量",
+        "備品更新計画"
+      ],
+      "quiz": null,
+      "visual": "自治体の公開データサイト。青、白、表組み中心。",
+      "image": "../../day01/images/projection-door-dual-lock.jpg"
+    },
+    {
+      "id": "SITE-14",
+      "slug": "harbor-photo-club",
+      "name": "海辺写真クラブ記録庫",
+      "unlock": 3,
+      "type": "photo-community",
+      "role": "市民が撮影した2004年の御影座周辺写真と、後年の撮影者コメントを保存する。",
+      "pages": [
+        "index.html",
+        "gallery-2004.html",
+        "photo-058.html",
+        "comments.html",
+        "digitization-log.html"
+      ],
+      "entry": "御影座記憶アーカイブの写真提供者欄",
+      "clues": [
+        "非常口前展示壁の別角度",
+        "写真袋の管理ラベル",
+        "撮影者の時刻訂正"
+      ],
+      "noise": [
+        "港祭り",
+        "夕景コンテスト",
+        "カメラ機種談義"
+      ],
+      "quiz": null,
+      "visual": "市民写真会の温かいアーカイブ。生成り、焦茶、古写真。",
+      "image": "../../day05/images/exit-wall-archive-photo-clue.png"
+    },
+    {
+      "id": "SITE-15",
+      "slug": "sound-restoration-lab",
+      "name": "音響修復ラボ・公開ノート",
+      "unlock": 6,
+      "type": "audio-lab",
+      "role": "音声予約再生、キャッシュ、波形照合、編集履歴の読み方を技術者が公開する。",
+      "pages": [
+        "index.html",
+        "scheduling-audio.html",
+        "cache-metadata.html",
+        "waveform-guide.html",
+        "case-note.html"
+      ],
+      "entry": "Recorderの機器仕様と音声ルーティング資料",
+      "clues": [
+        "録音と再生の区別",
+        "予約時刻と作成時刻",
+        "背景雑音まで一致する意味"
+      ],
+      "noise": [
+        "レコード修復",
+        "マイク試聴",
+        "会員勉強会"
+      ],
+      "quiz": null,
+      "visual": "暗色の技術ノート。波形色のミント、細かな仕様表。",
+      "image": "../../brewphone/images/evidence/audio-waveform-compare.png"
+    },
+    {
+      "id": "SITE-16",
+      "slug": "seaside-library",
+      "name": "海凪市立図書館デジタル分館",
+      "unlock": 5,
+      "type": "library",
+      "role": "新聞縮刷版、匿名ブログ目録、聞き書き、閲覧請求履歴を横断検索できる地域資料室。",
+      "pages": [
+        "index.html",
+        "catalog-frame13.html",
+        "oral-history.html",
+        "newspapers.html",
+        "request-log.html"
+      ],
+      "entry": "FRAME 13のプロフィール、消防資料の出典欄",
+      "clues": [
+        "匿名資料の同一人物断定を避ける注意",
+        "2004年新聞訂正欄",
+        "複数人による13頁閲覧請求"
+      ],
+      "noise": [
+        "郷土料理目録",
+        "映画パンフレット",
+        "寄贈者一覧"
+      ],
+      "quiz": null,
+      "visual": "公立図書館の地域資料検索。象牙、焦茶、落ち着いた金。",
+      "image": "../../day05/images/yui-diary-page.jpg"
     }
   ]
 }

@@ -1,33 +1,91 @@
 {
-  "version": "1.0.0",
+  "version": "2.0.0",
   "items": [
-    {
-      "id": "contact-maya",
-      "day": 1,
-      "app": "contacts",
-      "title": "星野真綾",
-      "subtitle": "左利き / アーカイブ主任",
-      "body": "39歳。潮騒館映像アーカイブ主任。映像修復と音声ノイズ除去を担当。",
-      "image": "images/people/maya-profile.jpg",
-      "link": null,
-      "evidenceId": null,
-      "tags": [
-        "真綾"
-      ],
-      "classification": "B"
-    },
     {
       "id": "contact-kuze",
       "day": 1,
       "app": "contacts",
       "title": "久世新",
       "subtitle": "被害者",
-      "body": "47歳。ドキュメンタリー監督。開館記念作品「最後の映写」を制作。",
+      "body": "久世新、47歳。ドキュメンタリー監督。地域史と個人の記憶を題材にした作品で知られ、潮騒館再開館記念作品「最後の映写」を制作していた。",
       "image": "images/people/kuze-profile.jpg",
       "link": null,
       "evidenceId": null,
       "tags": [],
-      "classification": "B"
+      "classification": "B",
+      "format": "profile",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "PERSON-02"
+        },
+        {
+          "label": "作成・取得",
+          "value": "2026-10-18 22:05更新"
+        },
+        {
+          "label": "出所",
+          "value": "関係者基本票"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "制作姿勢",
+          "body": "映像の順序と語りで観客の感情を強く導く作風。過去作では取材相手の同意範囲をめぐり二度の訂正要請を受けているが、いずれも法的紛争には至っていない。"
+        },
+        {
+          "heading": "当日の予定",
+          "body": "上映後のトーク、記者面談、東浜開発関係者との非公開打合せを予定。21時30分には海凪新聞の神谷記者と会う約束があった。"
+        }
+      ]
+    },
+    {
+      "id": "contact-maya",
+      "day": 1,
+      "app": "contacts",
+      "title": "星野真綾",
+      "subtitle": "映像アーカイブ主任",
+      "body": "星野真綾、39歳。潮騒館映像アーカイブ主任。フィルム補修、音声ノイズ除去、資料受入れの責任者。2004年の御影座火災で映写技師だった星野達郎の娘。",
+      "image": "images/people/maya-profile.jpg",
+      "link": null,
+      "evidenceId": null,
+      "tags": [
+        "真綾"
+      ],
+      "classification": "B",
+      "format": "profile",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "PERSON-01"
+        },
+        {
+          "label": "作成・取得",
+          "value": "2026-10-18 22:02更新"
+        },
+        {
+          "label": "出所",
+          "value": "関係者基本票"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "当日の担当",
+          "body": "19時台は上映素材の確認、20時20分以降は二階アーカイブ室で返却データの整理を行ったと申告。端末操作には14分余りの空白があるが、この時点では離席理由未確認。"
+        },
+        {
+          "heading": "技能・権限",
+          "body": "館内放送用音源の作成権限、映像編集端末の個人アカウント、資料室と機材室への入室権限を持つ。旧式設備の鍵管理責任者ではない。"
+        }
+      ]
     },
     {
       "id": "contact-miyahara",
@@ -35,25 +93,83 @@
       "app": "contacts",
       "title": "宮原孝志",
       "subtitle": "",
-      "body": "51歳。施設管理責任者。旧設備と鍵を管理。",
+      "body": "宮原孝志、51歳。潮騒館の施設管理責任者。電気設備、旧映写機、機械鍵、保守業者対応を担当。改修前の御影座時代から設備調査に関わる。",
       "image": "images/people/miyahara-profile.jpg",
       "link": null,
       "evidenceId": null,
       "tags": [],
-      "classification": "B"
+      "classification": "B",
+      "format": "profile",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "PERSON-03"
+        },
+        {
+          "label": "作成・取得",
+          "value": "2026-10-18 22:08更新"
+        },
+        {
+          "label": "出所",
+          "value": "関係者基本票"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "当日の担当",
+          "body": "上映中は地下機械室と一階防災盤を往復。20時28分から20時36分までは機械室固定カメラに姿がある。鍵棚の管理簿に不備があることを当初申告しなかった。"
+        },
+        {
+          "heading": "秘匿事項",
+          "body": "前年に旧式鍵一本を一時紛失し、発見後も正式な事故報告を出していない。虚偽の理由が現在の殺人と同じかは切り分けが必要。"
+        }
+      ]
     },
     {
       "id": "contact-yui",
       "day": 3,
       "app": "contacts",
       "title": "白石結衣",
-      "subtitle": "",
-      "body": "35歳。児童書翻訳者。旧姓・小川。2004年8月時点13歳。",
+      "subtitle": "児童書翻訳者 / 35歳",
+      "body": "白石結衣、35歳。海凪市出身の児童書翻訳者。2004年当時は中学2年生。事件当日の来館について当初「行っていない」と回答。",
       "image": "images/people/yui-profile.jpg",
       "link": null,
       "evidenceId": null,
       "tags": [],
-      "classification": "A"
+      "classification": "A",
+      "format": "profile",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "PERSON-06"
+        },
+        {
+          "label": "作成・取得",
+          "value": "2026-10-19 11:20更新"
+        },
+        {
+          "label": "出所",
+          "value": "関係者基本票"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "公開情報",
+          "body": "1991年2月10日生まれ。大学進学時に県外へ転居し、2017年の婚姻後に現在姓へ変更。旧姓は基本票では非公開扱いで、別の原資料との照合が必要。"
+        },
+        {
+          "heading": "事件との接点",
+          "body": "久世の作品に2004年の少女映像が使用される可能性を知り、上映中止を求めていた。現在の殺人時刻には館外にいたことを示す交通記録がある。"
+        }
+      ]
     },
     {
       "id": "contact-todo",
@@ -61,12 +177,37 @@
       "app": "contacts",
       "title": "東堂修一",
       "subtitle": "",
-      "body": "58歳。東浜開発会長。2004年当時は広報責任者。",
+      "body": "東堂修一、68歳。東浜開発会長。2004年当時は地域事業部長として御影座イベントの協賛展示を統括。現在は療養を理由に上映会を欠席。",
       "image": "images/people/todo-profile.jpg",
       "link": null,
       "evidenceId": null,
       "tags": [],
-      "classification": "B"
+      "classification": "B",
+      "format": "profile",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "PERSON-08"
+        },
+        {
+          "label": "作成・取得",
+          "value": "2026-10-19 09:55更新"
+        },
+        {
+          "label": "出所",
+          "value": "関係者基本票"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "事件当夜",
+          "body": "19時58分から20時44分まで自宅から地域経済番組へリモート出演。通信事業者ログと配信映像あり。娘・理央へ資料回収を指示した通話は18時02分。"
+        }
+      ]
     }
   ]
 }

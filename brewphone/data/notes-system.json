@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "2.0.0",
   "items": [
     {
       "id": "note-facility",
@@ -7,12 +7,45 @@
       "app": "system-notes",
       "title": "映写室B 扉仕様",
       "subtitle": "",
-      "body": "扉は外へ出て閉じると自動ラッチ。ICカードと保存用旧式錠を併設。",
+      "body": "映写室B扉の設備仕様書。改修時、文化財的価値を理由に旧式シリンダー錠と自動ラッチを残し、その外側へICリーダーを追加した経緯が記載されている。",
       "image": null,
       "link": null,
       "evidenceId": null,
       "tags": [],
-      "classification": "B"
+      "classification": "B",
+      "format": "document",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "FAC-B-DOOR-R6"
+        },
+        {
+          "label": "作成・取得",
+          "value": "2026-04-12 改訂"
+        },
+        {
+          "label": "出所",
+          "value": "潮騒館設備保全ファイル"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "解錠系統A：IC",
+          "body": "個人カードによる電気解錠。カードID、時刻、結果を90日間保存。停電時は施錠を維持し、防災盤から非常解錠する。"
+        },
+        {
+          "heading": "解錠系統B：M-02",
+          "body": "保存用機械錠。マスターキーM-02でラッチを直接解放する。電気制御盤を経由しないため操作ログは生成されない。通常使用禁止だが物理的封印はない。"
+        },
+        {
+          "heading": "退出",
+          "body": "室内側レバーで常時退出可能。扉が閉じるとラッチが復帰する。退出者の識別および退出時刻の個別記録は行わない。"
+        }
+      ]
     },
     {
       "id": "kamiya-note",
@@ -20,12 +53,37 @@
       "app": "system-notes",
       "title": "神谷記者メモ",
       "subtitle": "",
-      "body": "企業責任を示す看板／非常口前の展示壁／少女は救助側。",
+      "body": "神谷記者の取材メモ。久世の発言、企業交渉、少女本人への同意確認などが混在し、神谷自身も記事の独占性を優先していたことが分かる。",
       "image": null,
       "link": null,
       "evidenceId": null,
       "tags": [],
-      "classification": "B"
+      "classification": "B",
+      "format": "notes",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "REPORTER-NOTE-KN-18"
+        },
+        {
+          "label": "作成・取得",
+          "value": "2026-10-18 17:30〜20:12"
+        },
+        {
+          "label": "出所",
+          "value": "神谷直人提出"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "走り書き",
+          "body": "「K：事実は編集で初めて意味を持つ」「企業名を外しても観客は分かる？」「少女本人の了承→回答をぼかす」「21:30 原版13を見せる」「真綾、父の件で強硬」。記号Kが久世か神谷自身かは文脈ごとに確認が必要。"
+        }
+      ]
     },
     {
       "id": "yui-statement",
@@ -33,12 +91,37 @@
       "app": "system-notes",
       "title": "白石結衣 コメント",
       "subtitle": "",
-      "body": "「真実が公開されることと、私の人生が公開されることは同じではありません」",
+      "body": "白石結衣が代理人を通じて発表した短いコメント。火災原因の訂正を歓迎する一方、現在の生活や顔写真の公開を拒む。",
       "image": null,
       "link": null,
       "evidenceId": null,
       "tags": [],
-      "classification": "C"
+      "classification": "C",
+      "format": "statement",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "STATEMENT-YUI-01"
+        },
+        {
+          "label": "作成・取得",
+          "value": "2027-01-12"
+        },
+        {
+          "label": "出所",
+          "value": "白石結衣代理人"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "コメント全文",
+          "body": "「事実が訂正されることを望んでいました。でも、真実が公開されることと、私の人生が公開されることは同じではありません。助けてくれた人、助けられなかった人、あの日の後を生きた人の名前を、物語の結末として使わないでください。」"
+        }
+      ]
     }
   ]
 }

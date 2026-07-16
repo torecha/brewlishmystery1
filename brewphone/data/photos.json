@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "2.0.0",
   "items": [
     {
       "id": "photo-d1-1",
@@ -7,14 +7,46 @@
       "app": "photos",
       "title": "旧映写室B 全景",
       "subtitle": "",
-      "body": "倒れた脚立、散乱工具、映写機、作業机が写る。",
+      "body": "21時24分撮影。映写機2台、倒れた脚立、作業机、床の工具、フィルム缶の位置を一枚に収めた初動写真。入口側から西壁へ向けて撮影されている。",
       "image": "../day01/images/projection-room-wide.jpg",
       "link": null,
       "evidenceId": "EV-003",
       "tags": [
         "現場"
       ],
-      "classification": "B"
+      "classification": "B",
+      "format": "photo",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "EV-003 / PHOTO-01"
+        },
+        {
+          "label": "作成・取得",
+          "value": "2026-10-18 21:24:18"
+        },
+        {
+          "label": "出所",
+          "value": "鑑識係デジタル原版"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "画面の周辺",
+          "body": "机上のノートPCは予約投稿の設定画面を表示したまま。画面右下の時刻は撮影時刻ではなく端末時刻であるため、写真だけで正確性は保証できない。フィルム缶は作業台奥へ積まれ、床へ落ちた缶はない。"
+        },
+        {
+          "heading": "位置関係",
+          "body": "脚立の脚は東西方向に開き、久世の位置はその西側。工具は南西方向へ偏っている。救命処置の際に動いた物品は赤色タグで別途記録されている。"
+        }
+      ],
+      "annotations": [
+        "画像を拡大し、机の画面・脚立・工具の三領域を別々に確認する。"
+      ]
     },
     {
       "id": "photo-d1-2",
@@ -22,7 +54,7 @@
       "app": "photos",
       "title": "遺体発見時",
       "subtitle": "",
-      "body": "久世は脚立の真下ではなく西側に倒れていた。",
+      "body": "救命処置前、廊下側から撮影された遺体発見時写真。久世は脚立の真下ではなく、西へ約1.4メートル離れた床に倒れていた。",
       "image": "../day01/images/body-discovery-wide.jpg",
       "link": null,
       "evidenceId": "EV-004",
@@ -30,7 +62,36 @@
         "遺体",
         "脚立"
       ],
-      "classification": "A"
+      "classification": "A",
+      "format": "photo",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "EV-004 / PHOTO-02"
+        },
+        {
+          "label": "作成・取得",
+          "value": "2026-10-18 21:16:42"
+        },
+        {
+          "label": "出所",
+          "value": "救急要請者の業務端末"
+        },
+        {
+          "label": "取扱状態",
+          "value": "原本保全済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "撮影前の移動",
+          "body": "発見者・早瀬は肩に触れたが、身体を持ち上げてはいないと供述。救急隊到着まで胸骨圧迫は行われておらず、写真時点の位置が概ね発見時位置とされる。"
+        },
+        {
+          "heading": "事故仮説との関係",
+          "body": "脚立転落だけでも横方向へ倒れる可能性はある。位置だけでは事故を否定できないため、頭部損傷の方向、脚立の安定状態、手袋の使用状況との照合が必要。"
+        }
+      ]
     },
     {
       "id": "photo-d1-3",
@@ -38,12 +99,41 @@
       "app": "photos",
       "title": "二種類の錠",
       "subtitle": "",
-      "body": "ICカードリーダーの横に旧式鍵穴が残る。",
+      "body": "映写室Bの扉。上部にICカードリーダー、取手下に保存建築時代の旧式鍵穴が残る。二つは別系統で、同じ操作履歴へ記録されない。",
       "image": "../day01/images/projection-door-dual-lock.jpg",
       "link": null,
       "evidenceId": "EV-005",
       "tags": [],
-      "classification": "B"
+      "classification": "B",
+      "format": "photo",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "EV-005 / PHOTO-03"
+        },
+        {
+          "label": "作成・取得",
+          "value": "2026-10-18 21:31:09"
+        },
+        {
+          "label": "出所",
+          "value": "鑑識係デジタル原版"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "新旧二系統",
+          "body": "IC側はカード番号と時刻を保存する。旧式鍵は機械的にラッチを動かすだけで、IC制御盤へ信号を送らない。鍵穴の周囲には使用による古い擦過痕と、比較的新しい細い擦れが混在する。"
+        },
+        {
+          "heading": "閉鎖状態",
+          "body": "室内外いずれからも取手で退出でき、扉が閉じると自動ラッチが掛かる。発見時に扉が閉じていた事実だけでは、最後の退出者を特定できない。"
+        }
+      ]
     },
     {
       "id": "photo-d1-4",
@@ -51,12 +141,41 @@
       "app": "photos",
       "title": "脚立と作業用手袋",
       "subtitle": "",
-      "body": "手袋の掌に油汚れがなく、工具は一方向へ散る。",
+      "body": "脚立、ドライバー、レンチ、布、作業用手袋を接写した写真。工具は一方向へ寄る一方、手袋の掌には映写機整備で通常付着する黒い油がほとんどない。",
       "image": "../day01/images/ladder-tools-floor.jpg",
       "link": null,
       "evidenceId": "EV-006",
       "tags": [],
-      "classification": "A"
+      "classification": "A",
+      "format": "photo",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "EV-006 / PHOTO-04"
+        },
+        {
+          "label": "作成・取得",
+          "value": "2026-10-18 21:28:33"
+        },
+        {
+          "label": "出所",
+          "value": "鑑識係デジタル原版"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "脚立",
+          "body": "左右の開き止め金具は固定されたまま。後脚のゴムには床の粉塵が均等に付着し、直前に大きく滑った筋は確認されていない。"
+        },
+        {
+          "heading": "工具と手袋",
+          "body": "工具表面の指紋は複数人分で、日常共用のため単独の証明にはならない。手袋は久世の作業机の引き出しに同型予備があり、着用の有無は別に検証する必要がある。"
+        }
+      ]
     },
     {
       "id": "photo-staff",
@@ -64,12 +183,95 @@
       "app": "photos",
       "title": "潮騒館スタッフ集合写真",
       "subtitle": "",
-      "body": "開館前の記念写真。真綾は左手で小型カッターを持つ。",
-      "image": "../shared/images/people/staff-group-lobby.jpg",
+      "body": "潮騒館再開館準備日のスタッフ集合写真。名札、手にした工具、立ち位置、背景の掲示板が自然に写り込んでいる。",
+      "image": "../shared/images/people/staff-group-lobby-clue.png",
       "link": null,
       "evidenceId": "EV-123",
       "tags": [],
-      "classification": "A"
+      "classification": "A",
+      "format": "photo",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "PHOTO-STAFF-1002"
+        },
+        {
+          "label": "作成・取得",
+          "value": "2026-10-02 17:41"
+        },
+        {
+          "label": "出所",
+          "value": "潮騒館広報共有フォルダ"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "写真の扱い",
+          "body": "広報用に左右反転していない原版。人物の利き手を断定するには一枚だけでなく、別の日の作業写真や署名動作と比較する必要がある。"
+        },
+        {
+          "heading": "背景情報",
+          "body": "掲示板に「御影座記憶アーカイブ／収蔵品13」の小さな告知がある。サイト名をBrewPhone検索へ入れると市民アーカイブへ移動できる。"
+        }
+      ],
+      "discoveries": [
+        {
+          "prompt": "掲示板に写る市民アーカイブ名",
+          "answer": "御影座記憶アーカイブ",
+          "link": "../sites/mikage-archive/item-13.html"
+        }
+      ]
+    },
+    {
+      "id": "archive-exit-wall",
+      "day": 5,
+      "app": "photos",
+      "title": "非常口前展示壁・別角度",
+      "subtitle": "市民アルバム写真",
+      "evidenceId": "EV-052",
+      "tags": [
+        "非常口",
+        "展示壁"
+      ],
+      "classification": "A",
+      "format": "photo",
+      "body": "御影座ロビーを斜めから撮った別写真。非常口扉の前に壁が置かれ、来場者が一度横へ回らなければならない構造が分かる。",
+      "image": "../day05/images/exit-wall-archive-photo-clue.png",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "ARCH-PHOTO-2004-44"
+        },
+        {
+          "label": "作成・取得",
+          "value": "2004-08-21"
+        },
+        {
+          "label": "出所",
+          "value": "匿名寄贈アルバム"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "写真内情報",
+          "body": "壁の裏面に設営会社の管理ラベル、表側に東浜開発の展示題名。非常口誘導灯は見えるが、扉そのものは壁で隠れる。"
+        }
+      ],
+      "discoveries": [
+        {
+          "prompt": "壁裏の管理ラベルにある企業名",
+          "answer": "東浜開発",
+          "link": "../sites/tohama-development/history-2004.html"
+        }
+      ]
     },
     {
       "id": "cctv-yui",
@@ -77,12 +279,46 @@
       "app": "photos",
       "title": "裏口カメラ 19:12",
       "subtitle": "",
-      "body": "白石結衣が真綾へ封筒を渡している。",
+      "body": "潮騒館裏口カメラ。19時12分、白石結衣が星野真綾へ薄い封筒を渡し、約48秒後に海側通路へ戻る。来館を否定した供述とは一致しない。",
       "image": "../day05/images/yui-envelope-cctv.jpg",
       "link": null,
       "evidenceId": "EV-041",
       "tags": [],
-      "classification": "B"
+      "classification": "B",
+      "format": "video",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "CCTV-REAR-1912"
+        },
+        {
+          "label": "作成・取得",
+          "value": "2026-10-18 19:12:04〜19:12:58"
+        },
+        {
+          "label": "出所",
+          "value": "潮騒館裏口カメラC-07"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "video": {
+        "src": "media/cctv-yui-1912.mp4",
+        "poster": "../day05/images/yui-envelope-cctv.jpg",
+        "caption": "固定カメラ映像。音声なし。時刻は施設標準時へ補正済み。"
+      },
+      "sections": [
+        {
+          "heading": "映像上の行動",
+          "body": "結衣は館内へ入らず、通用口の外で真綾を待つ。封筒受渡し後、真綾は館内へ、結衣はバス停方向へ歩く。二人の間に争う様子はない。"
+        },
+        {
+          "heading": "供述の意味",
+          "body": "来館を隠したことは事実だが、隠した理由と現在事件への関与を同一視しない。19時17分発バスの記録と連続性を確認する。"
+        }
+      ]
     },
     {
       "id": "photo-fire",
@@ -90,12 +326,87 @@
       "app": "photos",
       "title": "2004年 御影座イベント写真",
       "subtitle": "",
-      "body": "非常口前に仮設展示壁。結衣は離れた場所でキャンドルを持つ。",
-      "image": "../day05/images/exit-wall-archive-photo.jpg",
+      "body": "2004年イベント中の古写真。来場者、キャンドル、スポンサー展示壁、非常口表示が同じ画面に写る。撮影者は不明だが、ネガ番号と寄贈時期は記録されている。",
+      "image": "../day05/images/exit-wall-archive-photo-clue.png",
       "link": null,
       "evidenceId": "EV-018",
       "tags": [],
-      "classification": "A"
+      "classification": "A",
+      "format": "photo",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "ARCH-PHOTO-2004-31"
+        },
+        {
+          "label": "作成・取得",
+          "value": "2004-08-21 夕刻推定"
+        },
+        {
+          "label": "出所",
+          "value": "御影座記憶アーカイブ寄贈"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "一見した印象",
+          "body": "制服姿の少女が小さな灯りを持つため、火災との関連を連想しやすい。しかし画像一枚から撮影時刻、出火地点、炎との距離は確定しない。"
+        },
+        {
+          "heading": "背景の構造",
+          "body": "北側非常口の前に高さ約2.2メートルの展示壁。非常口表示は壁上部から見えるが、扉へ直進できない。壁には東浜開発の展示パネルが貼られている。"
+        }
+      ],
+      "discoveries": [
+        {
+          "prompt": "非常口前の壁に写る協賛企業名",
+          "answer": "東浜開発",
+          "link": "../sites/wayback-mock/snapshot-20040815-tohama.html"
+        }
+      ]
+    },
+    {
+      "id": "projector-cavity-record",
+      "day": 8,
+      "app": "photos",
+      "title": "映写機2号・背面空洞",
+      "subtitle": "発見前後写真",
+      "evidenceId": "EV-080",
+      "tags": [
+        "隠匿場所"
+      ],
+      "classification": "A",
+      "format": "photo",
+      "body": "映写機背面のサービスパネル内。通常は予備ベルトを置く空洞に、布で包まれた巻き取りハンドルが入っていた。",
+      "image": "../day08/images/projector-hidden-cavity.jpg",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "PHOTO-EV080"
+        },
+        {
+          "label": "作成・取得",
+          "value": "2026-10-23 11:16〜11:20"
+        },
+        {
+          "label": "出所",
+          "value": "鑑識係"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "発見手順",
+          "body": "映写機・鍵穴・鍵棚の三資料を確認後、保守図面と現物の奥行き差からパネルを開放。発見者が先に内容物へ触れていないことを連続動画で記録。"
+        }
+      ]
     },
     {
       "id": "photo-stairs",
@@ -103,12 +414,41 @@
       "app": "photos",
       "title": "階段踊り場 20:34",
       "subtitle": "",
-      "body": "真綾が三階から二階へ下る姿。左袖に金色微粒子。",
+      "body": "20時34分、スタッフ広報担当がロビーへ戻る途中に撮影した階段踊り場写真。主題は壁面ポスターだが、奥の人物と左袖が写り込む。",
       "image": "../day09/images/stair-landing-2034.jpg",
       "link": null,
       "evidenceId": "EV-085",
       "tags": [],
-      "classification": "A"
+      "classification": "A",
+      "format": "photo",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "PHOTO-STAIR-2034"
+        },
+        {
+          "label": "作成・取得",
+          "value": "2026-10-18 20:34:27"
+        },
+        {
+          "label": "出所",
+          "value": "潮騒館広報端末"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "写り込み",
+          "body": "奥の人物は服装・髪型から真綾と整合。三階側から二階へ下りる向き。左袖口付近に金色の点状反射がある。顔は不鮮明で写真単独の個人識別は困難。"
+        },
+        {
+          "heading": "撮影時刻の検証",
+          "body": "端末時刻は館内Wi-Fiと同期。写真送信が20時34分31秒に広報グループへ届き、編集履歴なし。犯行推定20時31分から移動可能な時間幅。"
+        }
+      ]
     }
   ]
 }

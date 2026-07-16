@@ -10,10 +10,14 @@
   box-shadow: 0 12px 28px rgba(115, 25, 35, .25);
   font-size: .74rem;
   line-height: 1.55;
+  transition: opacity .25s ease, transform .25s ease;
 }
 
 .emergency-banner::before { position: absolute; top: 14px; left: 15px; display: grid; width: 21px; height: 21px; place-items: center; color: #9a333b; background: white; border-radius: 50%; content: '!'; font-weight: 900; }
 .emergency-banner strong { font-size: .66rem; letter-spacing: .12em; }
+.emergency-banner > div { padding-right: 72px; }
+.emergency-banner button { position: absolute; top: 50%; right: 10px; padding: 7px 8px; color: white; background: rgba(255, 255, 255, .12); border: 1px solid rgba(255, 255, 255, .3); border-radius: 8px; font: inherit; font-size: .58rem; font-weight: 800; transform: translateY(-50%); }
+.emergency-banner.is-acknowledged { opacity:.74; transform:scale(.985); }
 .emergency-banner.hidden { display: none; }
 .phone-shake { animation: phoneShake .32s linear; }
 

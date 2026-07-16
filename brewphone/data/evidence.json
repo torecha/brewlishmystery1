@@ -1,45 +1,132 @@
 {
-  "version": "1.0.0",
+  "version": "2.0.0",
   "items": [
-    {
-      "id": "weapon",
-      "day": 8,
-      "app": "evidence",
-      "title": "EV-081 巻き取りハンドル",
-      "subtitle": "",
-      "body": "映写機2号裏から発見。表面に清拭筋。",
-      "image": "../day08/images/weapon-handle-evidence.jpg",
-      "link": null,
-      "evidenceId": "EV-081",
-      "tags": [],
-      "classification": "A",
-      "eventId": "day08_emergency_01"
-    },
     {
       "id": "master-key",
       "day": 8,
       "app": "evidence",
       "title": "M-02 旧式マスターキー",
       "subtitle": "",
-      "body": "電子錠から独立した真鍮製マスターキー。",
+      "body": "旧式マスターキーM-02。鍵棚の指定位置へ戻されていたが、鍵の肩部と映写室B鍵穴から同じ系統の真鍮摩耗粉が採取された。",
       "image": "../day08/images/master-key-m02.jpg",
       "link": null,
       "evidenceId": "EV-064",
       "tags": [],
-      "classification": "A"
+      "classification": "A",
+      "format": "evidence",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "EV-082 / M-02"
+        },
+        {
+          "label": "作成・取得",
+          "value": "押収 2026-10-23 11:42"
+        },
+        {
+          "label": "出所",
+          "value": "地下管理室・鍵棚"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "使用範囲",
+          "body": "映写室A・B、旧フィルム庫、外部搬入口の保存錠に対応。IC管理とは独立。複製防止カードは導入前の製品で、過去に予備鍵が存在した可能性は排除できない。"
+        },
+        {
+          "heading": "当夜の状態",
+          "body": "鍵の平面部は拭かれているが、刻印溝に新しい繊維片。番号札の輪には最近開閉した微細な擦れ。単独では使用時刻を確定できない。"
+        }
+      ]
     },
     {
-      "id": "impact-report",
+      "id": "weapon",
+      "day": 8,
+      "app": "evidence",
+      "title": "EV-081 巻き取りハンドル",
+      "subtitle": "",
+      "body": "映写機2号裏の空洞から発見された巻き取りハンドル。表面は清拭されているが、凹部から微量の血液反応と毛髪片が検出された。",
+      "image": "../day08/images/weapon-handle-evidence.jpg",
+      "link": null,
+      "evidenceId": "EV-081",
+      "tags": [],
+      "classification": "A",
+      "eventId": "day08_emergency_01",
+      "format": "evidence",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "EV-081"
+        },
+        {
+          "label": "作成・取得",
+          "value": "発見 2026-10-23 11:18"
+        },
+        {
+          "label": "出所",
+          "value": "映写室B・映写機2号背面"
+        },
+        {
+          "label": "取扱状態",
+          "value": "封緘・鑑定済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "形状",
+          "body": "真鍮芯に黒色グリップ。重量684g。映写機2号軸へ装着可能だが、現場写真では軸から外れていた。久世の頭部創の曲率と金属端部が概ね一致。"
+        },
+        {
+          "heading": "付着物",
+          "body": "目視指紋なし。溝から久世と一致する血液型・DNA型、短い毛髪片。洗浄剤由来の界面活性剤は館内清掃用品と同種で、使用者特定にはならない。"
+        }
+      ]
+    },
+    {
+      "id": "alibi-matrix-d9",
       "day": 9,
       "app": "evidence",
-      "title": "打撃方向鑑定",
-      "subtitle": "",
-      "body": "久世の右後方から、左手で斜めに振り下ろした軌道に整合。",
-      "image": "../day09/images/impact-angle-diagram.png",
-      "link": null,
-      "evidenceId": "EV-121",
-      "tags": [],
-      "classification": "A"
+      "title": "関係者アリバイ比較表",
+      "subtitle": "20:23〜20:39",
+      "evidenceId": "BOARD-ALIBI",
+      "tags": [
+        "機会"
+      ],
+      "classification": "A",
+      "format": "evidence-board",
+      "body": "犯行時刻を含む16分間について、映像・端末・交通・証言を人物別に比較。単独証言だけの欄と機械記録の欄を分ける。",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "ALIBI-MATRIX-09"
+        },
+        {
+          "label": "作成・取得",
+          "value": "2026-10-24"
+        },
+        {
+          "label": "出所",
+          "value": "捜査本部"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "連続記録あり",
+          "body": "森下・東堂理央：舞台配信、神谷：新聞社配信、小田切：音響卓、宮原：地下固定カメラ、白石結衣：館外交通・決済。"
+        },
+        {
+          "heading": "一部空白",
+          "body": "早瀬：倉庫3分だがB室権限なし。真綾：端末14分22秒空白、階段写真で三階側から戻る人物。"
+        }
+      ]
     },
     {
       "id": "brass-report",
@@ -47,12 +134,79 @@
       "app": "evidence",
       "title": "真鍮粉鑑定",
       "subtitle": "",
-      "body": "真綾の左袖、M-02、鍵穴の粒子が同系統。",
+      "body": "イベント写真の真綾の左袖、M-02、映写室B鍵穴から採取した微粒子の比較。銅・亜鉛比と表面酸化物が同系統。",
       "image": "../day09/images/brass-powder-micro.jpg",
       "link": null,
       "evidenceId": "EV-125",
       "tags": [],
-      "classification": "A"
+      "classification": "A",
+      "format": "forensic",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "FORENSIC-BRASS-09"
+        },
+        {
+          "label": "作成・取得",
+          "value": "2026-10-24 13:40"
+        },
+        {
+          "label": "出所",
+          "value": "海凪県警科学捜査研究所"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "比較結果",
+          "body": "左袖粒子はCu 63.1% / Zn 35.8%、M-02表面はCu 63.4% / Zn 35.5%、鍵穴内部はCu 62.9% / Zn 36.0%。微量のニッケルと研磨剤成分も共通。"
+        },
+        {
+          "heading": "代替由来",
+          "body": "館内には真鍮製手すりや映写機部品もある。袖粒子だけではM-02接触を断定できないが、粒径・研磨剤・付着位置を合わせると鍵系統との整合が高い。右袖から同系粒子は未検出。"
+        }
+      ]
+    },
+    {
+      "id": "evidence-chain-d9",
+      "day": 9,
+      "app": "evidence",
+      "title": "証拠保全・連鎖記録",
+      "subtitle": "凶器・鍵・衣服",
+      "evidenceId": "CHAIN-09",
+      "tags": [
+        "証拠保全"
+      ],
+      "classification": "B",
+      "format": "document",
+      "body": "巻き取りハンドル、M-02、真綾のイベント衣装を、発見・封緘・搬送・鑑定の順で記録。混入や取違えの可能性を検証する。",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "CHAIN-EV081-083"
+        },
+        {
+          "label": "作成・取得",
+          "value": "2026-10-23〜24"
+        },
+        {
+          "label": "出所",
+          "value": "鑑識・科捜研"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "確認",
+          "body": "各封緘番号と受領署名一致。真綾衣装は本人立会いで提出。現場採取前に衣装と鍵を同じ袋へ入れた記録なし。"
+        }
+      ]
     },
     {
       "id": "evidence-final",
@@ -60,13 +214,94 @@
       "app": "evidence",
       "title": "最終証拠ボード",
       "subtitle": "",
-      "body": "左利き、離席、旧式鍵、真鍮粉、音声編集、未公開語句が星野真綾へ収束。",
+      "body": "Day9時点の証拠比較ボード。人物名ではなく、機会・侵入手段・凶器・音声偽装・未公開情報の五列へ資料を配置する。",
       "image": "../day09/images/evidence-board-final.png",
       "link": null,
       "evidenceId": null,
       "tags": [],
       "classification": "A",
-      "eventId": "day09_emergency_01"
+      "eventId": "day09_emergency_01",
+      "format": "evidence-board",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "BOARD-FINAL-09"
+        },
+        {
+          "label": "作成・取得",
+          "value": "2026-10-24 18:00"
+        },
+        {
+          "label": "出所",
+          "value": "BrewPhone統合証拠"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "星野真綾",
+          "body": "14分22秒の端末空白、階段写真、左袖真鍮粉、音声プロジェクトmaya.k、未公開ナレーション語句。すべての列に独立資料がある。"
+        },
+        {
+          "heading": "宮原孝志",
+          "body": "鍵知識と管理簿改ざんはあるが、20時31分の地下映像・暗証操作が一致。凶器・音声編集・未公開語句との接続なし。"
+        },
+        {
+          "heading": "神谷直人ほか",
+          "body": "神谷は左利きで動機もあるが連続配信。早瀬は対立を隠したが入室手段と音声権限なし。東堂側は企業動機があるが舞台映像と遠隔出演で機会なし。"
+        }
+      ],
+      "annotations": [
+        "五条件のうち一つだけ一致する人物を除外し、全条件の収束を見る。"
+      ]
+    },
+    {
+      "id": "impact-report",
+      "day": 9,
+      "app": "evidence",
+      "title": "打撃方向鑑定",
+      "subtitle": "",
+      "body": "頭部創、血痕方向、凶器候補を用いた打撃方向鑑定。被害者の右後方から左前方へ、水平よりやや下向きの一撃と推定される。",
+      "image": "../day09/images/impact-angle-diagram.png",
+      "link": null,
+      "evidenceId": "EV-121",
+      "tags": [],
+      "classification": "A",
+      "format": "forensic",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "FORENSIC-IMPACT-09"
+        },
+        {
+          "label": "作成・取得",
+          "value": "2026-10-24 09:00"
+        },
+        {
+          "label": "出所",
+          "value": "海凪県警科学捜査研究所"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "推定姿勢",
+          "body": "久世は映写機2号へ向き、わずかに前傾。加害者は右後方約0.8mから接近。凶器を左手で振った場合に自然な軌道だが、右手の逆手打ちも物理的には排除できない。"
+        },
+        {
+          "heading": "比較試験",
+          "body": "巻き取りハンドル端部と創縁の曲率が一致。脚立角部では創の幅と深さを同時に再現できない。方向鑑定だけで個人特定は不可。"
+        }
+      ],
+      "annotations": [
+        "「左手の可能性が高い」であり、左利きだけを犯人条件にしない。"
+      ]
     }
   ]
 }

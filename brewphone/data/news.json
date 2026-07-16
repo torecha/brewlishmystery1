@@ -1,18 +1,132 @@
 {
-  "version": "1.0.0",
+  "version": "2.0.0",
   "items": [
+    {
+      "id": "news-article13",
+      "day": 3,
+      "app": "news",
+      "title": "ARTICLE-13 御影座火災",
+      "subtitle": "",
+      "body": "2004年8月22日付「ARTICLE-13」。火災翌日の紙面で、13歳の少女が二人を北側出口へ誘導したと報じる。少女名は保護を理由に非公表。",
+      "image": null,
+      "link": "../sites/minagi-news/article-20040822-13.html",
+      "evidenceId": null,
+      "tags": [],
+      "classification": "A",
+      "format": "article",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "ARTICLE-13"
+        },
+        {
+          "label": "作成・取得",
+          "value": "2004-08-22 朝刊"
+        },
+        {
+          "label": "出所",
+          "value": "海凪新聞縮刷版"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "避難を助けた少女",
+          "body": "目撃者によれば、制服姿の少女は混乱する来場者の手を取り、川側の通路へ誘導した。本人は煙を吸い軽い治療を受けたが、記者の取材には「大人に出口を聞いただけ」と答えた。"
+        },
+        {
+          "heading": "同じ紙面の噂",
+          "body": "別欄では「会場でキャンドルを持つ若者がいた」とだけ掲載され、少女と同一人物かは書かれていない。後年の転載記事が二つを隣接させたことで、同一視が広がった。"
+        },
+        {
+          "heading": "協賛表示",
+          "body": "紙面下部に東浜開発のイベント協賛広告。当時の役職者名と展示企画名は広告の小さな文字に残る。"
+        }
+      ]
+    },
+    {
+      "id": "news-correction-2004",
+      "day": 3,
+      "app": "news",
+      "title": "2004年紙面・小さな訂正欄",
+      "subtitle": "火災翌週 / 第3面",
+      "evidenceId": null,
+      "tags": [
+        "訂正欄"
+      ],
+      "classification": "B",
+      "format": "article",
+      "body": "火災翌週の訂正欄。「キャンドルを持つ少女」と「避難誘導をした少女」が同一人物と確認された事実はない、と短く掲載されている。",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "CORR-2004-0828"
+        },
+        {
+          "label": "作成・取得",
+          "value": "2004-08-28"
+        },
+        {
+          "label": "出所",
+          "value": "海凪新聞縮刷版"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "掲載位置",
+          "body": "社会面ではなく第三面下部の三行訂正。後年のデジタル転載には反映されず、見出し検索でも見つけにくい。"
+        }
+      ],
+      "link": "../sites/minagi-news/corrections.html"
+    },
     {
       "id": "news-current",
       "day": 3,
       "app": "news",
       "title": "潮騒館で監督死亡",
       "subtitle": "",
-      "body": "開館記念上映会後、旧映写室で久世新監督が死亡。警察は事故と事件の両面で調査。",
+      "body": "海凪新聞デジタルの事件初報。警察発表前のため、20時46分の声と20時50分の投稿を「直前まで活動していた根拠」として紹介しているが、いずれも出所は関係者説明である。",
       "image": null,
       "link": "../sites/minagi-news/article-20261018.html",
       "evidenceId": null,
       "tags": [],
-      "classification": "B"
+      "classification": "B",
+      "format": "article",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "NEWS-20261019-A1"
+        },
+        {
+          "label": "作成・取得",
+          "value": "2026-10-19 07:30"
+        },
+        {
+          "label": "出所",
+          "value": "海凪新聞デジタル"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "記事本文",
+          "body": "十八日午後九時七分ごろ、市立映像資料館「潮騒館」の旧映写室で、映像監督・久世新さんが倒れているのを制作関係者が発見した。久世さんは同館の再開館記念作品を制作していた。警察は現場の状況から事故と事件の両面で調べている。"
+        },
+        {
+          "heading": "編集部注",
+          "body": "初報では館内関係者の説明に基づき時刻を掲載。死亡推定時刻は司法解剖および機器記録の確認後に更新するとしている。"
+        }
+      ]
     },
     {
       "id": "news-puzzle",
@@ -20,27 +134,39 @@
       "app": "news",
       "title": "日曜版「消えた座席番号」",
       "subtitle": "",
-      "body": "欠けた座席番号を求める読者クイズ。",
+      "body": "事件とは無関係に見える日曜版の読者企画。旧御影座から寄贈された座席札を9から15まで並べると、一枚だけ欠けている。",
       "image": null,
       "link": "../sites/minagi-news/sunday-puzzle.html",
       "evidenceId": null,
       "tags": [
         "13"
       ],
-      "classification": "B"
-    },
-    {
-      "id": "news-article13",
-      "day": 3,
-      "app": "news",
-      "title": "ARTICLE-13 御影座火災",
-      "subtitle": "",
-      "body": "2004年火災で、13歳少女が避難誘導を手伝ったとの記事。",
-      "image": null,
-      "link": "../sites/minagi-news/article-20040822-13.html",
-      "evidenceId": null,
-      "tags": [],
-      "classification": "A"
+      "classification": "B",
+      "format": "article",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "NP-2026-42"
+        },
+        {
+          "label": "作成・取得",
+          "value": "2026-10-18 朝刊"
+        },
+        {
+          "label": "出所",
+          "value": "海凪新聞・日曜版"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "応募欄",
+          "body": "欠けた番号を記事アーカイブの検索欄へ「ARTICLE-番号」の形式で入力すると、同じ座席番号に関連する過去記事が表示される。応募締切や景品紹介など、事件に無関係な紙面情報も併載。"
+        }
+      ]
     },
     {
       "id": "corrected-news",
@@ -48,12 +174,80 @@
       "app": "news",
       "title": "御影座火災報告を再調査",
       "subtitle": "",
-      "body": "海凪市は非常口前展示壁と企業関与を再検証。星野達郎への公式謝罪を決定。",
+      "body": "海凪新聞の検証記事。2004年の初報と後年転載が、匿名少女とキャンドルの記述を近接させ、誤解を強めた経緯を訂正する。",
       "image": null,
       "link": "../sites/minagi-news/corrections.html",
       "evidenceId": null,
       "tags": [],
-      "classification": "B"
+      "classification": "B",
+      "format": "article",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "NEWS-CORRECTION-2026"
+        },
+        {
+          "label": "作成・取得",
+          "value": "2027-01-12 06:00"
+        },
+        {
+          "label": "出所",
+          "value": "海凪新聞デジタル"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "訂正",
+          "body": "少女が出火原因だったと示す公的記録はない。消防調査は装飾照明配線を火元とし、少女は二人の避難を助けた。過去の見出しと写真配置が誤解を招いたことを謝罪する。"
+        },
+        {
+          "heading": "プライバシー",
+          "body": "本人の希望により現在氏名・居住地・写真は掲載しない。真実の訂正が個人生活の再公開にならないよう、必要最小限の記述とした。"
+        }
+      ]
+    },
+    {
+      "id": "museum-reopening-note",
+      "day": 10,
+      "app": "news",
+      "title": "潮騒館・再開方針",
+      "subtitle": "事件後3か月",
+      "evidenceId": null,
+      "tags": [
+        "その後"
+      ],
+      "classification": "E",
+      "format": "article",
+      "body": "潮騒館は安全改修と資料倫理委員会の設置後に再開。御影座火災の展示は、個人名を出さず企業責任と避難構造を中心に組み直す。",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "MUSEUM-NEWS-202701"
+        },
+        {
+          "label": "作成・取得",
+          "value": "2027-01-20"
+        },
+        {
+          "label": "出所",
+          "value": "潮騒館公式"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "新しい展示方針",
+          "body": "映像提供者が公開範囲を後から変更できる仕組み、匿名化、原版と編集版の併記、訂正履歴の常設表示を導入。"
+        }
+      ],
+      "link": "../sites/shiosai-museum/news.html"
     }
   ]
 }

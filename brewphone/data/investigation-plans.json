@@ -1,0 +1,89 @@
+{
+  "version": "2.0.0",
+  "plans": [
+    {
+      "day": 1,
+      "title": "閉じた映写室",
+      "briefing": "現場写真、初動記録、館内図を照合し、事故という説明に残る不自然さを整理してください。写真だけで結論を出さず、発見時刻と現場保存の経緯も確認します。",
+      "required": ["incident-report-d1", "photo-d1-1", "photo-d1-2", "photo-d1-3", "photo-d1-4", "map-floor3"],
+      "recommended": ["msg-d1-1", "msg-d1-2", "event-program-d1", "contact-maya", "contact-kuze", "contact-miyahara"],
+      "returnLabel": "Day.1の今日の問いへ"
+    },
+    {
+      "day": 2,
+      "title": "20時46分の声",
+      "briefing": "20時20分から21時07分までを、人の記憶・電子ログ・音声記録の三系統で比較します。供述の一文要約ではなく、言い直しと質問への反応も確認してください。",
+      "required": ["log-access", "int-maya-1", "int-rin-1", "int-miya-1", "audio-2046", "call-day2", "note-facility"],
+      "recommended": ["int-morishita-1", "shift-roster-d2", "cleaning-log-d2", "audio-routing-manual"],
+      "returnLabel": "Day.2の今日の問いへ"
+    },
+    {
+      "day": 3,
+      "title": "新聞の13番",
+      "briefing": "新聞クイズで得た番号を入口に、記事・人物情報・市民アーカイブを横断します。新聞記事の見出しだけでなく、訂正欄と写真キャプションも対象です。",
+      "required": ["news-puzzle", "news-article13", "archive-item-13", "photo-staff", "browser-d3", "contact-yui"],
+      "recommended": ["news-current", "news-correction-2004", "archive-memory-post", "browser-bookmarks-d3"],
+      "returnLabel": "Day.3の今日の問いへ"
+    },
+    {
+      "day": 4,
+      "title": "予約された生存",
+      "briefing": "公開時刻と作成時刻を切り分け、削除済みメールの交渉相手にも別のアリバイがあるか確認します。緊急復元通知はBrewPhone内で発生します。",
+      "required": ["social-scheduled", "mail-deleted", "support-contract-d4", "int-rio", "todo-livestream", "site-tohama"],
+      "recommended": ["mail-draft-kuze", "social-template-history", "todo-call-summary", "event-stage-log"],
+      "emergency": {"id": "day04_emergency_01", "triggerItem": "mail-deleted"},
+      "returnLabel": "Day.4の今日の問いへ"
+    },
+    {
+      "day": 5,
+      "title": "火災の日の少女",
+      "briefing": "現在の犯行と22年前の火災を混同せず、結衣の移動、火元、避難経路、噂が生まれた資料を別々に検証してください。",
+      "required": ["cctv-yui", "diary-yui", "photo-fire", "bus-yui", "fire-report", "int-yui-1"],
+      "recommended": ["fire-page13-request", "archive-exit-wall", "bus-delay-record", "frame13", "hospital-list-2004"],
+      "returnLabel": "Day.5の今日の問いへ"
+    },
+    {
+      "day": 6,
+      "title": "再生された声",
+      "briefing": "心拍・床振動・映写機・館内放送を同じ時計へ合わせます。Recorderでは20時46分音声と19時10分リハーサル音声を実際に再生して比較できます。",
+      "required": ["heart-log", "vibration-log", "motor-log", "audio-2046", "audio-rehearsal", "audio-compare", "broadcast-log"],
+      "recommended": ["int-odagiri", "system-clock-audit", "audio-cache-index", "sensor-maintenance-d6"],
+      "emergency": {"id": "day06_emergency_01", "triggerItem": "audio-compare"},
+      "returnLabel": "Day.6の今日の問いへ"
+    },
+    {
+      "day": 7,
+      "title": "名前を失う人",
+      "briefing": "映像に何が映っているかだけでなく、何秒見せ、何を直前・直後へ置き、何を切ったかを確認します。公開同意の範囲も重要です。",
+      "required": ["edit-notes", "narration", "roughcut-sequence", "consent-register", "int-maya-2", "int-kamiya"],
+      "recommended": ["kamiya-note", "yui-mail-unpublished", "kuze-journal-d7", "edit-export-history"],
+      "returnLabel": "Day.7の今日の問いへ"
+    },
+    {
+      "day": 8,
+      "title": "記録されない鍵",
+      "briefing": "電子ログがないことを『侵入できない』と読み替えず、保存設備の旧式系統、鍵棚の重量、退出後のラッチを組み合わせます。",
+      "required": ["weapon", "master-key", "key-weight", "latch-spec", "wayback", "int-miya-2"],
+      "recommended": ["key-audit-2025", "projector-cavity-record", "maintenance-manual-m02", "cleaning-supplies-log"],
+      "emergency": {"id": "day08_emergency_01", "triggerPending": true},
+      "returnLabel": "Day.8の今日の問いへ"
+    },
+    {
+      "day": 9,
+      "title": "左手の編集者",
+      "briefing": "利き手だけで犯人を決めず、犯行時刻の空白、鍵との接触、音声編集の作成者、未公開語句の知識を一人へ接続してください。",
+      "required": ["impact-report", "brass-report", "terminal-gap", "audio-project", "photo-stairs", "evidence-final"],
+      "recommended": ["alibi-matrix-d9", "project-checksum-d9", "evidence-chain-d9", "int-maya-3"],
+      "emergency": {"id": "day09_emergency_01", "triggerComplete": true},
+      "returnLabel": "Day.9の今日の問いへ"
+    },
+    {
+      "day": 10,
+      "title": "最後の編集",
+      "briefing": "新しい決定打はありません。これまでに提示された記録の意味を正しい順序へ戻し、論理的真相と感情的真相を分けて再構成します。",
+      "required": ["final-report", "corrected-news", "tatsuro-letter", "yui-statement", "case-timeline-final"],
+      "recommended": ["mission-complete", "museum-reopening-note", "detective-group-final"],
+      "returnLabel": "Day.10の最終回答へ"
+    }
+  ]
+}

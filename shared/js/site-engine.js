@@ -19,7 +19,11 @@
     technical: { label: '技術資料・会員フォーラム', mark: '16', utility: '映写技術保存会' },
     'web-archive': { label: '保存されたウェブ', mark: 'WWW', utility: 'PUBLIC WEB SNAPSHOT SERVICE' },
     magazine: { label: '街と人の月刊誌', mark: 'M+', utility: '月刊みなぎ　2026 OCT.' },
-    'weather-record': { label: '観測記録', mark: 'WX', utility: '海凪地方気象観測所' }
+    'weather-record': { label: '観測記録', mark: 'WX', utility: '海凪地方気象観測所' },
+    'open-data': { label: '海凪市オープンデータ', mark: 'OD', utility: 'MINAGI CITY / PUBLIC DATA PORTAL' },
+    'photo-community': { label: '市民写真記録', mark: 'PH', utility: '海辺写真クラブ・デジタル収蔵庫' },
+    'audio-lab': { label: '音響修復技術資料', mark: 'Hz', utility: 'SOUND RESTORATION LAB / TECHNICAL NOTES' },
+    library: { label: '地域資料・蔵書検索', mark: 'LIB', utility: '海凪市立図書館デジタル分館' }
   };
 
   const PAGE_LABELS = {
@@ -45,7 +49,15 @@
     'reader-posts.html': '読者投稿', 'fortune.html': '今月の占い',
     'snapshot-20040815-tohama.html': '2004年8月15日',
     'snapshot-info.html': '保存情報', 'daily-20261018.html': '10月18日の観測',
-    'sunset.html': '日没記録'
+    'sunset.html': '日没記録', 'facility-ledger.html': '施設台帳',
+    'procurement-2004.html': '2004年調達', 'safety-minutes.html': '安全会議録',
+    'file-arc-t04.html': '端末仕様', 'gallery-2004.html': '2004年アルバム',
+    'photo-058.html': '写真058', 'comments.html': '撮影者コメント',
+    'digitization-log.html': 'デジタル化記録', 'scheduling-audio.html': '予約再生',
+    'cache-metadata.html': 'キャッシュ情報', 'waveform-guide.html': '波形の読み方',
+    'case-note.html': '検証ノート', 'catalog-frame13.html': 'FRAME13目録',
+    'oral-history.html': '聞き書き', 'newspapers.html': '新聞縮刷版',
+    'request-log.html': '閲覧請求記録'
   };
 
   const escapeHTML = (value) => {
@@ -109,6 +121,23 @@
       </section>`).join('');
 
     const puzzle = page.page === 'sunday-puzzle.html' ? renderPuzzle() : '';
+    const detailedSections = (page.sections || []).map((section, index) => `
+      <section class="archive-section">
+        <p class="archive-section-number">${String(index + 1).padStart(2, '0')}</p>
+        <div><h2>${escapeHTML(section.heading)}</h2><p>${escapeHTML(section.body)}</p></div>
+      </section>`).join('');
+    const records = (page.records || []).length ? `
+      <section class="record-block">
+        <div class="record-heading"><p class="section-label">SOURCE RECORDS</p><h2>原資料の記載</h2></div>
+        <div class="record-table" role="table" aria-label="原資料の記載">
+          ${(page.records || []).map((record) => `<div class="record-row" role="row"><strong role="cell">${escapeHTML(record.label)}</strong><span role="cell">${escapeHTML(record.value)}</span><small role="cell">${escapeHTML(record.note || '')}</small></div>`).join('')}
+        </div>
+      </section>` : '';
+    const related = (page.related || []).length ? `
+      <nav class="related-records" aria-label="関連公開資料">
+        <p class="section-label">RELATED RECORDS</p>
+        ${(page.related || []).map((entry) => `<a href="${escapeHTML(entry.href)}"><span>${escapeHTML(entry.label)}</span><small>${escapeHTML(entry.description || '関連する公開資料を開く')}</small><b aria-hidden="true">→</b></a>`).join('')}
+      </nav>` : '';
     const pageLabel = PAGE_LABELS[page.page] || page.title;
     const archiveLine = archiveMetadata(page);
 
@@ -138,7 +167,10 @@
           </header>
           <div class="article-rule" aria-hidden="true"></div>
           <div class="article-grid">${facts}</div>
+          ${detailedSections ? `<div class="archive-sections">${detailedSections}</div>` : ''}
+          ${records}
           ${puzzle}
+          ${related}
           <aside class="source-note"><strong>公開資料について</strong><p>このページは公開当時の表記を基に整理されています。内容の訂正・更新は各ページの記録を参照してください。</p></aside>
         </article>
         <a class="back-to-phone" href="../../brewphone/">BrewPhoneに戻る</a>

@@ -53,31 +53,31 @@
             "id": "door",
             "label": "映写室の扉",
             "image": "../day01/images/projection-door-dual-lock.jpg",
-            "finding": "ICカードリーダーとは別に旧式鍵穴が残る。"
+        "finding": "扉にはICカードリーダーと古い鍵穴が併存する。鍵穴の縁には年代の違う擦れが重なり、どちらの機構が発見時の施錠状態を作ったかは写真だけでは分からない。"
           },
           {
             "id": "ladder",
             "label": "脚立と工具",
             "image": "../day01/images/ladder-tools-floor.jpg",
-            "finding": "遺体位置が脚立の落下軸から外れ、手袋の掌が清潔。"
+        "finding": "脚立は開き止めが掛かったまま。後脚の粉塵は均一で、工具は西側へ偏る。作業机にあった手袋の掌には黒い機械油がほとんど付いていないが、予備品の可能性も残る。"
           },
           {
             "id": "projector",
             "label": "映写機2号",
             "image": "../day01/images/projector-two.jpg",
-            "finding": "巻き取りハンドル取付部に新しい擦れ。"
+        "finding": "巻き取り軸の取付部に細い擦れがある。日常整備の古い傷と色が違って見えるが、最後に誰が部品を外したかまでは分からない。床には対応するハンドルが見当たらない。"
           },
           {
             "id": "desk",
             "label": "久世の作業机",
             "image": "../day01/images/kuze-work-desk.jpg",
-            "finding": "SNS管理画面らしきものが開いたまま。"
+        "finding": "ノートPCには投稿管理画面が開き、公開予定20:50、作成18:55と読める。机上には未返信メール、上映進行表、珈琲のレシートも残り、どれが事件に関係するかはまだ決められない。"
           },
           {
             "id": "intercom",
             "label": "インターホン",
             "image": "../day01/images/intercom-wall.jpg",
-            "finding": "通話以外の再生機能を示す記号がある。"
+        "finding": "壁端末には受話器、放送、ファイル再生に見える三つの記号が並ぶ。液晶は待機画面へ戻っており、20:46にどの方式が使われたかは本体だけでは確認できない。"
           }
         ]
       },
@@ -812,7 +812,7 @@
       ],
       "exploration": {
         "mode": "conditional_hotspots",
-        "required": 3,
+        "required": 4,
         "hotspots": [
           "映写機2号",
           "旧式鍵穴",

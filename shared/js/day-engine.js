@@ -89,9 +89,24 @@
           <p id="explore-status" class="muted" aria-live="polite"></p>
         </section>
 
-        <section class="question-card" id="question-card">
-          <p class="eyebrow">TODAY'S QUESTION</p>
-          <h2>今日の問い</h2>
+        <section class="phone-handoff" id="phone-handoff">
+          <div class="handoff-step"><span>02</span><div><p class="eyebrow">BREWPHONE INVESTIGATION</p><h2>BrewPhoneで資料を調べる</h2></div></div>
+          <p>現場確認を終えたら、その日の資料をBrewPhoneへ解放します。必読資料を読み終えるまで「今日の問い」は表示されません。</p>
+          <div class="handoff-locked" id="handoff-locked">
+            <strong>現場調査がまだ完了していません</strong>
+            <span>上の「現場を調べる」で必要な地点を確認してください。</span>
+          </div>
+          <div class="handoff-ready hidden" id="handoff-ready">
+            <p class="code-label">Today's Brew Code</p>
+            <div class="brew-code" id="brew-code">${escape(day.code)}</div>
+            <p class="muted">コードを入力するとDay.${day.day}の資料と調査ミッションが追加されます。</p>
+            <div class="code-actions"><button class="button" id="copy-code" type="button">コードをコピー</button><a class="button primary" id="open-phone" href="../brewphone/?day=${day.day}">BrewPhoneを開く</a></div>
+          </div>
+          <div class="phone-complete hidden" id="phone-complete"><span aria-hidden="true">✓</span><div><strong>BrewPhoneの調査完了</strong><p>必読資料を確認しました。今日の問いが解放されています。</p></div></div>
+        </section>
+
+        <section class="question-card hidden" id="question-card">
+          <div class="handoff-step"><span>03</span><div><p class="eyebrow">TODAY'S QUESTION</p><h2>今日の問い</h2></div></div>
           <p class="question">${escape(day.question)}</p>
           <form id="answer-form" class="answer-row">
             <label class="sr-only" for="answer-input">回答</label>
@@ -113,12 +128,11 @@
           </div>
           <div class="logic-flow"><div><small>CONNECT</small><p>${escape(day.success.connection)}</p></div><span aria-hidden="true">↓</span><div><small>CONCLUSION</small><p>${escape(day.success.conclusion)}</p></div></div>
           <div class="remaining"><strong>まだ残る疑問</strong><p>${escape(day.success.remaining)}</p></div>
-          <div class="code-reveal">
-            <p>Today's Brew Code</p>
-            <div class="brew-code" id="brew-code">${escape(day.code)}</div>
-            <small>このコードをBrewPhoneに入力すると、Day.${day.day}の資料が解放されます。</small>
-            <div class="code-actions"><button class="button" id="copy-code" type="button">コードをコピー</button><a class="button primary" id="open-phone" href="../brewphone/">BrewPhoneを開く</a></div>
+          <div class="investigation-finished">
+            <span aria-hidden="true">✓</span>
+            <div><p class="eyebrow">INVESTIGATION CLOSED</p><h3>Day.${day.day}の調査は終了です</h3><p>${day.day === 10 ? '最終記録とエンディングが解放されました。' : '捜査記録はこの端末に保存されました。次のQRが開くまで、BrewPhoneで資料を見返せます。'}</p></div>
           </div>
+          <div class="end-actions"><a class="button" href="../brewphone/?day=${day.day}">資料を見返す</a>${day.day === 10 ? '<a class="button primary" href="../ending/">エンディングを見る</a>' : '<a class="button primary" href="../">シリーズトップへ</a>'}</div>
         </section>
       </section>
 
@@ -126,7 +140,7 @@
       <a class="floating-phone" href="../brewphone/" aria-label="BrewPhoneを開く"><span>BP</span><small>BrewPhone</small></a>
 
       <div class="modal hidden" id="image-modal" role="dialog" aria-modal="true" aria-label="資料画像の拡大表示">
-        <div class="modal-card"><button class="modal-close" aria-label="閉じる">×</button><img id="modal-image" alt="拡大した資料画像"></div>
+        <div class="modal-card"><button class="modal-close" aria-label="閉じる">×</button><img id="modal-image" alt="拡大した資料画像"><div class="modal-evidence-copy" id="modal-evidence-copy"></div></div>
       </div>`;
   }
 
@@ -147,20 +161,31 @@
     };
     const save = () => S.set(`${key}_explored`, [...explored]);
 
-    const addButton = (id, label, text, meta = '') => {
+    const openEvidenceImage = (src, label, text) => {
+      const modal = document.getElementById('image-modal');
+      const image = document.getElementById('modal-image');
+      const copy = document.getElementById('modal-evidence-copy');
+      image.src = src;
+      image.alt = `${label}の資料画像`;
+      copy.innerHTML = `<p class="eyebrow">FIELD RECORD</p><h3>${escape(label)}</h3><p>${escape(text)}</p><small>画像はピンチ操作または拡大表示で細部まで確認できます。</small>`;
+      modal.classList.remove('hidden');
+    };
+
+    const addButton = (id, label, text, meta = '', image = '') => {
       const button = document.createElement('button');
       button.type = 'button';
       button.className = `explore-item${explored.has(id) ? ' done' : ''}`;
       button.dataset.id = id;
-      button.innerHTML = `<span class="explore-number">${String(host.querySelectorAll('.explore-item').length + 1).padStart(2, '0')}</span><span class="explore-label"><strong>${escape(label)}</strong>${meta ? `<small>${escape(meta)}</small>` : ''}</span><span class="explore-action">${explored.has(id) ? '確認済み' : '調べる'}</span>`;
+      const actionLabel = image ? (explored.has(id) ? 'もう一度見る' : '画像を調べる') : (explored.has(id) ? '確認済み' : '確認する');
+      button.innerHTML = `<span class="explore-number">${String(host.querySelectorAll('.explore-item').length + 1).padStart(2, '0')}</span><span class="explore-label"><strong>${escape(label)}</strong>${meta ? `<small>${escape(meta)}</small>` : ''}</span><span class="explore-action">${actionLabel}</span>`;
       button.addEventListener('click', () => {
         explored.add(id);
         button.classList.add('done');
-        button.querySelector('.explore-action').textContent = '確認済み';
+        button.querySelector('.explore-action').textContent = image ? 'もう一度見る' : '確認済み';
         showFinding(text);
+        if (image) openEvidenceImage(image, label, text);
         save();
         update();
-        maybeEmergency(day, id);
       });
       host.appendChild(button);
     };
@@ -168,7 +193,7 @@
     const mode = day.exploration.mode;
     if (mode === 'hotspots') {
       total = day.exploration.hotspots.length;
-      day.exploration.hotspots.forEach((item, index) => addButton(item.id || `spot-${index}`, item.label, item.finding || `${item.label}を確認した。`, item.image || ''));
+      day.exploration.hotspots.forEach((item, index) => addButton(item.id || `spot-${index}`, item.label, item.finding || `${item.label}を確認した。`, '資料写真を開く', item.image || ''));
     } else if (mode === 'timeline') {
       total = day.exploration.events.length;
       day.exploration.events.forEach((item, index) => addButton(`event-${index}`, item, 'タイムラインへ配置した。時刻の前後関係を照合できる。', '時系列カード'));
@@ -198,7 +223,7 @@
         if (explored.has('hidden-action')) return;
         explored.add('hidden-action'); save(); update();
         showFinding('映写機2号の裏の空洞から、清拭された巻き取りハンドルを発見した。');
-        fireEmergency(day);
+        queueEmergency(day);
       };
       host.appendChild(action);
     } else if (mode === 'evidence_board') {
@@ -242,8 +267,11 @@
       document.getElementById('explore-progress').style.width = `${percentage}%`;
       document.getElementById('explore-count').textContent = count;
       document.getElementById('explore-total').textContent = `/ ${total}`;
-      document.getElementById('explore-status').textContent = count >= goal ? '必要な調査を完了しました。今日の問いへ進めます。' : `あと${goal - count}件確認すると、必要な調査が完了します。`;
+      document.getElementById('explore-status').textContent = count >= goal ? '必要な現場調査を完了しました。BrewPhoneへ進めます。' : `あと${goal - count}件確認すると、必要な調査が完了します。`;
       document.getElementById('mission-ring').textContent = `${percentage}%`;
+      const fieldComplete = count >= goal;
+      document.getElementById('handoff-locked').classList.toggle('hidden', fieldComplete);
+      document.getElementById('handoff-ready').classList.toggle('hidden', !fieldComplete || S.get(`${key}_phone_complete`, false));
       const action = document.getElementById('conditional-action');
       if (action) {
         const ready = day.exploration.hotspots.every((_, index) => explored.has(`spot-${index}`));
@@ -252,6 +280,17 @@
       }
     }
     update();
+
+    if (S.get(`${key}_answered`, false) && !S.get(`${key}_phone_complete`, false)) {
+      S.set(`${key}_phone_complete`, true);
+    }
+    const phoneComplete = S.get(`${key}_phone_complete`, false);
+    if (phoneComplete) {
+      document.getElementById('phone-complete').classList.remove('hidden');
+      document.getElementById('handoff-ready').classList.add('hidden');
+      document.getElementById('handoff-locked').classList.add('hidden');
+      document.getElementById('question-card').classList.remove('hidden');
+    }
 
     let hintLevel = S.get(`${key}_hint_level`, 0);
     const hintList = document.getElementById('hint-list');
@@ -276,6 +315,7 @@
     if (S.get(`${key}_answered`, false)) success(false);
     document.getElementById('answer-form').addEventListener('submit', event => {
       event.preventDefault();
+      if (!S.get(`${key}_phone_complete`, false)) return;
       const value = norm(document.getElementById('answer-input').value);
       const accepted = day.answer.accepted.map(norm);
       if (accepted.includes(value)) success();
@@ -290,44 +330,32 @@
       try { await navigator.clipboard.writeText(day.code); document.getElementById('copy-code').textContent = 'コピーしました'; }
       catch (_) { document.getElementById('copy-code').textContent = 'コードを選択してコピー'; }
       localStorage.setItem('brewphone_pending_code', day.code);
+      localStorage.setItem('brewphone_active_day', String(day.day));
     };
-    document.getElementById('open-phone').onclick = () => localStorage.setItem('brewphone_pending_code', day.code);
+    document.getElementById('open-phone').onclick = () => {
+      localStorage.setItem('brewphone_pending_code', day.code);
+      localStorage.setItem('brewphone_active_day', String(day.day));
+    };
 
     document.querySelectorAll('.image-button').forEach(button => {
       button.onclick = () => {
-        document.getElementById('modal-image').src = button.dataset.image;
-        document.getElementById('image-modal').classList.remove('hidden');
+        openEvidenceImage(button.dataset.image, button.querySelector('img').alt, '場面資料を拡大表示しています。画面端、時計、手元、背景の掲示物も確認してください。');
       };
     });
     document.querySelector('.modal-close').onclick = () => document.getElementById('image-modal').classList.add('hidden');
     document.getElementById('image-modal').onclick = event => { if (event.target.id === 'image-modal') event.currentTarget.classList.add('hidden'); };
     document.addEventListener('keydown', event => { if (event.key === 'Escape') document.getElementById('image-modal').classList.add('hidden'); });
     window.BMImageFallback && window.BMImageFallback.bind(root);
-  }
-
-  function maybeEmergency(day, id) {
-    if (!day.emergency) return;
-    if (day.emergency.trigger === 'deleted_mail_opened' && id === 'item-1') fireEmergency(day);
-    if (day.emergency.trigger === 'audio_match_solved' && id === 'item-3') fireEmergency(day);
-    if (day.emergency.trigger === 'evidence_links_complete') {
-      const key = `day${String(day.day).padStart(2, '0')}`;
-      if ((S.get(`${key}_explored`, []) || []).length >= day.exploration.required_links.length) fireEmergency(day);
+    if (phoneComplete && (new URLSearchParams(location.search).get('stage') === 'question' || location.hash === '#question-card')) {
+      setTimeout(() => document.getElementById('question-card').scrollIntoView({ behavior: 'smooth', block: 'start' }), 180);
     }
   }
 
-  function fireEmergency(day) {
+  function queueEmergency(day) {
     if (!day.emergency) return;
     const event = day.emergency;
-    if (S.get(`event_${event.id}`, false)) return;
-    S.set(`event_${event.id}`, true);
-    document.body.classList.add('shake');
-    setTimeout(() => document.body.classList.remove('shake'), 420);
-    if (S.get('vibration_enabled', true) && navigator.vibrate) navigator.vibrate(event.vibration);
-    const banner = document.createElement('div');
-    banner.className = 'emergency-banner-live';
-    banner.innerHTML = `<div><span class="emergency-pulse"></span><p class="eyebrow">URGENT UPDATE</p><strong>緊急通知</strong><p>${escape(event.message)}</p></div><a class="button primary" href="${escape(event.target)}">BrewPhoneで確認</a>`;
-    document.body.appendChild(banner);
-    setTimeout(() => banner.classList.add('show'), 20);
-    setTimeout(() => banner.remove(), 14000);
+    if (S.get(`event_${event.id}`, false) || S.get(`event_pending_${event.id}`, false)) return;
+    S.set(`event_pending_${event.id}`, true);
+    localStorage.setItem('brewphone_active_day', String(day.day));
   }
 })();

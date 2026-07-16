@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "2.0.0",
   "items": [
     {
       "id": "map-floor3",
@@ -7,12 +7,80 @@
       "app": "map",
       "title": "潮騒館3階図",
       "subtitle": "",
-      "body": "映写室Bから非常階段まで近く、二階アーカイブ室へ数分で移動できる。",
+      "body": "潮騒館三階の実測図。映写室B、映写室A、フィルム保管庫、旧非常階段、西側廊下を表示する。二階アーカイブ室から映写室Bまでは通常歩行で約2分20秒。",
       "image": "../shared/images/scenes/third-floor-hall.jpg",
-      "link": null,
+      "link": "../sites/minagi-city-data/facility-ledger.html",
       "evidenceId": "EV-MAP-01",
       "tags": [],
-      "classification": "B"
+      "classification": "B",
+      "format": "map",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "MAP-3F-2026"
+        },
+        {
+          "label": "作成・取得",
+          "value": "2026-06改修確定版"
+        },
+        {
+          "label": "出所",
+          "value": "潮騒館施設台帳"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "移動試験",
+          "body": "二階端末席から映写室B扉まで、階段利用で最短1分58秒、通常歩行2分18秒。扉解錠と室内移動を含めても14分の離席中に往復は可能。"
+        },
+        {
+          "heading": "死角",
+          "body": "西側非常階段には二階踊り場のみカメラがあり、三階扉前は画角外。正面階段はロビー配信カメラに一部写る。"
+        }
+      ]
+    },
+    {
+      "id": "bus-delay-record",
+      "day": 5,
+      "app": "map",
+      "title": "海凪バス当日運行実績",
+      "subtitle": "予定表ではなくGPS実績",
+      "evidenceId": null,
+      "tags": [
+        "アリバイ"
+      ],
+      "classification": "B",
+      "format": "timeline",
+      "body": "19時17分便は工事渋滞で3分遅れたが、結衣のIC乗車と車内映像は同じ車両で一致。時刻表だけに依存しない移動検証。",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "BUS-GPS-1018-17"
+        },
+        {
+          "label": "作成・取得",
+          "value": "2026-10-18"
+        },
+        {
+          "label": "出所",
+          "value": "海凪バス運行センター"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "実績",
+          "body": "潮騒館裏19:17:08発、海凪中央19:24:12通過、港南二丁目19:41:26着。車両番号MN-204。"
+        }
+      ],
+      "link": "../sites/minagi-bus/route.html"
     },
     {
       "id": "bus-yui",
@@ -20,12 +88,41 @@
       "app": "map",
       "title": "白石結衣 移動記録",
       "subtitle": "",
-      "body": "19:17 海凪中央発。19:24 車内カメラ。20:31には現場から離れている。",
+      "body": "白石結衣の交通IC記録と海凪バス運行記録。19時17分に潮騒館裏停留所から乗車し、19時24分には車内カメラの画角に継続している。",
       "image": "../day05/images/bus-camera-yui.jpg",
       "link": "../sites/minagi-bus/timetable.html",
       "evidenceId": null,
       "tags": [],
-      "classification": "A"
+      "classification": "A",
+      "format": "timeline",
+      "meta": [
+        {
+          "label": "資料番号",
+          "value": "MOVE-YUI-1018"
+        },
+        {
+          "label": "作成・取得",
+          "value": "2026-10-18 19:12〜19:41"
+        },
+        {
+          "label": "出所",
+          "value": "交通IC・車内カメラ・運行GPS"
+        },
+        {
+          "label": "取扱状態",
+          "value": "確認済み"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "照合時系列",
+          "body": "19:12:04 裏口カメラ、19:13:02 通用口を離れる、19:16:31 停留所カメラ、19:17:08 IC乗車、19:24:12 海凪中央交差点の車内映像、19:41:26 港南二丁目で降車。"
+        },
+        {
+          "heading": "移動可能性",
+          "body": "19時24分から20時31分までに潮騒館へ戻るには、最短でもタクシーで22分。戻った記録はなく、19時58分には自宅近くの店舗決済がある。"
+        }
+      ]
     }
   ]
 }
